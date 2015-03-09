@@ -11,7 +11,7 @@ title: Eric Zhang Chen
 Education
 ---------
 
-2011-2016 (expected)
+2010-2014 (expected)
 :   **PhD, Computer Science**; Awesome University (MyTown)
 
     *Thesis title: Deep Learning Approaches to the Self-Awesomeness
