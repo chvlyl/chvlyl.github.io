@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Hank Quinlan's Blog</title>
+ <link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://hankquinlan.github.io/blog"/>
+ <updated>2015-03-09T19:18:38-04:00</updated>
+ <id>http://hankquinlan.github.io/blog</id>
+ <author>
+   <name>Hank Quinlan</name>
+   <email>hankquinlanhub@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>GitHub website setup</title>
+   <link href="http://hankquinlan.github.io/blog/2015/03/09/github-website-setup"/>
+   <updated>2015-03-09T00:00:00-04:00</updated>
+   <id>http://hankquinlan.github.io//blog/2015/03/09/github-website-setup</id>
+   <content type="html">&lt;p&gt;Keep track all the problems I have:&lt;br /&gt;
+1. In the YAML header of the .md file, there must be a space after semicolon.&lt;br /&gt;
+Wrong:&lt;br /&gt;
+ &lt;code&gt;layout:default&lt;/code&gt;&lt;br /&gt;
+Correct:&lt;br /&gt;
+ &lt;code&gt;layout: default&lt;/code&gt; &lt;br /&gt;
+2. Emphasis: either *emphasis* or _emphasis_&lt;/p&gt;
+
+&lt;p&gt;Markdown:&lt;br /&gt;
+1.Create a new line: just type two or more spaces after the line.&lt;/p&gt;
+
+&lt;p&gt;Resouces:&lt;br /&gt;
+- Markdown:&lt;br /&gt;
+&lt;a href=&quot;http://daringfireball.net/projects/markdown&quot;&gt;Markdown syntax by John Gruber&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
