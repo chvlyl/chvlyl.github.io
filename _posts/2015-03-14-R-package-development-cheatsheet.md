@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: home
 title: "R development cheatsheet"
 date: 2015-03-15
 ---
