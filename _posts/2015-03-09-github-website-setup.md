@@ -18,8 +18,8 @@ Correct:
 *Setup the cutom domain with GoDaddy:  
 1. Go to [GoDaddy](www.godaddy.com) and buy my own domain name statchen.com.  
 2. Go to GoDaddy *Zone File Editor*:  
-3. At *A(Host)* section add 'Host:@ Points to: 192.30.252.153'  and 'Host:@ Points to: 192.30.252.154'  
-4. At *CNAME (Alias)* section add 'Host:www to: chvlyl.github.io'  
+3. At *A(Host)* section add `Host:@ Points to: 192.30.252.153`  and `Host:@ Points to: 192.30.252.154`  
+4. At *CNAME (Alias)* section add `Host:www to: chvlyl.github.io`  
 5. Go to GitHub, add a file called CNAME with content statchen.com  
 6. I set the link in the layout to my GiHub website link chvlyl.github.io and this caused some problems. I changed the link to statchen.com and then problem was solved.     
 
