@@ -28,3 +28,9 @@ Correct:
 Resouces:  
 - Markdown:  
 [Markdown syntax by John Gruber](http://daringfireball.net/projects/markdown)  
+
+-[Markdown basics](https://help.github.com/articles/markdown-basics/)
+1. Headings: use \#
+2. Blockquotes: use \>
+3. Bold and italic text: \*italic text\*, \**bold text\**  
+4.  
