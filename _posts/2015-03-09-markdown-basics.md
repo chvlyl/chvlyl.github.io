@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Markdown basics"
+date: 2015-03-09
+---
+
+
 -[Markdown basics](https://help.github.com/articles/markdown-basics/)
 1. Headings: use \#  
 2. Blockquotes: use \>  
