@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Book: Probabilistic Programming & Bayesian Methods for Hackers"
+title: "Book: Probabilistic Programming and Bayesian Methods for Hackers"
 date: 2015-03-19
 ---
 
