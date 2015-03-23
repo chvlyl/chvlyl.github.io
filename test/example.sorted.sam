@@ -1,4 +1,4 @@
-@HD	VN:1.5	SO:coordinate
+@HD	VN:1.3	SO:coordinate
 @PG	ID:STAR	PN:STAR	VN:STAR_2.3.0e_r291	CL:/appl/STAR/STAR   --genomeDir /project/voight_gcb535/rna_seq/star_chr1and2andM/   --readFilesIn /home/zhch/hw2rnaseq/reads/sample1/HW_sample1_forward.fq   /home/zhch/hw2rnaseq/reads/sample1/HW_sample1_reverse.fq      --outFileNamePrefix /home/zhch/hw2rnaseq/reads/sample1/   --outSAMunmapped Within	cl:/appl/STAR/STAR   --outFileNamePrefix /home/zhch/hw2rnaseq/reads/sample1/ --genomeDir /project/voight_gcb535/rna_seq/star_chr1and2andM/ --outSAMunmapped Within --readFilesIn /home/zhch/hw2rnaseq/reads/sample1/HW_sample1_forward.fq /home/zhch/hw2rnaseq/reads/sample1/HW_sample1_reverse.fq 
 @SQ	SN:chr1	LN:197195432
 @SQ	SN:chr2	LN:181748087
