@@ -9,10 +9,10 @@ Step 1: setup an account in GitHub:
   2. Create an account in GitHub.  
   3. Create a repository username.github.io, replacing username with your GitHub username.  
   4. I used the website templates from [Jonathan Mcglone](http://jmcglone.com/guides/github-pages/) and [Yihui](http://yihui.name/).  
- 
+  5. Copy the template into your github repository. You have to learn some github basics about how to push a file into the respository.   
 
 
-Step 2: setup the cutom domain with GoDaddy:  
+Step 2: setup the custom domain with GoDaddy:  
   1. Go to [GoDaddy](www.godaddy.com) and buy my own domain name statchen.com.  
   2. Go to GoDaddy *Zone File Editor*:  
   3. At *A(Host)* section add `Host:@ Points to: 192.30.252.153`  and `Host:@ Points to: 192.30.252.154`  
