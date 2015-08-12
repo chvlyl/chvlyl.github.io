@@ -6,6 +6,7 @@ title: Eric Z Chen
 ## Education  
 * 2011-now, PhD student in Genomics and Computational Biology, University of Pennsylvania  
 * 2009-2011, M.Phil in Bioinformatics, The Chinese University of Hong Kong
+* 2008-2009, Intern, Institute of Genetics and Developmental Biology Chinese Academy of Sciences
 * 2004-2008, BS in Biology, University of Science and Technology of China  
 
 ## Publications  
