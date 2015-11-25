@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Book: Python for Data Analysis</h1>
+<p class="meta">21 Nov 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>Here is my reading note for the book “Python for Data Analysis” by Wes McKinney.</p>
+
+<h3 id="chapter-4-numpy-basicsarrays-and-vectorized-computation">Chapter 4: NumPy Basics:Arrays and Vectorized Computation</h3>
+
+<ol>
+  <li>
+    <p>The NumPy ndarray is homogeneous, that is, all the elements must be the same type.</p>
+  </li>
+  <li>
+    <p>Every ndarray has <strong>shape</strong> and <strong>dtype</strong> attributes. data.shape and data.dtype.</p>
+  </li>
+  <li>
+    <p>Create ndarray by <strong>np.array(data)</strong>. Use <strong>np.zeros(3,5)</strong> to create a 3x5 matrix with zeros and np.ones() to create a matrix with ones. Use <strong>np.eye(10)</strong> to create an identify matrix.</p>
+  </li>
+  <li>
+    <p>Create a sequence of numbers (0 to 10) by np.arange(10).</p>
+  </li>
+  <li>
+    <p>The slicing of the ndarray will not copy the original array. Thus any modifications on the sliced array will be reflected in the source array.</p>
+  </li>
+</ol>
+
+<p><code>
+arr_slice = arr[5:8]
+arr_slice[:] = 1
+</code></p>
+
+<p>The change on arr_slice will also change arr.</p>
+
+<ol>
+  <li>
+    <p>Use comma-separated list of indices to select element from two-dimensional array, arr2d[0,2].</p>
+  </li>
+  <li>
+    <p>Reshape an array: arr.reshape((3,5)). Transpose: arr.T</p>
+  </li>
+</ol>
+
+<h4 id="chapter-5-getting-started-with-pandas">Chapter 5: Getting Started with Pandas</h4>
+
+<ol>
+  <li>
+    <p>Series: one-dimentional array with index. ser.values and ser.index to get its values and index.</p>
+  </li>
+  <li>
+    <p>Compared to the NumPy array, one can use values in the index to select the values in the series. ser[‘a’].</p>
+  </li>
+  <li>
+    <p>One can create a series from Python dict. The keys (in the sorted order) will be the index. Series(dict).</p>
+  </li>
+  <li>
+    <p>Create the DataFrame with dict of equal-length lists or NumPy arrays.</p>
+  </li>
+  <li>
+    <p>Select a column in DataFrame by frame[‘col’] or frame.col.  Select a row by frame.ix[‘row’]</p>
+  </li>
+  <li>
+    <p>Use reindex to change the order of the data.</p>
+  </li>
+</ol>
+
+<h3 id="chapter-6-data-loading-storage-and-file-formats">Chapter 6: Data Loading, Storage, and File Formats</h3>
+
+<ol>
+  <li>
+    <p>Read a file into DataFrame: pd.read_csv or pd.read_table</p>
+  </li>
+  <li>
+    <p>Write DataFrame into a file:data.to_csv</p>
+  </li>
+</ol>
+
+<h3 id="chapter-7-data-wrangling-clean-transform-merge-reshape">Chapter 7: Data Wrangling: Clean, Transform, Merge, Reshape.</h3>
+
+<ol>
+  <li>Merge DataFrame by pd.merge(df1,df2).</li>
+</ol>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

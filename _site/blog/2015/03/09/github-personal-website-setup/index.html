@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>GitHub personal website setup</h1>
+<p class="meta">09 Mar 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>Step 1: setup an account in GitHub:<br />
+  1. Go to <a href="https://github.com/">GitHub</a>.<br />
+  2. Create an account in GitHub.<br />
+  3. Create a repository username.github.io, replacing username with your GitHub username.<br />
+  4. I used the website templates from <a href="http://jmcglone.com/guides/github-pages/">Jonathan Mcglone</a> and <a href="http://yihui.name/">Yihui</a>.<br />
+  5. Copy the template into your github repository. You have to learn some github basics about how to push a file into the respository.</p>
+
+<p>Step 2: setup the custom domain with GoDaddy:<br />
+  1. Go to <a href="www.godaddy.com">GoDaddy</a> and buy my own domain name statchen.com.<br />
+  2. Go to GoDaddy <strong>Zone File Editor</strong>:<br />
+  3. At <strong>A(Host)</strong> section add <code>Host:@ Points to: 192.30.252.153</code>  and <code>Host:@ Points to: 192.30.252.154</code><br />
+  4. At <strong>CNAME (Alias)</strong> section add <code>Host:www to: chvlyl.github.io</code><br />
+  5. Go to GitHub, add a file called CNAME with content statchen.com<br />
+  6. I set the link in the layout to my GiHub website link chvlyl.github.io and this caused some problems. I changed the link to statchen.com and then problem was solved.</p>
+
+<p>Step 3: modify the index files from the template:<br />
+  1. In the YAML header of the .md file, there must be a space after semicolon.<br />
+  Wrong:<br />
+   <code>layout:default</code><br />
+  Correct:<br />
+   <code>layout: default</code> <br />
+  2. Create a new line: just type two or more spaces after the line.<br />
+  3. Math equation support:  use \ begin{equation} and \end{equation}</p>
+
+<p>Step 4: update changes: 
+git add README.md
+git commit -m ‘Add README.md’
+git push -u origin master</p>
+
+<p>Step 5: Jekyll
+Run <code>jekyll serve --detach</code> in the website home folder to setup the local server.</p>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

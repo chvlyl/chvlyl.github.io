@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Rcpp</h1>
+<p class="meta">22 Nov 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <h2 id="introduction">Introduction</h2>
+<p>Rcpp is a R package that allows to easily incorporate C++ code in R code. Nowadays this package is getting very popular in the R community. If you take a look at the R packsges developed by Hadley Wickham, most of them actually use Rcpp. Code written in C++ generally is much faster than R. This is why many R packages implemented their core functions in C++ with Rcpp.</p>
+
+<h2 id="install-rcpp">Install Rcpp</h2>
+<p>Rcpp is just a regular R package and thus it can be installed as <code>install.packages('Rcpp')</code>.</p>
+
+<h2 id="cppfunction">cppFunction</h2>
+<p>This function allows you to create a R function with C++ code. For example,</p>
+
+<pre><code>cppFunction("int times2(int x) { return 2*x; }")
+times2(21) 
+</code></pre>
+
+<p>Here x can only be an integer.</p>
+
+<p>We can use IntegerVector or NumericVector to define a vector,</p>
+
+<pre><code>library(Rcpp)
+cppFunction("NumericVector la(NumericVector x) {
+return log(abs(x));
+}")
+la(seq(-5, 5, by=2))
+</code></pre>
+
+<p>Note that the la function takes a vector as the input. So the calculation can be vectorized in C++, too.</p>
+
+<h2 id="evalcpp">evalCpp</h2>
+<p>This function evaluates a single C++ expression</p>
+
+<pre><code>evalCpp("2 + 2") 
+</code></pre>
+
+<h2 id="sourcecpp">sourceCpp</h2>
+<p>This function allows to source a C++ file and the then function written in C++ can be called in R. The syntax is:</p>
+
+<pre><code>#include &lt;Rcpp.h&gt;
+using namespace Rcpp;
+
+// [[Rcpp::export]]
+Some C++ code
+
+
+/*** R
+some R code
+*/
+</code></pre>
+
+<p>The Rcpp::export line exports the function written in C++ into R. Note that there is a space in the last line.</p>
+
+<p>Use the sourceCpp to source the C++ file in the above foramt. Then the function defined in the C++ file can be accessed in R.</p>
+
+<h2 id="difference-between-c-and-r-code">Difference between C++ and R code</h2>
+<ol>
+  <li>In R, we use assignment to create functions. But in C++, we don’t need to assign the new function, it is similar to calling a function in R.</li>
+  <li>We must declare the type of the output and input of the functions in C++.</li>
+  <li>We must use return statement in a function in C++.</li>
+  <li>We need to use ; for each line in C++.</li>
+  <li>The loop in C++ is faster than that in R.  So it is fine to use loop in C++.</li>
+  <li>In C++, the vector indices start at 0, not 1.</li>
+  <li>In C++, the method is called with full stop (.).</li>
+  <li>In C++, to subset a matrix, we need to use (), not[].</li>
+</ol>
+
+<h2 id="rcpp-classes">Rcpp classes</h2>
+<ol>
+  <li>scalar: int, double, bool, String</li>
+  <li>vector: IntegerVector, NumericVector, LogicalVector, CharacterVector</li>
+  <li>matrix: IntergerMatrix, NumericMatrix, LogicalMatrix, CharacterMatrix</li>
+</ol>
+
+<h3 id="extract-a-column-from-r-dataframe">Extract a column from R dataframe</h3>
+<p>One can use as to extract a column from the dataframe in R and convert into C++ variable.</p>
+
+<pre><code>NumericVector col = as&lt;NumericVector&gt;(df["col1"])
+</code></pre>
+
+<h2 id="rcpp-suger">Rcpp suger</h2>
+<p>Rcpp has suger version functions that mimic the R functions.<br />
+1. All the basic arithmetic and logical operatiors are vectorised.</p>
+
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

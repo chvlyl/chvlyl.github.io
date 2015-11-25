@@ -20,3 +20,6 @@ date: 2015-03-09
 1. GFM ignores the underscores (use * to emphasize a word): _text_text_text  
 2. Strikethrough: ~~ text ~~  
 3. Syntax highlighting: ```python  
+
+- [Kramdown](http://kramdown.gettalong.org/quickref.html)  
+1. Code blocks: ~~~ with a newline before it.

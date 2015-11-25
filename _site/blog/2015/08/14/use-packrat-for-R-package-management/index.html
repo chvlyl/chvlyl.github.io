@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Use Packrat for R Package Management</h1>
+<p class="meta">14 Aug 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>Packrat tracks the version of R and packages used in the project which makes the project completely self-contained. Therefore anyone using Packrat will have the same software environment. With packrat, functions such as install.packages and remove.packages will only modify the private project library, instead of the user library.</p>
+
+<ol>
+  <li>
+    <h3 id="install-packrat">Install Packrat</h3>
+    <p>Install it from GitHub by:<br />
+<code>
+install.packages("devtools")    
+devtools::install_github("rstudio/packrat")   
+</code></p>
+  </li>
+  <li>
+    <h3 id="initialize-packrat">Initialize Packrat</h3>
+    <p><code>
+packrat::int()
+</code>
+Packrat will create a directory called “packrat” and will find packages used by the scripts in the projct and download the source code. It will create a “private library” for package management.
+That is, packages installed inside the packrat project are ONLY available to that project. Also packages installed outside the project are NOT available to the project.</p>
+  </li>
+  <li>
+    <h3 id="file-created-by-packrat">File created by Packrat</h3>
+    <ul>
+      <li>packrat/packrat.lock: package versions of the packages</li>
+      <li>packrat/packrat.opts: project-specific packrat options.</li>
+      <li>packrat/lib/: private package library for this project.</li>
+      <li>packrat/src/: source packages used in this project.</li>
+      <li>.Rprofile: fource R to use the private package library.</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="install-other-packages">Install other packages</h3>
+    <p>You can install the other packages as you normally do.
+<code>
+install.packages("packagename")
+</code></p>
+  </li>
+  <li>
+    <h3 id="install-local-source-packages">Install local source packages</h3>
+    <p><code>
+packrat::set_opts(local.repos="path")
+</code></p>
+  </li>
+  <li>
+    <h3 id="track-package-use">Track package use</h3>
+    <p><code>
+packrat::snapshot()
+</code>
+Take a snapshot to save the changes in Packrat. When doing this, Packrat will automatically check the priviate package library for packages that have beed added, modified or removed in your code since 
+the last snapshot was called.</p>
+  </li>
+</ol>
+
+<p><code>
+packrat::status()
+</code>
+If you change your code and some packages are not needed, Packrat will tell you.</p>
+
+<p><code>
+packrat::clean()
+</code>
+If you no longer need those packages, you can remove them.</p>
+
+<h3 id="restore-snapshots">Restore snapshots</h3>
+<p>You can install packags from the snapshot into your private library.
+<code>
+packrat::restore()
+</code></p>
+
+<ol>
+  <li>
+    <h3 id="bundle-up-the-project">Bundle up the project</h3>
+    <p>If you want to share your project with other people, you can bundle up it with Packrat
+<code>
+packrat::bundle()
+</code></p>
+  </li>
+  <li>
+    <h3 id="reproduce-the-analysis-with-the-same-packages">Reproduce the analysis with the same packages</h3>
+    <p>Copy the original packrat.lock file into the your new packrat folder and run <code>packrat::status</code> <code>packrat::restore</code>. Packrat will automatic download the same packages
+with the same versions.</p>
+  </li>
+</ol>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

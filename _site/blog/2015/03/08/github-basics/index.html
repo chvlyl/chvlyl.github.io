@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>GitHub basics</h1>
+<p class="meta">08 Mar 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <h4 id="basic-workflow">Basic workflow</h4>
+<ol>
+  <li>Create a branch: anything in the master branch is always deployable. when working on a feature or a fix, create a new branch with descriptive names.</li>
+  <li>Add commits: This keeps track of the progress as you work on a feature branch.</li>
+  <li>Open a pull request</li>
+  <li>Deploy</li>
+  <li>Merge to master branch</li>
+</ol>
+
+<h3 id="pro-githttpsprogitorg"><a href="https://progit.org/">Pro Git</a></h3>
+<ol>
+  <li>Git has three main states that your files can reside in: committed, modified, and staged. If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified.
+    <ul>
+      <li>Committed means that the data is safely stored in your local database.</li>
+      <li>Modified means that you have changed the file but have not committed it to your database yet.</li>
+      <li>Staged means that you have marked a modified file in its current version to go into your next commit snapshot.</li>
+    </ul>
+  </li>
+  <li>
+    <p>The first thing you should do when you install Git is to set your user name and e-mail address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating
+git config –global user.name “John Doe”
+git config –global user.email johndoe@example.com</p>
+  </li>
+  <li>Setup SSH keys
+    <ul>
+      <li>Check for SSH keys: ls -al ~/.ssh</li>
+      <li>Generate SSH kyes with GitHub email: ssh-keygen -t rsa -b 4096 -C “your_email@example.com”</li>
+      <li>Add the key to the ssh-agent (skipped): ssh-add ~/.ssh/id_rsa</li>
+      <li>Add SSH key to GitHub account: more ~/.ssh/id_rsa.pub and copy the content to GitHub SSH key setting</li>
+      <li>Test the connection: ssh -T git@github.com</li>
+    </ul>
+  </li>
+  <li>Push the local files to GitHub
+    <ul>
+      <li>Clone remote repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</li>
+      <li>git remote add origin remote repository URL
+git remote -v</li>
+      <li>Commit files
+git init
+git add .
+git commit -m ‘initial project version’
+git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin</li>
+    </ul>
+  </li>
+</ol>
+
+<p>5</p>
+
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

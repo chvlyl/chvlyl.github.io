@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitHub website setup"
+title: "GitHub personal website setup"
 date: 2015-03-09
 ---
 
@@ -31,5 +31,11 @@ Step 3: modify the index files from the template:
   3. Math equation support:  use \\ begin\{equation\} and \\end\{equation\}
 
 
+Step 4: update changes: 
+git add README.md
+git commit -m 'Add README.md'
+git push -u origin master
 
  
+Step 5: Jekyll
+Run `jekyll serve --detach` in the website home folder to setup the local server.  

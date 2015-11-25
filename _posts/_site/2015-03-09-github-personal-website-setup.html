@@ -1,0 +1,31 @@
+<p>Step 1: setup an account in GitHub:<br />
+  1. Go to <a href="https://github.com/">GitHub</a>.<br />
+  2. Create an account in GitHub.<br />
+  3. Create a repository username.github.io, replacing username with your GitHub username.<br />
+  4. I used the website templates from <a href="http://jmcglone.com/guides/github-pages/">Jonathan Mcglone</a> and <a href="http://yihui.name/">Yihui</a>.<br />
+  5. Copy the template into your github repository. You have to learn some github basics about how to push a file into the respository.</p>
+
+<p>Step 2: setup the custom domain with GoDaddy:<br />
+  1. Go to <a href="www.godaddy.com">GoDaddy</a> and buy my own domain name statchen.com.<br />
+  2. Go to GoDaddy <strong>Zone File Editor</strong>:<br />
+  3. At <strong>A(Host)</strong> section add <code>Host:@ Points to: 192.30.252.153</code>  and <code>Host:@ Points to: 192.30.252.154</code><br />
+  4. At <strong>CNAME (Alias)</strong> section add <code>Host:www to: chvlyl.github.io</code><br />
+  5. Go to GitHub, add a file called CNAME with content statchen.com<br />
+  6. I set the link in the layout to my GiHub website link chvlyl.github.io and this caused some problems. I changed the link to statchen.com and then problem was solved.</p>
+
+<p>Step 3: modify the index files from the template:<br />
+  1. In the YAML header of the .md file, there must be a space after semicolon.<br />
+  Wrong:<br />
+   <code>layout:default</code><br />
+  Correct:<br />
+   <code>layout: default</code> <br />
+  2. Create a new line: just type two or more spaces after the line.<br />
+  3. Math equation support:  use \ begin{equation} and \end{equation}</p>
+
+<p>Step 4: update changes: 
+git add README.md
+git commit -m ‘Add README.md’
+git push -u origin master</p>
+
+<p>Step 5: Jekyll
+Run <code>jekyll serve --detach</code> in the website home folder to setup the local server.</p>

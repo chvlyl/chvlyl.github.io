@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Python character encoding</h1>
+<p class="meta">11 Nov 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <ol>
+  <li>There are three most common encoding in Python:
+    <ul>
+      <li><strong>ASCII</strong>: use 1 byte (8 bits) for each character. It can only encode limitted characters.</li>
+      <li><strong>Unicode</strong>: use 2 bytes for common characters and 4 bytes for uncommon ones. It includes characters from non-English languages. But it wastes a lot of storage space.</li>
+      <li><strong>UTF-8</strong>: use 1 byte for common English characters, 3 bytes for less common ones (Chinese characters are usually encoded in 3 bytes) and 4-6 bytes for uncommon ones. Save some storage space.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Characters in the memory are all encoded in Unicode. It can be translated into UTF-8 when we want to save them into disk.</p>
+  </li>
+  <li>
+    <p>Python supports Unicode and use u’…’ syntax.</p>
+  </li>
+  <li>When the Python script contains some Unicode characters (for example, non-English characters), one must use # -<em>- coding: utf-8 -</em>- at the begnning of the Python script. This is to tell Python interpreter to use UTF-8 encoding.</li>
+</ol>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

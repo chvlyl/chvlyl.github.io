@@ -1,38 +1,1598 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Hank Quinlan's Blog</title>
- <link href="http://hankquinlan.github.io/blog/atom.xml" rel="self"/>
- <link href="http://hankquinlan.github.io/blog"/>
- <updated>2015-03-09T19:18:38-04:00</updated>
- <id>http://hankquinlan.github.io/blog</id>
+ <title>Eric Z Chen's Blog</title>
+ <link href="http://chvlyl.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://chvlyl.github.io/blog"/>
+ <updated>2015-11-24T22:11:06-05:00</updated>
+ <id>http://chvlyl.github.io/blog</id>
  <author>
-   <name>Hank Quinlan</name>
-   <email>hankquinlanhub@gmail.com</email>
+   <name>Eric Zhang Chen</name>
+   <email>chvlyl@gmail.com</email>
  </author>
 
  
  <entry>
-   <title>GitHub website setup</title>
-   <link href="http://hankquinlan.github.io/blog/2015/03/09/github-website-setup"/>
+   <title>Hadley Wickman's advice on how to be productive</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/23/Hadley-Wickman"/>
+   <updated>2015-11-23T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/23/Hadley-Wickman</id>
+   <content type="html">&lt;blockquote&gt;
+  &lt;p&gt;Most of my practical tips are in my quora answer, but here’s a bit more about my typical day.
+I normally wake up somewhere between 6 and 7. I try to immediately spend an hour writing - in an ideal world I do that before I check twitter and email, but that doesn’t always happen. Depending on whether I’m currently involved in more writing or programming heavy projects, I spend the next few hours programming or writing. I go to yoga at 12-1, and then eat lunch. I spend the rest of the afternoon (until 6) doing more writing/programming.
+On Fridays, I make a significant effort to get to inbox zero, and to handle my other responsibilities (reviewing papers, misc pull requests etc). I try to ignore email as much as possible during the rest of the week. I also try and schedule random meetings on Friday as much as possible.
+I avoid working on the weekends&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Writing. I have worked really hard to build a solid writing habit - I try and write for 60-90 minutes every morning. It’s the first thing I do after I get out of bed. I think writing is really helpful to me for a few reasons. First, I often use my writing as a reference - I don’t program in C++ every day, so I’m constantly referring to @Rcpp  every time I do. Writing also makes me aware of gaps in my knowledge and my tools, and filling in those gaps tends to make me more efficient at tackling new problems.&lt;/li&gt;
+    &lt;li&gt;Reading. I read a lot. I follow about 300 blogs, and keep a pretty close eye on the R tags on Twitter and Stack Overflow. I don’t read most things deeply - the majority of content I only briefly skim. But this wide exposure helps me keep up with changes in technology, interesting new programming languages, and what others are doing with data. It’s also helpful that if when you’re tackling a new problem you can recognise the basic name - then googling for it will suggest possible solutions. If you don’t know the name of a problem, it’s very hard to research it.
+Chunking. Context-switching is expensive, so if I worked on many packages at the same time, I’d never get anything done. Instead, at any point in time, most of my packages are lying fallow, steadily accumulating issues and ideas for new feature. Once a critical mass has accumulated, I’ll spend a couple of days on the package.&lt;/li&gt;
+    &lt;li&gt;Finally, it’s hard to over-emphasise the impact that working full-time on R makes. Since I’ve left Rice, I now spend well over 90% of my work time thinking about and programming in R. This has a compounding effect because as I built better tools (cognitive and computational) it becomes even easier to build new tools. I can create a new package in seconds, and I have many techniques on-hand (in-brain) for solving new problems.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If you want to give back, I think writing a blog is a great way. Many of the things that you struggle with will be common problems. Think about how to solve them well and describe your solution to others. The next step is to figure out how to wrap your solutions up into a function and then in a package. Keep your eyes open for similar problems and think about how you can create simple components that can be combined to solve them. This is hard so don’t be surprised if it takes a while (years!) to come together.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;C++ because it’s fast and awesome!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/dataisbeautiful/comments/3mp9r7/im_hadley_wickham_chief_scientist_at_rstudio_and/&quot;&gt;Hadley Wickman on AMA reddit&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rcpp</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/22/Rcpp"/>
+   <updated>2015-11-22T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/22/Rcpp</id>
+   <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Rcpp is a R package that allows to easily incorporate C++ code in R code. Nowadays this package is getting very popular in the R community. If you take a look at the R packsges developed by Hadley Wickham, most of them actually use Rcpp. Code written in C++ generally is much faster than R. This is why many R packages implemented their core functions in C++ with Rcpp.&lt;/p&gt;
+
+&lt;h2 id=&quot;install-rcpp&quot;&gt;Install Rcpp&lt;/h2&gt;
+&lt;p&gt;Rcpp is just a regular R package and thus it can be installed as &lt;code&gt;install.packages(&#39;Rcpp&#39;)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;cppfunction&quot;&gt;cppFunction&lt;/h2&gt;
+&lt;p&gt;This function allows you to create a R function with C++ code. For example,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cppFunction(&quot;int times2(int x) { return 2*x; }&quot;)
+times2(21) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here x can only be an integer.&lt;/p&gt;
+
+&lt;p&gt;We can use IntegerVector or NumericVector to define a vector,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;library(Rcpp)
+cppFunction(&quot;NumericVector la(NumericVector x) {
+return log(abs(x));
+}&quot;)
+la(seq(-5, 5, by=2))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that the la function takes a vector as the input. So the calculation can be vectorized in C++, too.&lt;/p&gt;
+
+&lt;h2 id=&quot;evalcpp&quot;&gt;evalCpp&lt;/h2&gt;
+&lt;p&gt;This function evaluates a single C++ expression&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;evalCpp(&quot;2 + 2&quot;) 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;sourcecpp&quot;&gt;sourceCpp&lt;/h2&gt;
+&lt;p&gt;This function allows to source a C++ file and the then function written in C++ can be called in R. The syntax is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;Rcpp.h&amp;gt;
+using namespace Rcpp;
+
+// [[Rcpp::export]]
+Some C++ code
+
+
+/*** R
+some R code
+*/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The Rcpp::export line exports the function written in C++ into R. Note that there is a space in the last line.&lt;/p&gt;
+
+&lt;p&gt;Use the sourceCpp to source the C++ file in the above foramt. Then the function defined in the C++ file can be accessed in R.&lt;/p&gt;
+
+&lt;h2 id=&quot;difference-between-c-and-r-code&quot;&gt;Difference between C++ and R code&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;In R, we use assignment to create functions. But in C++, we don’t need to assign the new function, it is similar to calling a function in R.&lt;/li&gt;
+  &lt;li&gt;We must declare the type of the output and input of the functions in C++.&lt;/li&gt;
+  &lt;li&gt;We must use return statement in a function in C++.&lt;/li&gt;
+  &lt;li&gt;We need to use ; for each line in C++.&lt;/li&gt;
+  &lt;li&gt;The loop in C++ is faster than that in R.  So it is fine to use loop in C++.&lt;/li&gt;
+  &lt;li&gt;In C++, the vector indices start at 0, not 1.&lt;/li&gt;
+  &lt;li&gt;In C++, the method is called with full stop (.).&lt;/li&gt;
+  &lt;li&gt;In C++, to subset a matrix, we need to use (), not[].&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;rcpp-classes&quot;&gt;Rcpp classes&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;scalar: int, double, bool, String&lt;/li&gt;
+  &lt;li&gt;vector: IntegerVector, NumericVector, LogicalVector, CharacterVector&lt;/li&gt;
+  &lt;li&gt;matrix: IntergerMatrix, NumericMatrix, LogicalMatrix, CharacterMatrix&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;extract-a-column-from-r-dataframe&quot;&gt;Extract a column from R dataframe&lt;/h3&gt;
+&lt;p&gt;One can use as to extract a column from the dataframe in R and convert into C++ variable.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NumericVector col = as&amp;lt;NumericVector&amp;gt;(df[&quot;col1&quot;])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;rcpp-suger&quot;&gt;Rcpp suger&lt;/h2&gt;
+&lt;p&gt;Rcpp has suger version functions that mimic the R functions.&lt;br /&gt;
+1. All the basic arithmetic and logical operatiors are vectorised.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Book: Python for Data Analysis</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/21/python-for-data-analysis"/>
+   <updated>2015-11-21T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/21/python-for-data-analysis</id>
+   <content type="html">&lt;p&gt;Here is my reading note for the book “Python for Data Analysis” by Wes McKinney.&lt;/p&gt;
+
+&lt;h3 id=&quot;chapter-4-numpy-basicsarrays-and-vectorized-computation&quot;&gt;Chapter 4: NumPy Basics:Arrays and Vectorized Computation&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;The NumPy ndarray is homogeneous, that is, all the elements must be the same type.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Every ndarray has &lt;strong&gt;shape&lt;/strong&gt; and &lt;strong&gt;dtype&lt;/strong&gt; attributes. data.shape and data.dtype.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create ndarray by &lt;strong&gt;np.array(data)&lt;/strong&gt;. Use &lt;strong&gt;np.zeros(3,5)&lt;/strong&gt; to create a 3x5 matrix with zeros and np.ones() to create a matrix with ones. Use &lt;strong&gt;np.eye(10)&lt;/strong&gt; to create an identify matrix.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a sequence of numbers (0 to 10) by np.arange(10).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The slicing of the ndarray will not copy the original array. Thus any modifications on the sliced array will be reflected in the source array.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;
+arr_slice = arr[5:8]
+arr_slice[:] = 1
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The change on arr_slice will also change arr.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use comma-separated list of indices to select element from two-dimensional array, arr2d[0,2].&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Reshape an array: arr.reshape((3,5)). Transpose: arr.T&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;chapter-5-getting-started-with-pandas&quot;&gt;Chapter 5: Getting Started with Pandas&lt;/h4&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Series: one-dimentional array with index. ser.values and ser.index to get its values and index.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Compared to the NumPy array, one can use values in the index to select the values in the series. ser[‘a’].&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;One can create a series from Python dict. The keys (in the sorted order) will be the index. Series(dict).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create the DataFrame with dict of equal-length lists or NumPy arrays.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Select a column in DataFrame by frame[‘col’] or frame.col.  Select a row by frame.ix[‘row’]&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Use reindex to change the order of the data.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;chapter-6-data-loading-storage-and-file-formats&quot;&gt;Chapter 6: Data Loading, Storage, and File Formats&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Read a file into DataFrame: pd.read_csv or pd.read_table&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Write DataFrame into a file:data.to_csv&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;chapter-7-data-wrangling-clean-transform-merge-reshape&quot;&gt;Chapter 7: Data Wrangling: Clean, Transform, Merge, Reshape.&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Merge DataFrame by pd.merge(df1,df2).&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Kernel and Reproducing Kernel Hilbert Space</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/20/kernel-and-RKHS"/>
+   <updated>2015-11-20T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/20/kernel-and-RKHS</id>
+   <content type="html">&lt;h2 id=&quot;feature-mapping-and-kernel-function&quot;&gt;Feature mapping and kernel function&lt;/h2&gt;
+&lt;p&gt;In many classification problems, the data in the original feature space are not linearly separatable. For example, in a two dimentional feature space &lt;script type=&quot;math/tex&quot;&gt;R^2&lt;/script&gt;, we have two features &lt;script type=&quot;math/tex&quot;&gt;(X_1,X_2)&lt;/script&gt;. In this space, one group of data is distributed as a circle and the other group is distributed as a big circle outside the previous one. These two groups are not linearly separatable in the &lt;script type=&quot;math/tex&quot;&gt;(X_1,X_2)&lt;/script&gt; space.&lt;/p&gt;
+
+&lt;p&gt;However, we can use feature engineering to map the two dimentional feature space &lt;script type=&quot;math/tex&quot;&gt;R^2&lt;/script&gt; into three dimentional feature space &lt;script type=&quot;math/tex&quot;&gt;R^3&lt;/script&gt;. That is, we can create new features based on the original features. For example, we can map &lt;script type=&quot;math/tex&quot;&gt;(X_1,X_2)&lt;/script&gt; into &lt;script type=&quot;math/tex&quot;&gt;(X_1^2,X_2^2,\sqrt2X_1X_2)&lt;/script&gt;. In other words, we now have a new three dimentional feature space &lt;script type=&quot;math/tex&quot;&gt;R^3&lt;/script&gt; as &lt;script type=&quot;math/tex&quot;&gt;(Z_1,Z_2,Z_3)&lt;/script&gt;. The relation between the original features and new fetures is &lt;script type=&quot;math/tex&quot;&gt;Z_1=X_1^2,Z_2=X_2^2,Z_3=\sqrt2X_1X_2&lt;/script&gt;. This process is called feature mapping &lt;script type=&quot;math/tex&quot;&gt;\phi: R^2-&gt;R^3&lt;/script&gt;. After feature mapping, the two groups of data are now linearly separatable in the new feature space.&lt;/p&gt;
+
+&lt;p&gt;Let’s take a look at the inner product in the orignal feature space (I will call it X hereafter) and new feature space (H). Let’s assume that there are two data points &lt;script type=&quot;math/tex&quot;&gt;(X_1,X_2)&lt;/script&gt;,&lt;script type=&quot;math/tex&quot;&gt;(X_1&#39;,X_2&#39;)&lt;/script&gt; in the original two dimentional feature space &lt;script type=&quot;math/tex&quot;&gt;R^2&lt;/script&gt; (Since the original feature space is two dimentional, each data point has two elements such as &lt;script type=&quot;math/tex&quot;&gt;X_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;X_2&lt;/script&gt; for the first data point. Recall that a point in the space can be considered as a point as well as a vector connecting that point and origin). After feature mapping, the two data points are now &lt;script type=&quot;math/tex&quot;&gt;(Z_1,Z_2,Z_3)&lt;/script&gt;,&lt;script type=&quot;math/tex&quot;&gt;(Z_1&#39;,Z_2&#39;,Z_3&#39;)&lt;/script&gt; in the three dimentional feature space &lt;script type=&quot;math/tex&quot;&gt;R^3&lt;/script&gt; (Since the new feature space is three dimentional, each data point has three elements such as &lt;script type=&quot;math/tex&quot;&gt;Z_1&lt;/script&gt;, &lt;script type=&quot;math/tex&quot;&gt;Z_2&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;Z_3&lt;/script&gt; for the first data point). Now let’s calculate the inner product in the &lt;strong&gt;new feature space&lt;/strong&gt; (use &amp;lt;X,Y&amp;gt; to indicate inner product between X and Y):&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;(Z_1,Z_2,Z_3),(Z&#39;_1,Z&#39;_2,Z&#39;_3)&gt;  \\
+= &lt;\phi(X_1,X_2),\phi(X_1&#39;,X_2&#39;)&gt; \\
+= &lt;(X_1^2,X_2^2,\sqrt2X_1X_2),(X_1&#39;^2,X_2&#39;^2,\sqrt2X_1&#39;X_2&#39;)&gt;  \\
+= X_1^2X_2^2+2X_1X_2X_1&#39;X_2&#39;+ X_1&#39;^2X_2&#39;^2   \\
+= (X_1X_1&#39;+X_2X_2&#39;)^2 \\
+= (&lt;(X_1,X_2),(X_1&#39;,X_2&#39;)&gt;)^2 %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;As you can see, the inner product of two data points in the new feature space is just the &lt;strong&gt;square&lt;/strong&gt; of the inner product of the two corresponding data points in the original feature space. In other words, if we want to map the data points from original space to the new space and calculate the inner product in the new space, we don’t need to take all the troubles to do the feature mapping and inner product calculation. Instead, we can calculate the inner product in the original space and take the square without doing the feature mapping at all. Since the inner product in the new space is the function of that in the original space, we can define this as so-called kernel function:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\kappa(x,x&#39;) := &lt;\phi(x),\phi(x&#39;)&gt;\\ %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;In summary, kernel function is a function to calculate the inner product. But this inner product is not calculated in the original space, it is calculated in another space (but without doing actual feature mapping). That is, a function to calculate the innder product in some inner product space. Therefore, we don’t need the inner product to be defined in the orignial space to calculate the kernel. If the original space are apples and oranges, how to calculate the inner product? We can map the apples and organges into their counts and then calculate the inner product.&lt;/p&gt;
+
+&lt;h2 id=&quot;two-fundamental-questions&quot;&gt;Two fundamental questions&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Given a feature mapping &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt;, can we find is corresponding kernel function &lt;script type=&quot;math/tex&quot;&gt;\kappa&lt;/script&gt;?&lt;/li&gt;
+  &lt;li&gt;Given a kernel function &lt;script type=&quot;math/tex&quot;&gt;\kappa&lt;/script&gt;, can we find its corresponding feature mapping &lt;script type=&quot;math/tex&quot;&gt;\phi&lt;/script&gt; and consturct the feature space?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;gram-matrix-or-kernel-matrix&quot;&gt;Gram matrix or kernel matrix&lt;/h2&gt;
+&lt;p&gt;Given a function &lt;script type=&quot;math/tex&quot;&gt;\kappa: R^d \times R^d-&gt;R&lt;/script&gt; and data points &lt;script type=&quot;math/tex&quot;&gt;X_1,X_2,\dots,X_m \in R^d&lt;/script&gt;, the Gram matrix, also called kernel matrix, is just a &lt;script type=&quot;math/tex&quot;&gt;m \times m&lt;/script&gt; matrix filled with &lt;script type=&quot;math/tex&quot;&gt;\kappa(X_i,X_j)&lt;/script&gt; for its i-th and j-th element.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+K=
+\begin{bmatrix}  
+\kappa(X_1,X_1) &amp; \dots &amp; \kappa(X_1,X_m) \\ 
+\dots &amp; \ldots &amp; \dots \\ 
+\kappa(X_m,X_1) &amp; \dots &amp; \kappa(X_m,X_m)
+\end{bmatrix} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Note that the definition is of Gram matrix or kernel matrix for whatever function &lt;script type=&quot;math/tex&quot;&gt;\kappa: R^d-&gt;R&lt;/script&gt;. We will use this definition along with positive semi-definite matrix to check if a funtion is a kernel function or if a kernel function is a valid one.&lt;/p&gt;
+
+&lt;h2 id=&quot;positive-semi-definite-matrix&quot;&gt;Positive semi-definite matrix&lt;/h2&gt;
+&lt;p&gt;A real symmetrix &lt;script type=&quot;math/tex&quot;&gt;m \times m&lt;/script&gt; matrix K satifying &lt;script type=&quot;math/tex&quot;&gt;a^TKa \geq 0&lt;/script&gt; for all &lt;script type=&quot;math/tex&quot;&gt;a \in R^m&lt;/script&gt; is called positive semi-definite matrix. For small matrix, we can use the definition to prove it is positive semi-definite or not. For large matrix, the calculation will be too cumbersome to do. Therefore, usually we use the eigenvalues to check if it is positive semi-definite or not. Note that a real symmetrix is positive semi-definite if and only if all its eigenvalues are non-negative.&lt;/p&gt;
+
+&lt;h2 id=&quot;kernel-function&quot;&gt;Kernel function&lt;/h2&gt;
+&lt;p&gt;If a function &lt;script type=&quot;math/tex&quot;&gt;\kappa: R^d \times R^d-&gt;R&lt;/script&gt; and for any set &lt;script type=&quot;math/tex&quot;&gt;X_1,X_2,\dots,X_m \in R^d&lt;/script&gt;, its Gram or kernel matrix
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+K=
+\begin{bmatrix}  
+\kappa(X_1,X_1) &amp; \dots &amp; \kappa(X_1,X_m) \\ 
+\dots &amp; \ldots &amp; \dots \\ 
+\kappa(X_m,X_1) &amp; \dots &amp; \kappa(X_m,X_m)
+\end{bmatrix} %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;is positive semi-definite, then this functioin is &lt;script type=&quot;math/tex&quot;&gt;\kappa&lt;/script&gt; is called positive semi-definite kernel. Sometimes, in short, it is called kernel.&lt;/p&gt;
+
+&lt;p&gt;The kernel function takes two variables as input, &lt;script type=&quot;math/tex&quot;&gt;R^d \times R^d-&gt;R&lt;/script&gt;, and generate a value output in &lt;script type=&quot;math/tex&quot;&gt;R&lt;/script&gt;. But not every function in this form is kernel function. Therefore, given a function in such form &lt;script type=&quot;math/tex&quot;&gt;\kappa: R^d \times R^d-&gt;R&lt;/script&gt;, we want to know if it is a kernel functioin.&lt;/p&gt;
+
+&lt;p&gt;In summary, in order to check if a function is a kernel, we need to make sure this function is positive semi-definite. We don’t do this directly on the function itself. Instead, we transfer the function into its corresponding Gram or kernel matrix. Then we check if the Gram or kernel matrix is positive semi-definite or not.&lt;/p&gt;
+
+&lt;h2 id=&quot;function-space&quot;&gt;Function space&lt;/h2&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;R^{R^d}&lt;/script&gt; is the set of all functions from &lt;script type=&quot;math/tex&quot;&gt;R^d&lt;/script&gt; to &lt;script type=&quot;math/tex&quot;&gt;R&lt;/script&gt;:   &lt;script type=&quot;math/tex&quot;&gt;R^{R^d} = \{f:R^d-&gt;R\}&lt;/script&gt;. Note that &lt;script type=&quot;math/tex&quot;&gt;R^{R^d}&lt;/script&gt; the function maps data points in &lt;script type=&quot;math/tex&quot;&gt;R^d&lt;/script&gt; to  &lt;script type=&quot;math/tex&quot;&gt;R&lt;/script&gt;. The elements in the function space are just all such functions.&lt;/p&gt;
+
+&lt;p&gt;Use kernel function &lt;script type=&quot;math/tex&quot;&gt;\kappa(x,z) = exp(-\frac{(x-z)^2}{2})&lt;/script&gt; as an example:&lt;br /&gt;
+Let z=0, then &lt;script type=&quot;math/tex&quot;&gt;\Phi_0(x) = \kappa(x,0) = exp(-\frac{x^2}{2}) \in R&lt;/script&gt;. This means, the kernel function &lt;script type=&quot;math/tex&quot;&gt;\kappa(x,z)&lt;/script&gt; maps the data point &lt;script type=&quot;math/tex&quot;&gt;z=1&lt;/script&gt; into a function  &lt;script type=&quot;math/tex&quot;&gt;exp(-\frac{x^2}{2})&lt;/script&gt;. &lt;br /&gt;
+Similary, let z=1, then &lt;script type=&quot;math/tex&quot;&gt;\Phi_1(x) = \kappa(x,1) = exp(-\frac{(x-1)^2}{2}) \in R&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;If we consider the second variable z in the function &lt;script type=&quot;math/tex&quot;&gt;\kappa(x,z)&lt;/script&gt; as the parameter, then for different parameters, we can have different functions. In other words, the kernel function can map each point in one space into a function in another space.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-reproducing-kernel-map&quot;&gt;The reproducing kernel map&lt;/h2&gt;
+&lt;p&gt;Suppose &lt;script type=&quot;math/tex&quot;&gt;\kappa: R^d \times R^d-&gt;R&lt;/script&gt; is a kernel. The producing kernel map is a map &lt;script type=&quot;math/tex&quot;&gt;\Phi: R^{R^d}-&gt;R^d&lt;/script&gt; such that &lt;script type=&quot;math/tex&quot;&gt;\Phi(z)=\phi_z=\kappa(*,z)&lt;/script&gt;, that is &lt;script type=&quot;math/tex&quot;&gt;\Phi(z)(x)=\phi_z(x)=\kappa(x,z)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here, &lt;script type=&quot;math/tex&quot;&gt;\Phi(z)&lt;/script&gt; (consider &lt;script type=&quot;math/tex&quot;&gt;\Phi(z)&lt;/script&gt; as &lt;script type=&quot;math/tex&quot;&gt;f&lt;/script&gt;) is a function that depends on z and this function takes x as input. We can write this function as &lt;script type=&quot;math/tex&quot;&gt;\phi_z(x)&lt;/script&gt;. This is equivalent to kernel function &lt;script type=&quot;math/tex&quot;&gt;\kappa(x,z)&lt;/script&gt; with z as fixed.&lt;/p&gt;
+
+&lt;p&gt;Again, this function just maps each point in one space into a function in another space (the new space is a function space because all the elements are functions). This mapping is defined by the kernel function with the second variable replaced by the point in the original space.&lt;/p&gt;
+
+&lt;h2 id=&quot;fundamental-question-2&quot;&gt;Fundamental question 2:&lt;/h2&gt;
+&lt;p&gt;Give a kernel function, how to construct a feature space?&lt;br /&gt;
+1. Define a vector space based on the image of &lt;script type=&quot;math/tex&quot;&gt;\Phi&lt;/script&gt; (&lt;script type=&quot;math/tex&quot;&gt;\Phi&lt;/script&gt; can be defined by the kernel function).&lt;br /&gt;
+2. Define an inner product based on the vector space.
+3. Show that &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\kappa(x,z)=&lt;\Phi(x),\Phi(z)&gt; %]]&gt;&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-a-vector-space&quot;&gt;Define a vector space&lt;/h2&gt;
+&lt;p&gt;As I mentioned before, given a kernel function, we can define a repdocuing kernel map. This map take points in original space into functions in a new function space. We can then take the linear combinations of those functions to construct a space. We can prove that, this function space is a vector space.  Here is the formal definition:&lt;/p&gt;
+
+&lt;p&gt;Suppose  &lt;script type=&quot;math/tex&quot;&gt;\kappa: R^d \times R^d-&gt;R&lt;/script&gt; is a kernel and &lt;script type=&quot;math/tex&quot;&gt;\Phi&lt;/script&gt; is the corresponding reproducing kernel map. Let&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}= \{f=\sum_i^m\alpha_i\Phi(x_i)|m \ in N, x_i,\dots,x_m \in R^d, \alpha_1,\dots,\alpha_m \ in R\}&lt;/script&gt;&lt;br /&gt;
+Then &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt; is a vector space over R.&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;\sum_i^m\alpha_i\Phi(x_i)&lt;/script&gt; means taking the linear combinations of the functions after reproducing kernel mapping. Note that &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt; depends on &lt;script type=&quot;math/tex&quot;&gt;\kappa&lt;/script&gt; because given different kernel functions, the repdocuing kernel maps are different. Therefore the constructed vector spaces are also different.&lt;/p&gt;
+
+&lt;h2 id=&quot;define-an-inner-product&quot;&gt;Define an inner product&lt;/h2&gt;
+&lt;p&gt;Next, we want to define inner product in the vector space &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt;. Recall that the elements in the &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt; space are functions. How to define inner product for functions?&lt;/p&gt;
+
+&lt;p&gt;Given two functions in the function space &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt;: &lt;script type=&quot;math/tex&quot;&gt;f=\sum_i^m\alpha_i\Phi(x_i)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;g=\sum_j^{m&#39;}\beta_j\Phi(x_j&#39;)&lt;/script&gt;, &lt;br /&gt;
+recall that &lt;script type=&quot;math/tex&quot;&gt;f=\sum_i^m\alpha_i\kappa(*,x_i)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;g=\sum_j^{m&#39;}\beta_j\kappa(*,x_j&#39;)&lt;/script&gt;.&lt;/p&gt;
+
+&lt;p&gt;Define  inner product over R as:  &lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;f,g&gt; := \sum_i^m\sum_j^{m&#39;}\alpha_i\beta_j\kappa(x_i,x_j&#39;) %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, we replace the functions &lt;script type=&quot;math/tex&quot;&gt;\Phi(x_i)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\Phi(x_j&#39;)&lt;/script&gt; with their kernel functions &lt;script type=&quot;math/tex&quot;&gt;\kappa(*,x_i)&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\kappa(*,x_j&#39;)&lt;/script&gt;. Then we define &lt;script type=&quot;math/tex&quot;&gt;\alpha_i\kappa(*,x_i) \times \beta_j\kappa(*,x_j&#39;) = \alpha_i\beta_j\kappa(x_i,x_j&#39;)&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;reproducing-property&quot;&gt;Reproducing property&lt;/h2&gt;
+&lt;p&gt;The inner product can be written as:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;f,g&gt; = \sum_i^m\sum_j^{m&#39;}\alpha_i\beta_j\kappa(x_i,x_j&#39;)\\
+= \sum_i^m \alpha_i \sum_j^{m&#39;}\beta_j\kappa(x_i,x_j&#39;)\\
+= \sum_i^m \alpha_i g(x_j&#39;)\\ %]]&gt;&lt;/script&gt; &lt;br /&gt;
+and&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;f,g&gt; = \sum_i^m\sum_j^{m&#39;}\alpha_i\beta_j\kappa(x_i,x_j&#39;)\\
+= \sum_j^{m&#39;}\beta_j\sum_i^m\alpha_i\kappa(x_i,x_j&#39;)\\
+= \sum_j^{m&#39;}\beta_j f(x_i)\\ %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Then if &lt;script type=&quot;math/tex&quot;&gt;m&#39;=1,\beta_j=1&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;g=\sum_j^{m&#39;}\beta_j\kappa(*,x_j&#39;)=\kappa(*,x_j&#39;)&lt;/script&gt; &lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;\kappa(*,x),f&gt; = f(x) %]]&gt;&lt;/script&gt;&lt;br /&gt;
+if &lt;script type=&quot;math/tex&quot;&gt;m=1,\alpha_i=1&lt;/script&gt;, then &lt;script type=&quot;math/tex&quot;&gt;f=\sum_i^{m}\alpha_i\kappa(*,x_i)=\kappa(*,x_i)&lt;/script&gt; 
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;\kappa(*,x),\kappa(*,z)&gt; = \kappa(z,x) = \kappa(x,z) %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;answer-to-fundamental-question-2&quot;&gt;Answer to fundamental question 2:&lt;/h2&gt;
+&lt;p&gt;Given a kernel function, we can derive a mapping &lt;script type=&quot;math/tex&quot;&gt;\Phi&lt;/script&gt;. Based on this mapping, we can define a function space &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt;. With inner product definition on the vector space &lt;script type=&quot;math/tex&quot;&gt;F_{\kappa}&lt;/script&gt;, we can calculate the inner product &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+&lt;\Phi(x),\Phi(z)&gt; %]]&gt;&lt;/script&gt;. The inner product is just the value of the kernel function &lt;script type=&quot;math/tex&quot;&gt;\kappa(x,z)&lt;/script&gt;:&lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\kappa(x,z) \\
+= &lt;\kappa(*,x),\kappa(*,z)&gt;\\
+= &lt;\Phi(x),\Phi(z)&gt;\\ %]]&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;fundamental-question-1&quot;&gt;Fundamental question 1&lt;/h2&gt;
+&lt;p&gt;Given a feature mapping &lt;script type=&quot;math/tex&quot;&gt;\Phi: R^d -&gt; H&lt;/script&gt;, the corresponding kernel function can be defined as &lt;br /&gt;
+&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\kappa(x,z) = &lt;\Phi(x),\Phi(z)&gt; %]]&gt;&lt;/script&gt;. We can prove that this function is positive semi-definite and thus a valid kernel function.&lt;/p&gt;
+
+&lt;h2 id=&quot;spaces&quot;&gt;Spaces&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Vector space: space with definiton of additioin and scalar product.&lt;/li&gt;
+  &lt;li&gt;Inner space: vector space with definition of inner product.&lt;/li&gt;
+  &lt;li&gt;Metric space: space with definition of distance.&lt;/li&gt;
+  &lt;li&gt;Complete space: space where the every Cauchy sequence is converged within the space.&lt;/li&gt;
+  &lt;li&gt;Hilbert space: real inner product space that is also a complete metric space with distance function defined by the inner product.  &lt;script type=&quot;math/tex&quot;&gt;d(x,y)=\|x-y\|&lt;/script&gt; where &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\|x\|=\sqrt{&lt;x,x&gt;} %]]&gt;&lt;/script&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=MahJ9iwReAM&quot;&gt;Youtube: Reproducing Kernel Hilbert Space I: Basic Definitions&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://youtu.be/JqsfFi41VTQ&quot;&gt;Youtube: Reproducing Kernel Hilbert Space II: Theorems and Proofs&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Python character encoding</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/11/Python-coding-for-characters"/>
+   <updated>2015-11-11T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/11/Python-coding-for-characters</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;There are three most common encoding in Python:
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;ASCII&lt;/strong&gt;: use 1 byte (8 bits) for each character. It can only encode limitted characters.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Unicode&lt;/strong&gt;: use 2 bytes for common characters and 4 bytes for uncommon ones. It includes characters from non-English languages. But it wastes a lot of storage space.&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;UTF-8&lt;/strong&gt;: use 1 byte for common English characters, 3 bytes for less common ones (Chinese characters are usually encoded in 3 bytes) and 4-6 bytes for uncommon ones. Save some storage space.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Characters in the memory are all encoded in Unicode. It can be translated into UTF-8 when we want to save them into disk.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Python supports Unicode and use u’…’ syntax.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When the Python script contains some Unicode characters (for example, non-English characters), one must use # -&lt;em&gt;- coding: utf-8 -&lt;/em&gt;- at the begnning of the Python script. This is to tell Python interpreter to use UTF-8 encoding.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>PloS Computational Biology: Ten Simple Rules for Writing Science</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/03/ten-simple-rules-for-writing"/>
+   <updated>2015-11-03T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/03/ten-simple-rules-for-writing</id>
+   <content type="html">&lt;p&gt;Recently, I read this paper &lt;a href=&quot;http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004205&quot;&gt;Ten Simple Rules for Writing Science from PloS Computational Biology&lt;/a&gt;. I found this paper gives very practical tips on writing scientific papers. I summarized those tips as below (some sentences are directly copied from the ariticle).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;p&gt;Keep it short&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Keep it compact: keep sentences or phrasing short, break compound sentences into simpler sentences, and remove any “unnecessary” words&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Keep it simple:  use plain language and avoid jargon and technical terms&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Use the present tense: it is more direct and deemed easier to understand for non-native speakers&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Avoid adjectives and adverbs: Use few adjectives and adverbs avoids fluff and keep the text short and easy to understand&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Focus: stick to a single point, and reiterate the “take home” message&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Signal Novelty and Importance: explicitly state the significance of your work&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Be Bold: sell the work forcefully and stress positive results&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Show Confidence: using too many “hedge words” (e.g., “somewhat”, “speculative”, “appear”, “almost”, “largely”) can signal a lack of confidence in the work.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Avoid Evocative Words: words perceived as “pleasant”, “active” or “easy to imagine”&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Reference:
+- Weinberger CJ, Evans JA, Allesina S (2015) Ten Simple (Empirical) Rules for Writing Science. PLoS Comput Biol 11(4): e1004205. doi:10.1371/journal.pcbi.1004205&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tips for surviving PhD</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/03/PhD"/>
+   <updated>2015-11-03T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/03/PhD</id>
+   <content type="html">&lt;h3 id=&quot;phd-grind-by-philip-guohttppgbovinenetphd-memoirpguo-phd-grindpdf&quot;&gt;&lt;a href=&quot;http://pgbovine.net/PhD-memoir/pguo-PhD-grind.pdf&quot;&gt;PHD Grind by Philip Guo&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;I happened to find Philip Guo’s book about his PhD journal. After reading it, I found this book is very inspiring. 
+1. Find ideas by solving real problems.&lt;br /&gt;
+2. Find ideas by working with other people (professors, students).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Magic methods in Python</title>
+   <link href="http://chvlyl.github.io/blog/2015/09/12/magic-method-in-python"/>
+   <updated>2015-09-12T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/09/12/magic-method-in-python</id>
+   <content type="html">&lt;p&gt;In Python, there are some variables/methods with double underscores, for example, &lt;strong&gt;name&lt;/strong&gt; and &lt;strong&gt;init&lt;/strong&gt;. Sometings, they are called magic variables/methods. They are created by the core Python team for their own protocols. So never created these variables and methods for your own use. That is, you can use them in your code, but do not create new ones by yourself. Here are some common magic variables/methods.&lt;/p&gt;
+
+&lt;h3 id=&quot;name&quot;&gt;&lt;strong&gt;name&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;If .py file is executed directly，&lt;strong&gt;name&lt;/strong&gt; will be set as &lt;strong&gt;main&lt;/strong&gt;.&lt;/li&gt;
+  &lt;li&gt;If .py file is imported，then &lt;strong&gt;name&lt;/strong&gt; is the name of the .py file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So if we write the .py like following:
+&lt;code&gt;
+## some functions here
+if __name__==&#39;__main__&#39;:
+    ## run some test
+&lt;/code&gt;
+Then, if we import this .py file, the code inside the if statement will not be executed, because &lt;strong&gt;name&lt;/strong&gt; is the name of the .py file. But if we run this .py file directly, the test code inside the if statment will run, because &lt;strong&gt;name&lt;/strong&gt; is now “&lt;strong&gt;main&lt;/strong&gt;”. Therefore, we can put the test code in the if statement with &lt;strong&gt;name&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;init&quot;&gt;&lt;strong&gt;init&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;This is the constructor to initilize an object.&lt;/p&gt;
+
+&lt;h3 id=&quot;doc&quot;&gt;&lt;strong&gt;doc&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The documentation for modules, classes and functions. For example:
+&lt;code&gt;
+#file.py
+&quot;&quot;&quot;
+file&#39;s doc
+&quot;&quot;&quot;
+class someclass(object):
+    &quot;&quot;&quot;
+    class&#39;s doc
+    &quot;&quot;&quot;
+    pass
+def somefunction():
+    &quot;&quot;&quot;
+    function&#39;s doc
+    &quot;&quot;&quot;
+    pass
+&lt;/code&gt;
+If we run
+&lt;code&gt;
+print __doc__
+print someclass.__doc__
+print somefunction.__doc__
+&lt;/code&gt;
+we will get
+&lt;code&gt;
+script&#39;s doc
+class&#39;s doc
+function&#39;s doc
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;call&quot;&gt;&lt;strong&gt;call&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;If an object has the &lt;strong&gt;call&lt;/strong&gt;() function，then this object can be called as a function.
+&lt;code&gt;
+class someclass(object):
+    def __init__(self):
+        pass
+    def funcion(self):
+        pass
+    def __call__(self):
+        return self
+&lt;/code&gt;
+&lt;code&gt;
+test=someclass()
+# we can use test as a function
+test()
+&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Use computing clusters for data analysis</title>
+   <link href="http://chvlyl.github.io/blog/2015/09/10/use-clusters"/>
+   <updated>2015-09-10T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/09/10/use-clusters</id>
+   <content type="html">&lt;p&gt;U of Penn has a cluster computing system, called PMACS. Here are some instructions for how to run analysis jobs on clusters. Use PMACS as an example.&lt;/p&gt;
+
+&lt;h3 id=&quot;login&quot;&gt;Login&lt;/h3&gt;
+&lt;p&gt;PMACS has two kinds of servers: one is the computing server, the other is the data transfer server. First, log into the data transfer server to upload any necessary data.
+&lt;code&gt;
+ssh username@mercury.pmacs.upenn.edu
+&lt;/code&gt;
+Or one can use rsync to copy data from other servers.
+&lt;code&gt;
+rsync -avzhe ssh --progress localfolder username@mercury.pmacs.upenn.edu:/home/username/
+&lt;/code&gt;
+After uploading the data, one can log into the computing server 
+&lt;code&gt;
+ssh username@consign.pmacs.upenn.edu
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;interactive-job-submission&quot;&gt;Interactive job submission&lt;/h3&gt;
+&lt;p&gt;Normally, the computing server has a front node and this is the node we first log into. Since it is required to run jobs in computing nodes instead of front nodes, we have to log into computing nodes.
+&lt;code&gt;
+bsub -Is bash
+&lt;/code&gt;
+We are now in a computing node.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Maximal information coefficient</title>
+   <link href="http://chvlyl.github.io/blog/2015/09/09/book-ipython-for-interactive-computing-and-data-visualization"/>
+   <updated>2015-09-09T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/09/09/book-ipython-for-interactive-computing-and-data-visualization</id>
+   <content type="html">&lt;p&gt;The maximal information coefficient (MIC) is a way of measuring both linear or non-linear associations.&lt;/p&gt;
+
+&lt;h2 id=&quot;hoeffdings-d&quot;&gt;Hoeffding’s D&lt;/h2&gt;
+
+&lt;h2 id=&quot;r-package-for-mic&quot;&gt;R package for MIC&lt;/h2&gt;
+&lt;p&gt;There is one R package called “minerva” implementing MIC. It can be found &lt;a href=&quot;https://cran.r-project.org/web/packages/minerva/index.html&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Use virtualenv in Python</title>
+   <link href="http://chvlyl.github.io/blog/2015/09/01/use-virtualenv-in-python"/>
+   <updated>2015-09-01T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/09/01/use-virtualenv-in-python</id>
+   <content type="html">&lt;p&gt;Virtualenv is a package to create isolated Python environments. So you can use different python environments for each project.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform’s standard location is), it’s easy to end up in a situation where you unintentionally upgrade an application that shouldn’t be upgraded.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;install-virtualent&quot;&gt;– Install virtualent&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;python
+sudo pip install virtualenv
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-python-environment&quot;&gt;– Create a Python environment&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;python
+mkdir new_project
+virtualenv --distribute new_project
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The –distribute is to use distribute package system instead of setuptools. It will install pip in the new virtual environment.  The new_project folder has its own Python and pip in it. All the packages installed globally are also available to the virtualenv environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;activate-the-virtualenv&quot;&gt;– Activate the virtualenv&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;python
+cd new_project
+source bin/activate
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Use deactivate to exit the environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;python-style-guide&quot;&gt;– Python style guide&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/&quot;&gt;PEP 0008 Python coding style&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;– Reference&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;The above content was summarized from http://mirnazim.org/writings/python-ecosystem-introduction/&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Use virtualenv in Python</title>
+   <link href="http://chvlyl.github.io/blog/2015/09/01/maximal-information-coefficient"/>
+   <updated>2015-09-01T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/09/01/maximal-information-coefficient</id>
+   <content type="html">&lt;p&gt;Virtualenv is a package to create isolated Python environments. So you can use different python environments for each project.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform’s standard location is), it’s easy to end up in a situation where you unintentionally upgrade an application that shouldn’t be upgraded.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;install-virtualent&quot;&gt;– Install virtualent&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;python
+sudo pip install virtualenv
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;create-a-python-environment&quot;&gt;– Create a Python environment&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;python
+mkdir new_project
+virtualenv --distribute new_project
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The –distribute is to use distribute package system instead of setuptools. It will install pip in the new virtual environment.  The new_project folder has its own Python and pip in it. All the packages installed globally are also available to the virtualenv environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;activate-the-virtualenv&quot;&gt;– Activate the virtualenv&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;python
+cd new_project
+source bin/activate
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Use deactivate to exit the environment.&lt;/p&gt;
+
+&lt;h3 id=&quot;python-style-guide&quot;&gt;– Python style guide&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/&quot;&gt;PEP 0008 Python coding style&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;– Reference&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;The above content was summarized from http://mirnazim.org/writings/python-ecosystem-introduction/&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>iPython Notebook</title>
+   <link href="http://chvlyl.github.io/blog/2015/08/26/ipython-notebook"/>
+   <updated>2015-08-26T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/08/26/ipython-notebook</id>
+   <content type="html">&lt;h2 id=&quot;install-ipython&quot;&gt;Install iPython&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;
+pip install &quot;ipython[all]&quot;  
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;install-anaconda&quot;&gt;Install Anaconda&lt;/h2&gt;
+&lt;p&gt;Anaconda includes a large collection of popular Python packages for scientific computing. It can be download &lt;a href=&quot;http://continuum.io/downloads&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Send gmail by python</title>
+   <link href="http://chvlyl.github.io/blog/2015/08/20/send-gmail-by-python"/>
+   <updated>2015-08-20T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/08/20/send-gmail-by-python</id>
+   <content type="html">&lt;h3 id=&quot;install-pip-from-herehttpspippypaioenlatestinstallinghtml&quot;&gt;Install pip from &lt;a href=&quot;https://pip.pypa.io/en/latest/installing.html&quot;&gt;here&lt;/a&gt;&lt;/h3&gt;
+
+&lt;h3 id=&quot;install-yagmail&quot;&gt;Install yagmail.&lt;/h3&gt;
+&lt;p&gt;pip install yagmail&lt;/p&gt;
+
+&lt;h3 id=&quot;turn-on-less-secure-app&quot;&gt;Turn on less secure app&lt;/h3&gt;
+&lt;p&gt;https://www.google.com/settings/security/lesssecureapps&lt;/p&gt;
+
+&lt;p&gt;import yagmail
+yag = yagmail.SMTP(‘user_me@gmail.com’)
+yag.send(‘user_you@gmail.com’, ‘Why,Oh why!’)&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Copy files with rsync</title>
+   <link href="http://chvlyl.github.io/blog/2015/08/20/copy-files-with-rsync"/>
+   <updated>2015-08-20T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/08/20/copy-files-with-rsync</id>
+   <content type="html">&lt;h3 id=&quot;use-rsync-to-copy-files-between-servers&quot;&gt;Use rsync to copy files between servers&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;
+rsync -avzhe ssh --progress  localfolder  username@remote:/home/username/
+&lt;/code&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rmarkdown: floating table of content</title>
+   <link href="http://chvlyl.github.io/blog/2015/08/17/Rmarkdown-floating-table-of-content"/>
+   <updated>2015-08-17T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/08/17/Rmarkdown-floating-table-of-content</id>
+   <content type="html">&lt;h3 id=&quot;floating-table-of-content&quot;&gt;Floating table of content&lt;/h3&gt;
+&lt;p&gt;I’d like to add a floating table of content to my HTML output generated by Rmarkdown. First, create a css file called “style.css” with following cotent 
+and put it under the same folder as Rmd file.&lt;br /&gt;
+&lt;code&gt;
+#TOC {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  overflow:auto;
+}
+&lt;/code&gt;
+In Rmd YAML header, add css: style.css, for example&lt;br /&gt;
+&lt;code&gt;
+---
+title: &quot;Untitled&quot;
+author: &quot;Eric Z Chen&quot;
+date: &quot;August 17, 2015&quot;
+output: 
+  html_document: 
+    css: style.css
+    highlight: kate
+    number_sections: yes
+    theme: spacelab
+    toc: yes
+---
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;change-the-width-of-the-html-output&quot;&gt;Change the width of the HTML output&lt;/h3&gt;
+&lt;p&gt;I have some a wide matrix output in my HTML output and I’d like to put it in one row. Add the following content to the style.css file&lt;br /&gt;
+&lt;code&gt;
+body .main-container {
+  max-width: 1280px;
+}
+&lt;/code&gt;
+Also, change the main body width&lt;br /&gt;
+&lt;code&gt;
+body {
+  max-width: 1200px;
+  margin: auto;
+  margin-left:410px;
+  line-height: 20px;
+}
+&lt;/code&gt;
+Change the Rmd YAML to include the css if you didn’t do so.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Use Packrat for R Package Management</title>
+   <link href="http://chvlyl.github.io/blog/2015/08/14/use-packrat-for-R-package-management"/>
+   <updated>2015-08-14T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/08/14/use-packrat-for-R-package-management</id>
+   <content type="html">&lt;p&gt;Packrat tracks the version of R and packages used in the project which makes the project completely self-contained. Therefore anyone using Packrat will have the same software environment. With packrat, functions such as install.packages and remove.packages will only modify the private project library, instead of the user library.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;install-packrat&quot;&gt;Install Packrat&lt;/h3&gt;
+    &lt;p&gt;Install it from GitHub by:&lt;br /&gt;
+&lt;code&gt;
+install.packages(&quot;devtools&quot;)    
+devtools::install_github(&quot;rstudio/packrat&quot;)   
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;initialize-packrat&quot;&gt;Initialize Packrat&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;
+packrat::int()
+&lt;/code&gt;
+Packrat will create a directory called “packrat” and will find packages used by the scripts in the projct and download the source code. It will create a “private library” for package management.
+That is, packages installed inside the packrat project are ONLY available to that project. Also packages installed outside the project are NOT available to the project.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;file-created-by-packrat&quot;&gt;File created by Packrat&lt;/h3&gt;
+    &lt;ul&gt;
+      &lt;li&gt;packrat/packrat.lock: package versions of the packages&lt;/li&gt;
+      &lt;li&gt;packrat/packrat.opts: project-specific packrat options.&lt;/li&gt;
+      &lt;li&gt;packrat/lib/: private package library for this project.&lt;/li&gt;
+      &lt;li&gt;packrat/src/: source packages used in this project.&lt;/li&gt;
+      &lt;li&gt;.Rprofile: fource R to use the private package library.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;install-other-packages&quot;&gt;Install other packages&lt;/h3&gt;
+    &lt;p&gt;You can install the other packages as you normally do.
+&lt;code&gt;
+install.packages(&quot;packagename&quot;)
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;install-local-source-packages&quot;&gt;Install local source packages&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;
+packrat::set_opts(local.repos=&quot;path&quot;)
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;track-package-use&quot;&gt;Track package use&lt;/h3&gt;
+    &lt;p&gt;&lt;code&gt;
+packrat::snapshot()
+&lt;/code&gt;
+Take a snapshot to save the changes in Packrat. When doing this, Packrat will automatically check the priviate package library for packages that have beed added, modified or removed in your code since 
+the last snapshot was called.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code&gt;
+packrat::status()
+&lt;/code&gt;
+If you change your code and some packages are not needed, Packrat will tell you.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+packrat::clean()
+&lt;/code&gt;
+If you no longer need those packages, you can remove them.&lt;/p&gt;
+
+&lt;h3 id=&quot;restore-snapshots&quot;&gt;Restore snapshots&lt;/h3&gt;
+&lt;p&gt;You can install packags from the snapshot into your private library.
+&lt;code&gt;
+packrat::restore()
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;bundle-up-the-project&quot;&gt;Bundle up the project&lt;/h3&gt;
+    &lt;p&gt;If you want to share your project with other people, you can bundle up it with Packrat
+&lt;code&gt;
+packrat::bundle()
+&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;reproduce-the-analysis-with-the-same-packages&quot;&gt;Reproduce the analysis with the same packages&lt;/h3&gt;
+    &lt;p&gt;Copy the original packrat.lock file into the your new packrat folder and run &lt;code&gt;packrat::status&lt;/code&gt; &lt;code&gt;packrat::restore&lt;/code&gt;. Packrat will automatic download the same packages
+with the same versions.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Metabolome Data Analysis</title>
+   <link href="http://chvlyl.github.io/blog/2015/08/11/metabolome-data-analysis"/>
+   <updated>2015-08-11T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/08/11/metabolome-data-analysis</id>
+   <content type="html">&lt;h4 id=&quot;lc-ms&quot;&gt;LC-MS&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Liquid chromatography-mass spectrometry: detect the mass-to-charge raio (m/z) and the retention time&lt;/li&gt;
+  &lt;li&gt;Chromatography is used to separate organic and inorganic compoundns. Liquid chromatography (LC) and gas chromatography (GC) 
+are two common chromatography approaches.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;retention-time&quot;&gt;Retention time&lt;/h4&gt;
+&lt;p&gt;The time that a compound elutes out of the column in chromatography is called retention time. The eluted compounds are then injected
+into the mass spectrometer.&lt;/p&gt;
+
+&lt;h4 id=&quot;mass-spectrometer&quot;&gt;Mass spectrometer&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Ion source: converts eletrically neural compounds into charged molecules. It is often to analyze the biological samples in 
+both +ve(positive) and -ve(negative) ionization modes to cover more metabolites.&lt;/li&gt;
+  &lt;li&gt;Mass analyzer: separates ions according to the m/z values. Usually, more than one mass analyzer are used in tandem mass spectrometry.&lt;/li&gt;
+  &lt;li&gt;Detector: converts the abundances of the ions into the electrical signals.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;lc-ms-raw-data&quot;&gt;LC-MS raw data&lt;/h4&gt;
+&lt;p&gt;Since samples are separated by liquid chromatography and mass spectrometry, the LC-MS raw data is three dimentional 
+(retention time, mass-to-charge ratio, intensity)
+1. Retention time: the time that the metabolite elutes from the liquid chromatography.
+2. Mass-to-charge raio (m/z): measurement of the molecular weight.
+3. Intensity: quantification of the metabolite abundance.&lt;/p&gt;
+
+&lt;h4 id=&quot;lc-msms&quot;&gt;LC-MS/MS&lt;/h4&gt;
+&lt;p&gt;The parent ions are broken into smaller fragments. The MS/MS spectrum (tandem MS) can provide the information about 
+both product ions and the remaining parent ion. Therefore, metabolites with the same mass but different structures can be identified.&lt;/p&gt;
+
+&lt;h4 id=&quot;lc-ms-data-preprocessing&quot;&gt;LC-MS data preprocessing&lt;/h4&gt;
+&lt;p&gt;Remove outliers, detect peaks orrepsongding to metabolites and align peaks across multimple samples.&lt;/p&gt;
+
+&lt;h4 id=&quot;install-rstudio&quot;&gt;Install RStudio&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Install RStudio from &lt;a href=&quot;http://www.rstudio.com/products/rstudio/download/&quot;&gt;here&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;You also need to install some R packages for R package development, such as “devtools” and “roxygen2”.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;create-a-github-account&quot;&gt;Create a GitHub account&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Go to &lt;a href=&quot;https://github.com/&quot;&gt;GitHub website&lt;/a&gt; and create an account.&lt;/li&gt;
+  &lt;li&gt;Create a repo for the R package on GitHub.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;install-git&quot;&gt;Install Git&lt;/h4&gt;
+&lt;p&gt;Install Git from &lt;a href=&quot;http://git-scm.com/downloads&quot;&gt;here&lt;/a&gt;, not GitHub!&lt;/p&gt;
+
+&lt;h4 id=&quot;generate-ssh-key&quot;&gt;Generate SSH key&lt;/h4&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Ios App Development</title>
+   <link href="http://chvlyl.github.io/blog/2015/04/02/iOS-APP-development"/>
+   <updated>2015-04-02T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/04/02/iOS-APP-development</id>
+   <content type="html">&lt;p&gt;https://github.com/futurice/ios-good-practices&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Recommended statistics text books by UC  Berkeley SGSA</title>
+   <link href="http://chvlyl.github.io/blog/2015/04/01/statistics-book"/>
+   <updated>2015-04-01T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/04/01/statistics-book</id>
+   <content type="html">&lt;p&gt;I found a list of &lt;a href=&quot;https://www.stat.berkeley.edu/mediawiki/index.php/Recommended_Books&quot;&gt;statistics text books&lt;/a&gt; from UC Berkeley SGSA.
+I moditifed this list and added some books that I think are quite good.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;applied-statistics&quot;&gt;Applied Statistics&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;All of Statistics: A Concise Course in Statistical Inference by Larry Wasserman&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;categorical-data&quot;&gt;Categorical Data&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;&#39;’Categorical Data Analysis’’ by Alan Agresti&lt;/dt&gt;
+      &lt;dd&gt;Well-written, go-to reference for all things involving categorical data.&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of Nonparametric Statistics (Springer Texts in Statistics) by Larry Wasserman&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;=== Linear models ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Generalized Linear Models’’ by McCullagh and Nelder&lt;/dt&gt;
+  &lt;dd&gt;Theoretical take on GLMs. Does not have a lot of concrete data examples.
+* ‘‘Statistical Models’’ by David A. Freedman&lt;/dd&gt;
+  &lt;dd&gt;…Berkeley classic!
+* ‘‘Linear Models with R’’ by Julian Faraway&lt;/dd&gt;
+  &lt;dd&gt;Undergraduate-level textbook, has been used previously as a textbook for Stat 151A. Appropriate for beginners to R who would like to learn how to use linear models in practice. Does not cover GLMs.&lt;/dd&gt;
+  &lt;dt&gt;=== Experimental Design ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Design of Comparative Experiments’’ by RA Bailey&lt;/dt&gt;
+  &lt;dd&gt;Classic, approachable text, free for download: http://www.maths.qmul.ac.uk/~rab/DOEbook/&lt;/dd&gt;
+  &lt;dt&gt;=== Machine Learning ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘The Elements of Statistical Learning’’ by Hastie, Tibshirani, and Friedman.&lt;/dt&gt;
+  &lt;dd&gt;Comprehensive but superficial coverage of all modern machine learning techniques for handling data. Introduces PCA, EM algorithm, k-means/hierarchical clustering, boosting, classification and regression trees, random forest, neural networks, etc. …the list goes on.&lt;/dd&gt;
+  &lt;dd&gt;You can download the book here [http://www-stat.stanford.edu/~tibs/ElemStatLearn/].
+* “Pattern Recognition and Machine Learning” by Bishop.
+* “Probabilistic Graphical Models” by Koller and Friedman.&lt;/dd&gt;
+  &lt;dt&gt;== Theoretical Statistics ==&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Theory of Point Estimation’’ by Lehmann and Casella&lt;/dt&gt;
+  &lt;dd&gt;A good reference for Stat 210A.
+* ‘‘Testing Statistical Hypotheses’’ by Lehmann and Romano&lt;/dd&gt;
+  &lt;dd&gt;A good reference for Stat 210A.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;== Probability ==&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;=== Undergraduate Level Probability ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Probability’’ by Jim Pitman&lt;/dt&gt;
+  &lt;dd&gt;What the majority of Berkeley undergraduates use to learn probability.
+* ‘‘Introduction to Probability Theory’’ by Hoel, Port and Stone&lt;/dd&gt;
+  &lt;dd&gt;This text is more mathematically inclined than Pitman’s, and more concise, but not as good at teaching probabilistic thinking.&lt;/dd&gt;
+  &lt;dt&gt;=== Measure Theoretic Probability ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Probability: Theory and Examples’’ by Rick Durrett&lt;/dt&gt;
+  &lt;dd&gt;This is the standard text for learning measure theoretic probability. Its style of presentation can be confusing at times, but the aim is to present the material in a manner that emphasizes understanding rather than mathematical clarity. It has become the standard text in Stat 205A and Stat 205B for good reason. Online [http://www.math.duke.edu/~rtd/PTE/pte.html here].
+* ‘‘Foundations of Modern Probability’’ by Olav Kallenberg&lt;/dd&gt;
+  &lt;dd&gt;This epic tome is the ultimate research level reference for fundamental probability. It starts from scratch, building up the appropriate measure theory and then going through all the material found in 205A and 205B before powering on through to stochastic calculus and a variety of other specialized topics. The author put much effort into making every proof as concise as possible, and thus the reader must put in a similar amount of effort to understand the proofs. This might sound daunting, but the rewards are great. This book has sometimes been used as the text for 205A.
+* ‘‘Probability with Martingales’’ by David Williams&lt;/dd&gt;
+  &lt;dd&gt;This delightful and entertaining book is the fastest way to learn measure theoretic probability, but far from the most thorough. A great way to learn the essentials.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;=== Stochastic Calculus ===
+Stochastic Calculus is an advanced topic that interested students can learn by themselves or in a reading group. There are three classic texts:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&#39;’Continuous Martingales and Brownian Motion’’ by Revuz and Yor&lt;/li&gt;
+  &lt;li&gt;&#39;’Diffusions, Markov Processes and Martingales (Volumes 1 and 2)’’ by Rogers and Williams&lt;/li&gt;
+  &lt;li&gt;&#39;’Brownian Motion and Stochastic Calculus’’ by Karatzas and Shreve&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;=== Random Walk and Markov Chains ===
+These are indispensable tools of probability. Some nice references are&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&#39;’Markov Chain and Mixing Times’’ by Levin, Peres and Wilmer. Online  [http://pages.uoregon.edu/dlevin/MARKOV/ here].&lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;&#39;’Markov Chains’’ by Norris&lt;/dt&gt;
+      &lt;dd&gt;Staring with elementary examples, this book gives very good hints on how to think about Markov Chains&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;dl&gt;
+      &lt;dt&gt;&#39;’Continuous time Markov Processes’’ by Liggett&lt;/dt&gt;
+      &lt;dd&gt;This is a really great book. Ngoc is keeping the library copy - and she is looking for someone to read the book with. :)&lt;/dd&gt;
+    &lt;/dl&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;== Mathematics == &lt;/dt&gt;
+  &lt;dt&gt;=== Convex Optimization ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Convex Optimization’’ by Stephen Boyd and Lieven Vandenberghe.&lt;/dt&gt;
+  &lt;dd&gt;You can download the book here [http://www.stanford.edu/~boyd/cvxbook/].&lt;/dd&gt;
+  &lt;dt&gt;=== Linear Algebra ===&lt;/dt&gt;
+  &lt;dt&gt;* “The Matrix Cookbook” by Kaare Brandt Petersen, Michael Syskind Pedersen&lt;/dt&gt;
+  &lt;dd&gt;I can’t say it better than they do: “Matrix identities, relations and approximations. A desktop reference for quick overview of mathematics of matrices.”&lt;/dd&gt;
+  &lt;dd&gt;Download here http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274
+* “Matrix Analysis” and “Topics in Matrix Analysis” by Horn and Johnson&lt;/dd&gt;
+  &lt;dd&gt;Second book is more advanced than the first. Everything you need to know about matrix analysis.&lt;/dd&gt;
+  &lt;dt&gt;=== Convex Analysis ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘A course in Convexity’’ by Barvinok.&lt;/dt&gt;
+  &lt;dd&gt;A great book for self study and reference. It starts with the basis of convex analysis, then moves on to duality, Krein-Millman theorem, duality, concentration of measure, ellipsoid method and ends with Minkowski bodies, lattices and integer programming. Fairly theoretical and has many fun exercises.&lt;/dd&gt;
+  &lt;dt&gt;=== Measure Theory ===&lt;/dt&gt;
+  &lt;dt&gt;* Real Analysis and Probability - Dudley&lt;/dt&gt;
+  &lt;dd&gt;Very comprehensive. 
+* Probability and Measure Theory - Ash&lt;/dd&gt;
+  &lt;dd&gt;Nice and easy to digest. Good as companion for 205A&lt;/dd&gt;
+  &lt;dt&gt;=== Combinatorics ===&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Enumerative Combinatorics Vol I and II’’ - Richard Stanley [http://www-math.mit.edu/~rstan/ec/].&lt;/dt&gt;
+  &lt;dd&gt;There’s also a course on combinatorics this semester in the math department called Math249: Algebraic Combinatorics. Despite the scary “algebraic” prefix it’s really fun.&lt;/dd&gt;
+  &lt;dt&gt;== Computational Biology ==&lt;/dt&gt;
+  &lt;dt&gt;* ‘‘Statistical Methods in Bioinformatics’’ by Ewens and Grant&lt;/dt&gt;
+  &lt;dd&gt;Great overview of sequencing technology for the unacquainted.
+* ‘‘Computational Genome Analysis: An Introduction’’ by Deonier, Tavare, and Waterman&lt;/dd&gt;
+  &lt;dd&gt;Great R code examples from computational biology. Discusses the basics, such as the greedy algorithm, etc.&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;=== Population Genetics ===
+* “Probability Models for DNA Sequence Evolution” by Durrett
+* “Mathematical Population Genetics” by Ewens&lt;/p&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;== Computer Science ==&lt;/dt&gt;
+  &lt;dt&gt;=== Numerical Analysis ===&lt;/dt&gt;
+  &lt;dt&gt;* Numerical Analysis by Burden and Faires&lt;/dt&gt;
+  &lt;dd&gt;This book is a good overview of numerical computation methods for everything you’d need to know about implementing most computational methods you’ll run into in statistics. It is filled with pseudo-code  but does use Maple as it’s exemplary language sometimes. It has been a great resource for the Computational Statistics courses (243/244). Depending on what happens with this course, this may be a good place to look when you’re &lt;b&gt;lost in computation&lt;/b&gt;.
+=== Algorithms ===
+* ‘‘Introduction to Algorithms’’, Third Edition, by Cormen, Leiserson, Rivest, and Stein.&lt;/dd&gt;
+  &lt;dd&gt;Amazon [http://www.amazon.com/Introduction-Algorithms-Third-Thomas-Cormen/dp/0262033844/] Google Books [http://books.google.com/books?id=VK9hPgAACAAJ&amp;amp;dq=9780262033848&amp;amp;hl=en&amp;amp;ei=McKXTfbaBOXliAKpxaCBCQ&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CDwQ6AEwAA]&lt;/dd&gt;
+  &lt;dd&gt;MIT OpenCourseWare 6.046J / 18.410J ‘‘Introduction to Algorithms’’ (SMA 5503) was taught by one of the authors, Prof. Charles Leiserson, in 2005. This is an undergraduate course and this book was used as the textbook. [http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/]
+* ‘‘Algorithm Design’‘[http://www.amazon.com/dp/0321295358/ref%3Dasc_df_03212953581947560/%3Ftag%3Daskcom05el-20%26creative%3D394997%26creativeASIN%3D0321295358%26linkCode%3Dasn&amp;amp;tag=appmatic-20], by Jon Kleinberg and Éva Tardos.&lt;/dd&gt;
+&lt;/dl&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tidyr</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/25/tidyr"/>
+   <updated>2015-03-25T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/25/tidyr</id>
+   <content type="html">
+&lt;p&gt;unite(new_variable_name, variable_to_be_merged_1, variable_to_be_merged_1, sep = “.”)&lt;/p&gt;
+
+&lt;p&gt;separate(data_frame, col_to_be_split, into=c(“var1”,”var2”,…), sep = “[^[:alnum:]]+”, remove = TRUE,
+convert = FALSE, extra = “error”, …)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How To Submit Sequencing Data To Sra Database</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/25/how-to-submit-sequencing-data-to-sra-database"/>
+   <updated>2015-03-25T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/25/how-to-submit-sequencing-data-to-sra-database</id>
+   <content type="html">
+&lt;p&gt;&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/books/NBK47529/&quot;&gt;Steps for SRA Submission&lt;/a&gt;
+1. Create a BioProject for this research.&lt;br /&gt;
+  * Go to &lt;a href=&quot;https://submit.ncbi.nlm.nih.gov/subs/bioproject/&quot;&gt;BioProject&lt;/a&gt; and submit a new project.
+  * Fill in all the necessary information.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Create a BioSample submission for your biological sample(s)
+    &lt;ul&gt;
+      &lt;li&gt;Download a &lt;a href=&quot;https://submit.ncbi.nlm.nih.gov/biosample/template/&quot;&gt;batch template&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;3.
+Gather Sequence Data Files&lt;/p&gt;
+
+&lt;p&gt;4.
+Enter Metadata on SRA website&lt;/p&gt;
+
+&lt;p&gt;a.
+Login and create a new SRA submission&lt;/p&gt;
+
+&lt;p&gt;b.
+Create Experiment(s) and link to BioProject and BioSample&lt;/p&gt;
+
+&lt;p&gt;c.
+Create Run(s)&lt;/p&gt;
+
+&lt;p&gt;5.
+Transfer Data files to SRA&lt;/p&gt;
+
+&lt;p&gt;6.
+Update Submission with PubMed links, Release Date, or Metadata Changes&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Learn QIIME for microbiome data analysis</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/24/learn-qiime"/>
+   <updated>2015-03-24T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/24/learn-qiime</id>
+   <content type="html">&lt;p&gt;I start to learn QIIME for microbiome 16S rRNA data analysis. I follow this &lt;a href=&quot;http://www.wernerlab.org/teaching/qiime/&quot;&gt;tutorial&lt;/a&gt; 
+and the &lt;a href=&quot;&quot;&gt;tutorial&lt;/a&gt; from QIIME website.&lt;/p&gt;
+
+&lt;p&gt;Step 1: install QIIME.&lt;br /&gt;
+  1. I use MacBook Pro so I download the MacQIIME &lt;a href=&quot;http://www.wernerlab.org/software/macqiime&quot;&gt;here&lt;/a&gt;. Install MacQIIME.  &lt;br /&gt;
+  2. Make a copy of the tutorial data set to the home folder by:&lt;br /&gt;
+     &lt;code&gt;cp -R /macqiime/QIIME/qiime_tutorial ~/qiime_tutorial&lt;/code&gt;&lt;br /&gt;
+  3. Type &lt;code&gt;macqiime&lt;/code&gt; to source QIIME environment variables. It is the same as a normal terminal shell, except the default 
+  python is /macqiime/bin/python and there are other new QIIME-related things in system PATH. Type &lt;code&gt;exit&lt;/code&gt; to go back to 
+  the normal shell.&lt;/p&gt;
+
+&lt;p&gt;Step 2: install BLAST.&lt;br /&gt;
+  1. Download &lt;a href=&quot;ftp://ftp.ncbi.nlm.nih.gov/blast/executables/release/2.2.22/blast-2.2.22-universal-macosx.tar.gz&quot;&gt;BLAST&lt;/a&gt;.&lt;br /&gt;
+  2. Unzip it by:&lt;br /&gt;
+  &lt;code&gt;tar -xvf blast-2.2.22-universal-macosx.tar.gz&lt;/code&gt;&lt;br /&gt;
+  3. Move it to somewhere permanent such as home directory:&lt;br /&gt;
+  &lt;code&gt;mv blast-2.2.22 ~/&lt;/code&gt;&lt;br /&gt;
+  4. Add the ~/blast-2.2.22/bin folder to the PATH by editing &lt;code&gt;~/.bash_profile&lt;/code&gt;. Add following line (replace YourName with the actual username):&lt;br /&gt;
+  &lt;code&gt;export PATH=/Users/YourName/blast-2.2.22/bin:${PATH}&lt;/code&gt;&lt;br /&gt;
+  5. Type &lt;code&gt;blastall&lt;/code&gt; to see if you can run it.&lt;br /&gt;
+  6. Make a &lt;code&gt;~/.ncbirc&lt;/code&gt; file that points to the BLAST data directory with following content (remember to replace YourName):&lt;br /&gt;
+  &lt;code&gt;[NCBI]&lt;/code&gt;&lt;br /&gt;
+   &lt;code&gt;Data=/Users/YourName/blast-2.2.22/data/&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 3: obtain the data.
+mappling fiile.
+#SampleID  BarcodeSequence LinkerPrimerSequence    Treatment DOB   Description &lt;br /&gt;
+#Example mapping file for the QIIME analysis package. These 9 samples are from a study of the effects of &lt;br /&gt;
+#exercise and diet on mouse cardiac physiology (Crawford, et al, PNAS, 2009).&lt;br /&gt;
+PC.354 AGCACGAGCCTA    YATGCTGCCTCCCGTAGGAGT   Control 20061218    Control_mouse__I.D._354&lt;br /&gt;
+PC.355 AACTCGTCGATG    YATGCTGCCTCCCGTAGGAGT   Control 20061218    Control_mouse__I.D._355&lt;br /&gt;
+PC.356 ACAGACCACTCA    YATGCTGCCTCCCGTAGGAGT   Control 20061126    Control_mouse__I.D._356&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Multiple sequence alignment in QIIME:
+    &lt;ol&gt;
+      &lt;li&gt;You can choose from three multiple sequence alignment methods: PyNAST(Caporaso et al., 2009), MUSCLE(Edgar, 2004) and INFERNAL (Nawrocki, Kolbe, &amp;amp; Eddy, 2009).&lt;/li&gt;
+      &lt;li&gt;PyNAST: need to provide a template of sequences for alignment.&lt;/li&gt;
+      &lt;li&gt;MUSCLE: slower than PyNAST when sequence number is large.&lt;/li&gt;
+      &lt;li&gt;INFERNAL: use RNA secondary structure annotation for multiple alignments.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Alignment filter:
+    &lt;ol&gt;
+      &lt;li&gt;To remove positions where gaps are in every sequence.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Clustering and heatmap</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/24/Clustering-and-heatmap"/>
+   <updated>2015-03-24T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/24/Clustering-and-heatmap</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;The scale of each gene&lt;/li&gt;
+  &lt;li&gt;Take a log transformation&lt;/li&gt;
+  &lt;li&gt;Scale each gene across samples. mean/SD scaling and meain/mad scaling&lt;/li&gt;
+  &lt;li&gt;Outliers. Replace outliers with 3 sd ?&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How To Evaluate A Model</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/20/how-to-evaluate-a-model"/>
+   <updated>2015-03-20T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/20/how-to-evaluate-a-model</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Do we need to scale the data before calculating the distance?</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/20/do-we-need-to-scale-the-data-before-calculating-the-distance"/>
+   <updated>2015-03-20T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/20/do-we-need-to-scale-the-data-before-calculating-the-distance</id>
+   <content type="html">&lt;p&gt;I have been confused about this question for quite a long time. Because all the text books I read say that one MUST scale data before calculating the distance for PCA or clustering analysis. Is this true? The short answer is: it depends.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;If the variables or features are not comparable and measured in different units, then it is better to scale the data before calculating the distance.
+For example, if we have two variables, height in inches and weight in pounds, we should scale the data before doing PCA or clustering. The reason is that the variable
+weight has much larger scale than variable height and thus the distance will be dominated by the weight. That is, a relatively small change in weight will cause a dramatical change in distance, while even a relatively large change in height will not change the distance very much. Since the height and weight are not directly comparable, we can scale them and then compare them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It is also faster for gradient descent algorithm to converge if we scale the data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;However, if the variables or features are comparable and measured in the same units, then we should not scale the data. For example, if we have two variables, arm length and leg length, both in meters, then we should not scale the data. Because arm length and leg length are comparable and scaling the data will distort the meaning of the data. Therefore, for this kind of data, we should not scale them and keep the original scale.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Book: Probabilistic Programming and Bayesian Methods for Hackers</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/19/probabilistic-programming-and-bayesian-methods-for-hackers"/>
+   <updated>2015-03-19T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/19/probabilistic-programming-and-bayesian-methods-for-hackers</id>
+   <content type="html">&lt;p&gt;I found &lt;a href=&quot;https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/&quot;&gt;this book&lt;/a&gt;. It covers the Bayesian methods
+ and very easy to understand without math background. I like the examples in this book.&lt;/p&gt;
+
+&lt;h4 id=&quot;chapter-1-basics-about-bayesian-methods&quot;&gt;Chapter 1: Basics about Bayesian methods.&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bayesian methods = prior knowledge + data (evidence). The data can wash away the prior knowledge.&lt;/li&gt;
+  &lt;li&gt;Use PyMC for Bayesian analysis in Python.&lt;/li&gt;
+  &lt;li&gt;It is OK if the posterior distribution does not look like the prior distribution for the parameter
+ (if we use MCMC rather than analytical distribution).&lt;/li&gt;
+  &lt;li&gt;Find the change point for count data: assume two poisson distribution with different means before and after time point t.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;chapter-2-pymc&quot;&gt;Chapter 2: PyMC&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;A good starting point to modeling is to think about &lt;code&gt;how you generate the data&lt;/code&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;What is the best distribution to describe the data? Poisson? Normal?&lt;/li&gt;
+      &lt;li&gt;What are the parameters in the distribution and do we know the values?&lt;/li&gt;
+      &lt;li&gt;Give priors to the unknown parameters.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Godness of fit: compare observed data with model prediction. If the data is statistically different from the model prediction, then
+the model does not accurately fit the data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;chapter-3-mcmc&quot;&gt;Chapter 3: MCMC&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;N unknowns parameters will define an N dimensional space for the probability distribution. The surface or curve that on top of the space 
+is the probability of a specific point.
+    &lt;ul&gt;
+      &lt;li&gt;For example, if there are two unknown parameters, p_1 and p_2 ~ U(0,5), then the space is a square of length 5 and the surface is just
+a plane on the top of the square. The volumn of the whole space is 1.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;After we incorporate the data, the space of prior distribution on unknowns does not change, but the surface of the space is changed. 
+The resulting surface is the posterior distribution.&lt;/li&gt;
+  &lt;li&gt;The curse of dimensionality: it is very difficult to search the high dimensional space.&lt;/li&gt;
+  &lt;li&gt;MCMC: sample the posterior distribution. It explores the nearby positions and moves into areas with higher probability.&lt;/li&gt;
+  &lt;li&gt;Algorithms for MCMC: most of them are as follows:
+    &lt;ol&gt;
+      &lt;li&gt;Start at current position.&lt;/li&gt;
+      &lt;li&gt;Propose moving to a new positoin.&lt;/li&gt;
+      &lt;li&gt;Accept/Rejct the new position.&lt;/li&gt;
+      &lt;li&gt;If accept, move to the new position. If rejct, do not move.&lt;/li&gt;
+      &lt;li&gt;Iterate and return all accepted posisions (trace).&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Covergence in MCMC algorithm: the traces converge, not to a single point, but to a distribution of possible points.&lt;/li&gt;
+  &lt;li&gt;The traces appear as a random walk in the apce.&lt;/li&gt;
+  &lt;li&gt;Autocorrelation: correlation of two time points. If I know the position of the series at time s, can it help me know where I cam at time t.&lt;/li&gt;
+  &lt;li&gt;MCMC algoritm regurns samples that exhibit autocorrelation.&lt;/li&gt;
+  &lt;li&gt;If a prior distribution assigns 0 probability to the unknown parameter, the posterior will also assign 0 probability. Therefore the prior must 
+contain the true parameter.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;chapter-4-theorem&quot;&gt;Chapter 4: Theorem&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;The law of large numbers: the average of a sequence of random variable from the same distribution coverges to the expected value of that distribution.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;chapter-5-loss-function&quot;&gt;Chapter 5: Loss function&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Squared-error loss function: put too much weight on large outliers.&lt;/li&gt;
+  &lt;li&gt;Absolute-error loss function&lt;/li&gt;
+  &lt;li&gt;Asymmetric squared-error loss function.&lt;/li&gt;
+  &lt;li&gt;Loss functions are objective.&lt;/li&gt;
+  &lt;li&gt;Bayesian loss function: E[L(theta,theta.hat)]. Use Law of Large Numbers to approciate the expectation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;chapter-6-how-to-choose-a-prior&quot;&gt;Chapter 6: How to choose a prior&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;Bayesian methods: prior distribution with hyperparameters&lt;/li&gt;
+  &lt;li&gt;Empirical Bayes: use data to get the prior&lt;/li&gt;
+  &lt;li&gt;Wishart distribution: is a distribution over all positive semi-definite matrices.&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Scientific writing by Rick Bushman</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/18/scientific-writing-by-Rick-Bushman"/>
+   <updated>2015-03-18T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/18/scientific-writing-by-Rick-Bushman</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.bushmanlab.org/&quot;&gt;Dr.Rick Bushman&lt;/a&gt; gave us a short lecture on scientific writing. I summarised the main points here:&lt;br /&gt;
+1. The simpler the better. Try to simplify your sentence and every dispensable word you remov increases clarity.&lt;br /&gt;
+2. Write in short sentences. Short sentences are much easier to read than long sentences and they help keep your own thoughs in order.&lt;br /&gt;
+3. Start paragraphs with short topic sentences.  A topic sentence should introduce and summarize what follows in the paragraph.&lt;br /&gt;
+4. End paragraphs with summary sentences.&lt;br /&gt;
+5. Avoid using “very, interestingly, strikingly, novel”. Let readers conclude for themselves.
+6. Avoid starting sentences with long clauses.&lt;br /&gt;
+7. Don’t over-condense your writing. In math, it is common to see phrases like “the rest of the proof is obvious”.&lt;br /&gt;
+8. Never use a long word where a short one will do.&lt;br /&gt;
+9. If it is possible to cut a word out, always cut if out.&lt;br /&gt;
+10. Never use the passive where you can use the active.&lt;br /&gt;
+11. Never use a foreign phrase, a scientic word, or a jargon word if you can thknk of an everyday English equivalent.&lt;/p&gt;
+
+&lt;p&gt;Rick also recommended two books:&lt;br /&gt;
+1. On Writing Well by William Zinsser.&lt;br /&gt;
+2. The Elements of Style by William Strunk Jr. and E. B. White.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How To Calculate Factorial For Noninteger Number</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/16/how-to-calculate-factorial-for-noninteger-number"/>
+   <updated>2015-03-16T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/16/how-to-calculate-factorial-for-noninteger-number</id>
+   <content type="html">
+&lt;p&gt;Use gamma function&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Dirichlet Process</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/15/dirichlet-process"/>
+   <updated>2015-03-15T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/15/dirichlet-process</id>
+   <content type="html">&lt;p&gt;http://blog.echen.me/2012/03/20/infinite-mixture-models-with-nonparametric-bayes-and-the-dirichlet-process/&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>R package development cheatsheet</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/15/R-package-development-cheatsheet"/>
+   <updated>2015-03-15T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/15/R-package-development-cheatsheet</id>
+   <content type="html">&lt;p&gt;R package development cheatsheet can be downloaded &lt;a href=&quot;http://www.rstudio.com/resources/cheatsheets/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rstudio.com/wp-content/uploads/2015/03/devtools-cheatsheet.png&quot; alt=&quot;R development cheatsheet&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Multiple testing problem and false discovery rate control</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/09/multiple-testing-problem"/>
    <updated>2015-03-09T00:00:00-04:00</updated>
-   <id>http://hankquinlan.github.io//blog/2015/03/09/github-website-setup</id>
-   <content type="html">&lt;p&gt;Keep track all the problems I have:&lt;br /&gt;
-1. In the YAML header of the .md file, there must be a space after semicolon.&lt;br /&gt;
-Wrong:&lt;br /&gt;
- &lt;code&gt;layout:default&lt;/code&gt;&lt;br /&gt;
-Correct:&lt;br /&gt;
- &lt;code&gt;layout: default&lt;/code&gt; &lt;br /&gt;
-2. Emphasis: either *emphasis* or _emphasis_&lt;/p&gt;
+   <id>http://chvlyl.github.io//blog/2015/03/09/multiple-testing-problem</id>
+   <content type="html">&lt;h2 id=&quot;what-is-multiple-testing-problem&quot;&gt;What is multiple testing problem?&lt;/h2&gt;
+&lt;p&gt;I found this interesting comic from XKCD:&lt;/p&gt;
 
-&lt;p&gt;Markdown:&lt;br /&gt;
-1.Create a new line: just type two or more spaces after the line.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/significant.png&quot; alt=&quot;Multiple testing problem&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Resouces:&lt;br /&gt;
-- Markdown:&lt;br /&gt;
-&lt;a href=&quot;http://daringfireball.net/projects/markdown&quot;&gt;Markdown syntax by John Gruber&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Basically, the comic says that the scientists want to test the association
+between jelly beans and acne with some test. In each test, they control 
+the false positive rate at 0.05 level. However, after they repeate the test
+20 times, they find one positive but they can not reproduce it in another
+experiment. Clearly, this result is actually a false positive.
+The reason is that if we control the false postive rate for 
+each test at 0.05 level, the overall false positive rate is actually 
+&lt;script type=&quot;math/tex&quot;&gt;1-(1-0.05)^{20}=0.64&lt;/script&gt; for 20 tests. That is, the overall false positive rate
+ is 0.61 even if we control false positive rate for each test at 0.05 level.&lt;/p&gt;
+
+&lt;p&gt;Here are some examples from &lt;a href=&quot;http://en.wikipedia.org/wiki/Multiple_comparisons_problem&quot;&gt;Wiki&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Suppose the treatment is a new way of teaching writing to students, and the control is the standard way of teaching writing. Students in the two groups can be compared in terms of grammar, spelling, organization, content, and so on. As more attributes are compared, it becomes more likely that the treatment and control groups will appear to differ on at least one attribute by random chance alone.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Suppose we consider the efficacy of a drug in terms of the reduction of any one of a number of disease symptoms. As more symptoms are considered, it becomes more likely that the drug will appear to be an improvement over existing drugs in terms of at least one symptom.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Suppose we consider the safety of a drug in terms of the occurrences of different types of side effects. As more types of side effects are considered, it becomes more likely that the new drug will appear to be less safe than existing drugs in terms of at least one side effect.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That is, as the number of comparisons increases, we will eventually find the groups being compared to be different at one attribute.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-control-the-overall-false-positive-rate&quot;&gt;How to control the overall false positive rate?&lt;/h2&gt;
+&lt;p&gt;A natural solution is that we control the false positive rate for each test 
+at &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; level so that the overall false postive rate is &lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+1-(1-\alpha)^n&lt;0.05 %]]&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Markdown basics</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/09/markdown-basics"/>
+   <updated>2015-03-09T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/09/markdown-basics</id>
+   <content type="html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/markdown-basics/&quot;&gt;Markdown basics&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Headings: use #&lt;/li&gt;
+      &lt;li&gt;Blockquotes: use &amp;gt;&lt;/li&gt;
+      &lt;li&gt;Bold and italic text: *italic text*, **bold text**&lt;/li&gt;
+      &lt;li&gt;Unordered lists: * or -&lt;/li&gt;
+      &lt;li&gt;Ordered lists: index with a number&lt;/li&gt;
+      &lt;li&gt;Nested lists: indent the list by two spaces&lt;/li&gt;
+      &lt;li&gt;Inline code formatting: `&lt;/li&gt;
+      &lt;li&gt;Block code formatting: ```&lt;/li&gt;
+      &lt;li&gt;Links: [text](link)&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://help.github.com/articles/github-flavored-markdown/&quot;&gt;GitHub Flavored Markdown&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;GFM ignores the underscores (use * to emphasize a word): _text_text_text&lt;/li&gt;
+      &lt;li&gt;Strikethrough: ~~ text ~~&lt;/li&gt;
+      &lt;li&gt;Syntax highlighting: ```python&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kramdown.gettalong.org/quickref.html&quot;&gt;Kramdown&lt;/a&gt;
+    &lt;ol&gt;
+      &lt;li&gt;Code blocks: ~~~ with a newline before it.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GitHub personal website setup</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/09/github-personal-website-setup"/>
+   <updated>2015-03-09T00:00:00-04:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/09/github-personal-website-setup</id>
+   <content type="html">&lt;p&gt;Step 1: setup an account in GitHub:&lt;br /&gt;
+  1. Go to &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;.&lt;br /&gt;
+  2. Create an account in GitHub.&lt;br /&gt;
+  3. Create a repository username.github.io, replacing username with your GitHub username.&lt;br /&gt;
+  4. I used the website templates from &lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot;&gt;Jonathan Mcglone&lt;/a&gt; and &lt;a href=&quot;http://yihui.name/&quot;&gt;Yihui&lt;/a&gt;.&lt;br /&gt;
+  5. Copy the template into your github repository. You have to learn some github basics about how to push a file into the respository.&lt;/p&gt;
+
+&lt;p&gt;Step 2: setup the custom domain with GoDaddy:&lt;br /&gt;
+  1. Go to &lt;a href=&quot;www.godaddy.com&quot;&gt;GoDaddy&lt;/a&gt; and buy my own domain name statchen.com.&lt;br /&gt;
+  2. Go to GoDaddy &lt;strong&gt;Zone File Editor&lt;/strong&gt;:&lt;br /&gt;
+  3. At &lt;strong&gt;A(Host)&lt;/strong&gt; section add &lt;code&gt;Host:@ Points to: 192.30.252.153&lt;/code&gt;  and &lt;code&gt;Host:@ Points to: 192.30.252.154&lt;/code&gt;&lt;br /&gt;
+  4. At &lt;strong&gt;CNAME (Alias)&lt;/strong&gt; section add &lt;code&gt;Host:www to: chvlyl.github.io&lt;/code&gt;&lt;br /&gt;
+  5. Go to GitHub, add a file called CNAME with content statchen.com&lt;br /&gt;
+  6. I set the link in the layout to my GiHub website link chvlyl.github.io and this caused some problems. I changed the link to statchen.com and then problem was solved.&lt;/p&gt;
+
+&lt;p&gt;Step 3: modify the index files from the template:&lt;br /&gt;
+  1. In the YAML header of the .md file, there must be a space after semicolon.&lt;br /&gt;
+  Wrong:&lt;br /&gt;
+   &lt;code&gt;layout:default&lt;/code&gt;&lt;br /&gt;
+  Correct:&lt;br /&gt;
+   &lt;code&gt;layout: default&lt;/code&gt; &lt;br /&gt;
+  2. Create a new line: just type two or more spaces after the line.&lt;br /&gt;
+  3. Math equation support:  use \ begin{equation} and \end{equation}&lt;/p&gt;
+
+&lt;p&gt;Step 4: update changes: 
+git add README.md
+git commit -m ‘Add README.md’
+git push -u origin master&lt;/p&gt;
+
+&lt;p&gt;Step 5: Jekyll
+Run &lt;code&gt;jekyll serve --detach&lt;/code&gt; in the website home folder to setup the local server.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GitHub basics</title>
+   <link href="http://chvlyl.github.io/blog/2015/03/08/github-basics"/>
+   <updated>2015-03-08T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/03/08/github-basics</id>
+   <content type="html">&lt;h4 id=&quot;basic-workflow&quot;&gt;Basic workflow&lt;/h4&gt;
+&lt;ol&gt;
+  &lt;li&gt;Create a branch: anything in the master branch is always deployable. when working on a feature or a fix, create a new branch with descriptive names.&lt;/li&gt;
+  &lt;li&gt;Add commits: This keeps track of the progress as you work on a feature branch.&lt;/li&gt;
+  &lt;li&gt;Open a pull request&lt;/li&gt;
+  &lt;li&gt;Deploy&lt;/li&gt;
+  &lt;li&gt;Merge to master branch&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;pro-githttpsprogitorg&quot;&gt;&lt;a href=&quot;https://progit.org/&quot;&gt;Pro Git&lt;/a&gt;&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Git has three main states that your files can reside in: committed, modified, and staged. If a particular version of a file is in the Git directory, it’s considered committed. If it has been modified and was added to the staging area, it is staged. And if it was changed since it was checked out but has not been staged, it is modified.
+    &lt;ul&gt;
+      &lt;li&gt;Committed means that the data is safely stored in your local database.&lt;/li&gt;
+      &lt;li&gt;Modified means that you have changed the file but have not committed it to your database yet.&lt;/li&gt;
+      &lt;li&gt;Staged means that you have marked a modified file in its current version to go into your next commit snapshot.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The first thing you should do when you install Git is to set your user name and e-mail address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating
+git config –global user.name “John Doe”
+git config –global user.email johndoe@example.com&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Setup SSH keys
+    &lt;ul&gt;
+      &lt;li&gt;Check for SSH keys: ls -al ~/.ssh&lt;/li&gt;
+      &lt;li&gt;Generate SSH kyes with GitHub email: ssh-keygen -t rsa -b 4096 -C “your_email@example.com”&lt;/li&gt;
+      &lt;li&gt;Add the key to the ssh-agent (skipped): ssh-add ~/.ssh/id_rsa&lt;/li&gt;
+      &lt;li&gt;Add SSH key to GitHub account: more ~/.ssh/id_rsa.pub and copy the content to GitHub SSH key setting&lt;/li&gt;
+      &lt;li&gt;Test the connection: ssh -T git@github.com&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Push the local files to GitHub
+    &lt;ul&gt;
+      &lt;li&gt;Clone remote repository
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY&lt;/li&gt;
+      &lt;li&gt;git remote add origin remote repository URL
+git remote -v&lt;/li&gt;
+      &lt;li&gt;Commit files
+git init
+git add .
+git commit -m ‘initial project version’
+git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;5&lt;/p&gt;
+
 </content>
  </entry>
  
  
 </feed>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

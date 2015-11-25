@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Use virtualenv in Python</h1>
+<p class="meta">01 Sep 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>Virtualenv is a package to create isolated Python environments. So you can use different python environments for each project.</p>
+
+<blockquote>
+  <p>The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform’s standard location is), it’s easy to end up in a situation where you unintentionally upgrade an application that shouldn’t be upgraded.</p>
+</blockquote>
+
+<h3 id="install-virtualent">– Install virtualent</h3>
+<p><code>python
+sudo pip install virtualenv
+</code></p>
+
+<h3 id="create-a-python-environment">– Create a Python environment</h3>
+<p><code>python
+mkdir new_project
+virtualenv --distribute new_project
+</code></p>
+
+<p>The –distribute is to use distribute package system instead of setuptools. It will install pip in the new virtual environment.  The new_project folder has its own Python and pip in it. All the packages installed globally are also available to the virtualenv environment.</p>
+
+<h3 id="activate-the-virtualenv">– Activate the virtualenv</h3>
+<p><code>python
+cd new_project
+source bin/activate
+</code></p>
+
+<p>Use deactivate to exit the environment.</p>
+
+<h3 id="python-style-guide">– Python style guide</h3>
+<p><a href="https://www.python.org/dev/peps/pep-0008/">PEP 0008 Python coding style</a></p>
+
+<h3 id="reference">– Reference</h3>
+<ol>
+  <li>The above content was summarized from http://mirnazim.org/writings/python-ecosystem-introduction/</li>
+</ol>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

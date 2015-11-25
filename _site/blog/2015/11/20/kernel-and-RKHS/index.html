@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Kernel and Reproducing Kernel Hilbert Space</h1>
+<p class="meta">20 Nov 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <h2 id="feature-mapping-and-kernel-function">Feature mapping and kernel function</h2>
+<p>In many classification problems, the data in the original feature space are not linearly separatable. For example, in a two dimentional feature space <script type="math/tex">R^2</script>, we have two features <script type="math/tex">(X_1,X_2)</script>. In this space, one group of data is distributed as a circle and the other group is distributed as a big circle outside the previous one. These two groups are not linearly separatable in the <script type="math/tex">(X_1,X_2)</script> space.</p>
+
+<p>However, we can use feature engineering to map the two dimentional feature space <script type="math/tex">R^2</script> into three dimentional feature space <script type="math/tex">R^3</script>. That is, we can create new features based on the original features. For example, we can map <script type="math/tex">(X_1,X_2)</script> into <script type="math/tex">(X_1^2,X_2^2,\sqrt2X_1X_2)</script>. In other words, we now have a new three dimentional feature space <script type="math/tex">R^3</script> as <script type="math/tex">(Z_1,Z_2,Z_3)</script>. The relation between the original features and new fetures is <script type="math/tex">Z_1=X_1^2,Z_2=X_2^2,Z_3=\sqrt2X_1X_2</script>. This process is called feature mapping <script type="math/tex">\phi: R^2->R^3</script>. After feature mapping, the two groups of data are now linearly separatable in the new feature space.</p>
+
+<p>Let’s take a look at the inner product in the orignal feature space (I will call it X hereafter) and new feature space (H). Let’s assume that there are two data points <script type="math/tex">(X_1,X_2)</script>,<script type="math/tex">(X_1',X_2')</script> in the original two dimentional feature space <script type="math/tex">R^2</script> (Since the original feature space is two dimentional, each data point has two elements such as <script type="math/tex">X_1</script> and <script type="math/tex">X_2</script> for the first data point. Recall that a point in the space can be considered as a point as well as a vector connecting that point and origin). After feature mapping, the two data points are now <script type="math/tex">(Z_1,Z_2,Z_3)</script>,<script type="math/tex">(Z_1',Z_2',Z_3')</script> in the three dimentional feature space <script type="math/tex">R^3</script> (Since the new feature space is three dimentional, each data point has three elements such as <script type="math/tex">Z_1</script>, <script type="math/tex">Z_2</script> and <script type="math/tex">Z_3</script> for the first data point). Now let’s calculate the inner product in the <strong>new feature space</strong> (use &lt;X,Y&gt; to indicate inner product between X and Y):<br />
+<script type="math/tex">% <![CDATA[
+<(Z_1,Z_2,Z_3),(Z'_1,Z'_2,Z'_3)>  \\
+= <\phi(X_1,X_2),\phi(X_1',X_2')> \\
+= <(X_1^2,X_2^2,\sqrt2X_1X_2),(X_1'^2,X_2'^2,\sqrt2X_1'X_2')>  \\
+= X_1^2X_2^2+2X_1X_2X_1'X_2'+ X_1'^2X_2'^2   \\
+= (X_1X_1'+X_2X_2')^2 \\
+= (<(X_1,X_2),(X_1',X_2')>)^2 %]]></script></p>
+
+<p>As you can see, the inner product of two data points in the new feature space is just the <strong>square</strong> of the inner product of the two corresponding data points in the original feature space. In other words, if we want to map the data points from original space to the new space and calculate the inner product in the new space, we don’t need to take all the troubles to do the feature mapping and inner product calculation. Instead, we can calculate the inner product in the original space and take the square without doing the feature mapping at all. Since the inner product in the new space is the function of that in the original space, we can define this as so-called kernel function:<br />
+<script type="math/tex">% <![CDATA[
+\kappa(x,x') := <\phi(x),\phi(x')>\\ %]]></script></p>
+
+<p>In summary, kernel function is a function to calculate the inner product. But this inner product is not calculated in the original space, it is calculated in another space (but without doing actual feature mapping). That is, a function to calculate the innder product in some inner product space. Therefore, we don’t need the inner product to be defined in the orignial space to calculate the kernel. If the original space are apples and oranges, how to calculate the inner product? We can map the apples and organges into their counts and then calculate the inner product.</p>
+
+<h2 id="two-fundamental-questions">Two fundamental questions</h2>
+<ol>
+  <li>Given a feature mapping <script type="math/tex">\phi</script>, can we find is corresponding kernel function <script type="math/tex">\kappa</script>?</li>
+  <li>Given a kernel function <script type="math/tex">\kappa</script>, can we find its corresponding feature mapping <script type="math/tex">\phi</script> and consturct the feature space?</li>
+</ol>
+
+<h2 id="gram-matrix-or-kernel-matrix">Gram matrix or kernel matrix</h2>
+<p>Given a function <script type="math/tex">\kappa: R^d \times R^d->R</script> and data points <script type="math/tex">X_1,X_2,\dots,X_m \in R^d</script>, the Gram matrix, also called kernel matrix, is just a <script type="math/tex">m \times m</script> matrix filled with <script type="math/tex">\kappa(X_i,X_j)</script> for its i-th and j-th element.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+K=
+\begin{bmatrix}  
+\kappa(X_1,X_1) & \dots & \kappa(X_1,X_m) \\ 
+\dots & \ldots & \dots \\ 
+\kappa(X_m,X_1) & \dots & \kappa(X_m,X_m)
+\end{bmatrix} %]]></script>
+
+<p>Note that the definition is of Gram matrix or kernel matrix for whatever function <script type="math/tex">\kappa: R^d->R</script>. We will use this definition along with positive semi-definite matrix to check if a funtion is a kernel function or if a kernel function is a valid one.</p>
+
+<h2 id="positive-semi-definite-matrix">Positive semi-definite matrix</h2>
+<p>A real symmetrix <script type="math/tex">m \times m</script> matrix K satifying <script type="math/tex">a^TKa \geq 0</script> for all <script type="math/tex">a \in R^m</script> is called positive semi-definite matrix. For small matrix, we can use the definition to prove it is positive semi-definite or not. For large matrix, the calculation will be too cumbersome to do. Therefore, usually we use the eigenvalues to check if it is positive semi-definite or not. Note that a real symmetrix is positive semi-definite if and only if all its eigenvalues are non-negative.</p>
+
+<h2 id="kernel-function">Kernel function</h2>
+<p>If a function <script type="math/tex">\kappa: R^d \times R^d->R</script> and for any set <script type="math/tex">X_1,X_2,\dots,X_m \in R^d</script>, its Gram or kernel matrix
+<script type="math/tex">% <![CDATA[
+K=
+\begin{bmatrix}  
+\kappa(X_1,X_1) & \dots & \kappa(X_1,X_m) \\ 
+\dots & \ldots & \dots \\ 
+\kappa(X_m,X_1) & \dots & \kappa(X_m,X_m)
+\end{bmatrix} %]]></script></p>
+
+<p>is positive semi-definite, then this functioin is <script type="math/tex">\kappa</script> is called positive semi-definite kernel. Sometimes, in short, it is called kernel.</p>
+
+<p>The kernel function takes two variables as input, <script type="math/tex">R^d \times R^d->R</script>, and generate a value output in <script type="math/tex">R</script>. But not every function in this form is kernel function. Therefore, given a function in such form <script type="math/tex">\kappa: R^d \times R^d->R</script>, we want to know if it is a kernel functioin.</p>
+
+<p>In summary, in order to check if a function is a kernel, we need to make sure this function is positive semi-definite. We don’t do this directly on the function itself. Instead, we transfer the function into its corresponding Gram or kernel matrix. Then we check if the Gram or kernel matrix is positive semi-definite or not.</p>
+
+<h2 id="function-space">Function space</h2>
+<p><script type="math/tex">R^{R^d}</script> is the set of all functions from <script type="math/tex">R^d</script> to <script type="math/tex">R</script>:   <script type="math/tex">R^{R^d} = \{f:R^d->R\}</script>. Note that <script type="math/tex">R^{R^d}</script> the function maps data points in <script type="math/tex">R^d</script> to  <script type="math/tex">R</script>. The elements in the function space are just all such functions.</p>
+
+<p>Use kernel function <script type="math/tex">\kappa(x,z) = exp(-\frac{(x-z)^2}{2})</script> as an example:<br />
+Let z=0, then <script type="math/tex">\Phi_0(x) = \kappa(x,0) = exp(-\frac{x^2}{2}) \in R</script>. This means, the kernel function <script type="math/tex">\kappa(x,z)</script> maps the data point <script type="math/tex">z=1</script> into a function  <script type="math/tex">exp(-\frac{x^2}{2})</script>. <br />
+Similary, let z=1, then <script type="math/tex">\Phi_1(x) = \kappa(x,1) = exp(-\frac{(x-1)^2}{2}) \in R</script>.</p>
+
+<p>If we consider the second variable z in the function <script type="math/tex">\kappa(x,z)</script> as the parameter, then for different parameters, we can have different functions. In other words, the kernel function can map each point in one space into a function in another space.</p>
+
+<h2 id="the-reproducing-kernel-map">The reproducing kernel map</h2>
+<p>Suppose <script type="math/tex">\kappa: R^d \times R^d->R</script> is a kernel. The producing kernel map is a map <script type="math/tex">\Phi: R^{R^d}->R^d</script> such that <script type="math/tex">\Phi(z)=\phi_z=\kappa(*,z)</script>, that is <script type="math/tex">\Phi(z)(x)=\phi_z(x)=\kappa(x,z)</script>.</p>
+
+<p>Here, <script type="math/tex">\Phi(z)</script> (consider <script type="math/tex">\Phi(z)</script> as <script type="math/tex">f</script>) is a function that depends on z and this function takes x as input. We can write this function as <script type="math/tex">\phi_z(x)</script>. This is equivalent to kernel function <script type="math/tex">\kappa(x,z)</script> with z as fixed.</p>
+
+<p>Again, this function just maps each point in one space into a function in another space (the new space is a function space because all the elements are functions). This mapping is defined by the kernel function with the second variable replaced by the point in the original space.</p>
+
+<h2 id="fundamental-question-2">Fundamental question 2:</h2>
+<p>Give a kernel function, how to construct a feature space?<br />
+1. Define a vector space based on the image of <script type="math/tex">\Phi</script> (<script type="math/tex">\Phi</script> can be defined by the kernel function).<br />
+2. Define an inner product based on the vector space.
+3. Show that <script type="math/tex">% <![CDATA[
+\kappa(x,z)=<\Phi(x),\Phi(z)> %]]></script>.</p>
+
+<h2 id="define-a-vector-space">Define a vector space</h2>
+<p>As I mentioned before, given a kernel function, we can define a repdocuing kernel map. This map take points in original space into functions in a new function space. We can then take the linear combinations of those functions to construct a space. We can prove that, this function space is a vector space.  Here is the formal definition:</p>
+
+<p>Suppose  <script type="math/tex">\kappa: R^d \times R^d->R</script> is a kernel and <script type="math/tex">\Phi</script> is the corresponding reproducing kernel map. Let<br />
+<script type="math/tex">F_{\kappa}= \{f=\sum_i^m\alpha_i\Phi(x_i)|m \ in N, x_i,\dots,x_m \in R^d, \alpha_1,\dots,\alpha_m \ in R\}</script><br />
+Then <script type="math/tex">F_{\kappa}</script> is a vector space over R.</p>
+
+<p><script type="math/tex">\sum_i^m\alpha_i\Phi(x_i)</script> means taking the linear combinations of the functions after reproducing kernel mapping. Note that <script type="math/tex">F_{\kappa}</script> depends on <script type="math/tex">\kappa</script> because given different kernel functions, the repdocuing kernel maps are different. Therefore the constructed vector spaces are also different.</p>
+
+<h2 id="define-an-inner-product">Define an inner product</h2>
+<p>Next, we want to define inner product in the vector space <script type="math/tex">F_{\kappa}</script>. Recall that the elements in the <script type="math/tex">F_{\kappa}</script> space are functions. How to define inner product for functions?</p>
+
+<p>Given two functions in the function space <script type="math/tex">F_{\kappa}</script>: <script type="math/tex">f=\sum_i^m\alpha_i\Phi(x_i)</script> and <script type="math/tex">g=\sum_j^{m'}\beta_j\Phi(x_j')</script>, <br />
+recall that <script type="math/tex">f=\sum_i^m\alpha_i\kappa(*,x_i)</script> and <script type="math/tex">g=\sum_j^{m'}\beta_j\kappa(*,x_j')</script>.</p>
+
+<p>Define  inner product over R as:  <br />
+<script type="math/tex">% <![CDATA[
+<f,g> := \sum_i^m\sum_j^{m'}\alpha_i\beta_j\kappa(x_i,x_j') %]]></script></p>
+
+<p>Here, we replace the functions <script type="math/tex">\Phi(x_i)</script> and <script type="math/tex">\Phi(x_j')</script> with their kernel functions <script type="math/tex">\kappa(*,x_i)</script> and <script type="math/tex">\kappa(*,x_j')</script>. Then we define <script type="math/tex">\alpha_i\kappa(*,x_i) \times \beta_j\kappa(*,x_j') = \alpha_i\beta_j\kappa(x_i,x_j')</script></p>
+
+<h2 id="reproducing-property">Reproducing property</h2>
+<p>The inner product can be written as:<br />
+<script type="math/tex">% <![CDATA[
+<f,g> = \sum_i^m\sum_j^{m'}\alpha_i\beta_j\kappa(x_i,x_j')\\
+= \sum_i^m \alpha_i \sum_j^{m'}\beta_j\kappa(x_i,x_j')\\
+= \sum_i^m \alpha_i g(x_j')\\ %]]></script> <br />
+and<br />
+<script type="math/tex">% <![CDATA[
+<f,g> = \sum_i^m\sum_j^{m'}\alpha_i\beta_j\kappa(x_i,x_j')\\
+= \sum_j^{m'}\beta_j\sum_i^m\alpha_i\kappa(x_i,x_j')\\
+= \sum_j^{m'}\beta_j f(x_i)\\ %]]></script></p>
+
+<p>Then if <script type="math/tex">m'=1,\beta_j=1</script>, then <script type="math/tex">g=\sum_j^{m'}\beta_j\kappa(*,x_j')=\kappa(*,x_j')</script> <br />
+<script type="math/tex">% <![CDATA[
+<\kappa(*,x),f> = f(x) %]]></script><br />
+if <script type="math/tex">m=1,\alpha_i=1</script>, then <script type="math/tex">f=\sum_i^{m}\alpha_i\kappa(*,x_i)=\kappa(*,x_i)</script> 
+<script type="math/tex">% <![CDATA[
+<\kappa(*,x),\kappa(*,z)> = \kappa(z,x) = \kappa(x,z) %]]></script></p>
+
+<h2 id="answer-to-fundamental-question-2">Answer to fundamental question 2:</h2>
+<p>Given a kernel function, we can derive a mapping <script type="math/tex">\Phi</script>. Based on this mapping, we can define a function space <script type="math/tex">F_{\kappa}</script>. With inner product definition on the vector space <script type="math/tex">F_{\kappa}</script>, we can calculate the inner product <script type="math/tex">% <![CDATA[
+<\Phi(x),\Phi(z)> %]]></script>. The inner product is just the value of the kernel function <script type="math/tex">\kappa(x,z)</script>:<br />
+<script type="math/tex">% <![CDATA[
+\kappa(x,z) \\
+= <\kappa(*,x),\kappa(*,z)>\\
+= <\Phi(x),\Phi(z)>\\ %]]></script></p>
+
+<h2 id="fundamental-question-1">Fundamental question 1</h2>
+<p>Given a feature mapping <script type="math/tex">\Phi: R^d -> H</script>, the corresponding kernel function can be defined as <br />
+<script type="math/tex">% <![CDATA[
+\kappa(x,z) = <\Phi(x),\Phi(z)> %]]></script>. We can prove that this function is positive semi-definite and thus a valid kernel function.</p>
+
+<h2 id="spaces">Spaces</h2>
+<ul>
+  <li>Vector space: space with definiton of additioin and scalar product.</li>
+  <li>Inner space: vector space with definition of inner product.</li>
+  <li>Metric space: space with definition of distance.</li>
+  <li>Complete space: space where the every Cauchy sequence is converged within the space.</li>
+  <li>Hilbert space: real inner product space that is also a complete metric space with distance function defined by the inner product.  <script type="math/tex">d(x,y)=\|x-y\|</script> where <script type="math/tex">% <![CDATA[
+\|x\|=\sqrt{<x,x>} %]]></script>.</li>
+</ul>
+
+<h2 id="reference">Reference</h2>
+<ol>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=MahJ9iwReAM">Youtube: Reproducing Kernel Hilbert Space I: Basic Definitions</a></p>
+  </li>
+  <li>
+    <p><a href="https://youtu.be/JqsfFi41VTQ">Youtube: Reproducing Kernel Hilbert Space II: Theorems and Proofs</a></p>
+  </li>
+</ol>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

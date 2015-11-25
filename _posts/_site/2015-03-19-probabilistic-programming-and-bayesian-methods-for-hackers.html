@@ -1,0 +1,76 @@
+<p>I found <a href="https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/">this book</a>. It covers the Bayesian methods
+ and very easy to understand without math background. I like the examples in this book.</p>
+
+<h4 id="chapter-1-basics-about-bayesian-methods">Chapter 1: Basics about Bayesian methods.</h4>
+<ul>
+  <li>Bayesian methods = prior knowledge + data (evidence). The data can wash away the prior knowledge.</li>
+  <li>Use PyMC for Bayesian analysis in Python.</li>
+  <li>It is OK if the posterior distribution does not look like the prior distribution for the parameter
+ (if we use MCMC rather than analytical distribution).</li>
+  <li>Find the change point for count data: assume two poisson distribution with different means before and after time point t.</li>
+</ul>
+
+<h4 id="chapter-2-pymc">Chapter 2: PyMC</h4>
+<ul>
+  <li>A good starting point to modeling is to think about <code>how you generate the data</code>.
+    <ul>
+      <li>What is the best distribution to describe the data? Poisson? Normal?</li>
+      <li>What are the parameters in the distribution and do we know the values?</li>
+      <li>Give priors to the unknown parameters.</li>
+    </ul>
+  </li>
+  <li>Godness of fit: compare observed data with model prediction. If the data is statistically different from the model prediction, then
+the model does not accurately fit the data.</li>
+</ul>
+
+<h4 id="chapter-3-mcmc">Chapter 3: MCMC</h4>
+<ul>
+  <li>N unknowns parameters will define an N dimensional space for the probability distribution. The surface or curve that on top of the space 
+is the probability of a specific point.
+    <ul>
+      <li>For example, if there are two unknown parameters, p_1 and p_2 ~ U(0,5), then the space is a square of length 5 and the surface is just
+a plane on the top of the square. The volumn of the whole space is 1.</li>
+    </ul>
+  </li>
+  <li>After we incorporate the data, the space of prior distribution on unknowns does not change, but the surface of the space is changed. 
+The resulting surface is the posterior distribution.</li>
+  <li>The curse of dimensionality: it is very difficult to search the high dimensional space.</li>
+  <li>MCMC: sample the posterior distribution. It explores the nearby positions and moves into areas with higher probability.</li>
+  <li>Algorithms for MCMC: most of them are as follows:
+    <ol>
+      <li>Start at current position.</li>
+      <li>Propose moving to a new positoin.</li>
+      <li>Accept/Rejct the new position.</li>
+      <li>If accept, move to the new position. If rejct, do not move.</li>
+      <li>Iterate and return all accepted posisions (trace).</li>
+    </ol>
+  </li>
+  <li>Covergence in MCMC algorithm: the traces converge, not to a single point, but to a distribution of possible points.</li>
+  <li>The traces appear as a random walk in the apce.</li>
+  <li>Autocorrelation: correlation of two time points. If I know the position of the series at time s, can it help me know where I cam at time t.</li>
+  <li>MCMC algoritm regurns samples that exhibit autocorrelation.</li>
+  <li>If a prior distribution assigns 0 probability to the unknown parameter, the posterior will also assign 0 probability. Therefore the prior must 
+contain the true parameter.</li>
+</ul>
+
+<h4 id="chapter-4-theorem">Chapter 4: Theorem</h4>
+<ul>
+  <li>The law of large numbers: the average of a sequence of random variable from the same distribution coverges to the expected value of that distribution.</li>
+</ul>
+
+<h4 id="chapter-5-loss-function">Chapter 5: Loss function</h4>
+<ul>
+  <li>Squared-error loss function: put too much weight on large outliers.</li>
+  <li>Absolute-error loss function</li>
+  <li>Asymmetric squared-error loss function.</li>
+  <li>Loss functions are objective.</li>
+  <li>Bayesian loss function: E[L(theta,theta.hat)]. Use Law of Large Numbers to approciate the expectation.</li>
+</ul>
+
+<h4 id="chapter-6-how-to-choose-a-prior">Chapter 6: How to choose a prior</h4>
+<ul>
+  <li>Bayesian methods: prior distribution with hyperparameters</li>
+  <li>Empirical Bayes: use data to get the prior</li>
+  <li>Wishart distribution: is a distribution over all positive semi-definite matrices.</li>
+</ul>
+

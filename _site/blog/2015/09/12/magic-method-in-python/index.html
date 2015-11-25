@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Magic methods in Python</h1>
+<p class="meta">12 Sep 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>In Python, there are some variables/methods with double underscores, for example, <strong>name</strong> and <strong>init</strong>. Sometings, they are called magic variables/methods. They are created by the core Python team for their own protocols. So never created these variables and methods for your own use. That is, you can use them in your code, but do not create new ones by yourself. Here are some common magic variables/methods.</p>
+
+<h3 id="name"><strong>name</strong></h3>
+<ul>
+  <li>If .py file is executed directly，<strong>name</strong> will be set as <strong>main</strong>.</li>
+  <li>If .py file is imported，then <strong>name</strong> is the name of the .py file.</li>
+</ul>
+
+<p>So if we write the .py like following:
+<code>
+## some functions here
+if __name__=='__main__':
+    ## run some test
+</code>
+Then, if we import this .py file, the code inside the if statement will not be executed, because <strong>name</strong> is the name of the .py file. But if we run this .py file directly, the test code inside the if statment will run, because <strong>name</strong> is now “<strong>main</strong>”. Therefore, we can put the test code in the if statement with <strong>name</strong>.</p>
+
+<h3 id="init"><strong>init</strong></h3>
+<p>This is the constructor to initilize an object.</p>
+
+<h3 id="doc"><strong>doc</strong></h3>
+<p>The documentation for modules, classes and functions. For example:
+<code>
+#file.py
+"""
+file's doc
+"""
+class someclass(object):
+    """
+    class's doc
+    """
+    pass
+def somefunction():
+    """
+    function's doc
+    """
+    pass
+</code>
+If we run
+<code>
+print __doc__
+print someclass.__doc__
+print somefunction.__doc__
+</code>
+we will get
+<code>
+script's doc
+class's doc
+function's doc
+</code></p>
+
+<h3 id="call"><strong>call</strong></h3>
+<p>If an object has the <strong>call</strong>() function，then this object can be called as a function.
+<code>
+class someclass(object):
+    def __init__(self):
+        pass
+    def funcion(self):
+        pass
+    def __call__(self):
+        return self
+</code>
+<code>
+test=someclass()
+# we can use test as a function
+test()
+</code></p>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

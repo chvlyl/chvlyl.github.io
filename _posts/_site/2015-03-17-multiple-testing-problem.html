@@ -1,0 +1,35 @@
+<h2 id="what-is-multiple-testing-problem">What is multiple testing problem?</h2>
+<p>I found this interesting comic from XKCD:</p>
+
+<p><img src="http://imgs.xkcd.com/comics/significant.png" alt="Multiple testing problem" /></p>
+
+<p>Basically, the comic says that the scientists want to test the association
+between jelly beans and acne with some test. In each test, they control 
+the false positive rate at 0.05 level. However, after they repeate the test
+20 times, they find one positive but they can not reproduce it in another
+experiment. Clearly, this result is actually a false positive.
+The reason is that if we control the false postive rate for 
+each test at 0.05 level, the overall false positive rate is actually 
+<script type="math/tex">1-(1-0.05)^{20}=0.64</script> for 20 tests. That is, the overall false positive rate
+ is 0.61 even if we control false positive rate for each test at 0.05 level.</p>
+
+<p>Here are some examples from <a href="http://en.wikipedia.org/wiki/Multiple_comparisons_problem">Wiki</a>:</p>
+
+<blockquote>
+  <p>Suppose the treatment is a new way of teaching writing to students, and the control is the standard way of teaching writing. Students in the two groups can be compared in terms of grammar, spelling, organization, content, and so on. As more attributes are compared, it becomes more likely that the treatment and control groups will appear to differ on at least one attribute by random chance alone.</p>
+</blockquote>
+
+<blockquote>
+  <p>Suppose we consider the efficacy of a drug in terms of the reduction of any one of a number of disease symptoms. As more symptoms are considered, it becomes more likely that the drug will appear to be an improvement over existing drugs in terms of at least one symptom.</p>
+</blockquote>
+
+<blockquote>
+  <p>Suppose we consider the safety of a drug in terms of the occurrences of different types of side effects. As more types of side effects are considered, it becomes more likely that the new drug will appear to be less safe than existing drugs in terms of at least one side effect.</p>
+</blockquote>
+
+<p>That is, as the number of comparisons increases, we will eventually find the groups being compared to be different at one attribute.</p>
+
+<h2 id="how-to-control-the-overall-false-positive-rate">How to control the overall false positive rate?</h2>
+<p>A natural solution is that we control the false positive rate for each test 
+at <script type="math/tex">\alpha</script> level so that the overall false postive rate is <script type="math/tex">% <![CDATA[
+1-(1-\alpha)^n<0.05 %]]></script></p>
