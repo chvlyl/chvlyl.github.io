@@ -5,9 +5,7 @@ date: 2015-03-09
 ---
 
 ## What is multiple testing problem?
-I found this interesting comic from XKCD:
-
-![Multiple testing problem](http://imgs.xkcd.com/comics/significant.png)
+I found one interesting comic from XKCD about [Multiple testing problem](http://imgs.xkcd.com/comics/significant.png)
 
 Basically, the comic says that the scientists want to test the association
 between jelly beans and acne with some test. In each test, they control 

@@ -5,8 +5,8 @@ date: 2015-03-08
 ---
 
 
-#### Basic workflow
-1. Create a branch: anything in the master branch is always deployable. when working on a feature or a fix, create a new branch with descriptive names.
+### Basic workflow
+1. Create a branch: anything in the master branch is always deployable. When working on a feature or a fix, create a new branch with descriptive names. That is, consider master branch as a stable version of your software and other branches as the development or test version. Work new features only on the development branch and merge into master branch when you are sure that the software is working as desired.  
 2. Add commits: This keeps track of the progress as you work on a feature branch.
 3. Open a pull request
 4. Deploy
@@ -44,6 +44,6 @@ git commit -m 'initial project version'
 git push origin master
 # Pushes the changes in your local repository up to the remote repository you specified as the origin
 
-5
+
 
 

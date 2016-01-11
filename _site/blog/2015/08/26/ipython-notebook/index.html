@@ -37,27 +37,46 @@
   <ul class="nav pills">
   <li><a href="/">Home</a></li>
   <li><a href="/cv/">CV</a></li>
+  <li><a href="/software/">Software</a></li>
   <li><a href="/blog/">Blog</a></li>
 </ul>
-<h1>iPython Notebook</h1>
+<h1>IPython Notebook</h1>
 <p class="meta">26 Aug 2015</p>
 <script type="text/javascript"
     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <div class="post">
-  <h2 id="install-ipython">Install iPython</h2>
-<p><code>
-pip install "ipython[all]"  
-</code></p>
+  <h2 id="install-anaconda">Install Anaconda</h2>
+<p>Anaconda includes a large collection of popular Python packages for scientific computing. It can be download <a href="http://continuum.io/downloads">here</a>. IPython and IPython Notebook have been already included in the Anaconda distribution. So you don’t need to install IPython after Anaconda is installed.</p>
 
-<h2 id="install-anaconda">Install Anaconda</h2>
-<p>Anaconda includes a large collection of popular Python packages for scientific computing. It can be download <a href="http://continuum.io/downloads">here</a></p>
+<p>You can install packages from Anaconda.org:</p>
+
+<pre><code>conda install -c packagename
+</code></pre>
+
+<p>If you want to install packages from non-Anaconda, you can use pip, which is also included in Anaconda:</p>
+
+<pre><code>pip install packagename
+</code></pre>
+
+<h2 id="use-r-in-ipython-notebook">Use R in IPython Notebook</h2>
+<p>First, you need to install the R kernel:</p>
+
+<pre><code>conda install -c r r-irkernel
+</code></pre>
+
+<p>Then, run the IPython Notebook server:</p>
+
+<pre><code>ipython notebook
+</code></pre>
+
+<p>In IPython notebook, you can create a R notebook.</p>
 
 
 </div>
 
 <footer>
-  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
 </footer>
 </div>
 </body>

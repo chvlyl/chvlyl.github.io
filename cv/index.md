@@ -9,6 +9,23 @@ title: Eric Z Chen
 * 2008-2009, Intern, Institute of Genetics and Developmental Biology Chinese Academy of Sciences
 * 2004-2008, BS in Biology, University of Science and Technology of China  
 
+
+## Teaching Experience  
+* TA for GCB535 Introduction to Bioinformatics 2015 Fall  
+* TA for GCB535 Introduction to Bioinformatics 2016 Fall  
+
+## Reviewer Experience
+* PLoS One   
+* BioData Mining   
+* Biometrics   
+* Applied Soft Computing  
+* IEEE/ACM Transactions on Computational Biology and Bioinformatics
+
+## Computing Skill
+* Programming language: R, Python, Perl, Java, C++, bash
+* Linux 
+* Parallel computing in clusters
+
 ## Publications ([Google Scholar Citation](https://scholar.google.com/citations?hl=en&user=7mrZzpYAAAAJ&view_op=list_works&sortby=pubdate))  
 12. Lewis JD\*, **Chen EZ**\*, Baldassano RN, Otley AR, Griffiths AM, Lee D, Bittinger K, Bailey A, Friedman ES, Hoffmann C, Albenberg L, Sinha R, Compher C, Gilroy E, Nessel L, Grant A, Chehoud C, Li H, Wu GD, Bushman FD: Inflammation, Antibiotics, and Diet as Environmental Stressors of the Gut Microbiome in Pediatric Crohn's Disease. Cell Host Microbe 2015, 18:489–500. (* Co-first authors)
 

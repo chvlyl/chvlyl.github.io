@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/software/">Software</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Write to NTFS Drives on Mac OS system</h1>
+<p class="meta">01 Dec 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>An annoying problem using Mac is that the OS X system on Mac does not support NTFS drives. When I try to write a file to the external disk in NTFS format, the OS X system refuses to do so and throws out an error that the disk is read only. One simple solution to install <a href="http://www.paragon-software.com/home/ntfs-mac/">NTFS for Mac</a>. However, it is not free. Therefore, I try to find other solutions and I happed to find <a href="http://computers.tutsplus.com/tutorials/quick-tip-how-to-write-to-ntfs-drives-in-os-x-mavericks--cms-21434">this one</a>. I tried it on my Mac and it worked!</p>
+
+<ol>
+  <li>
+    <p>First, edit the /etc/fstab file by <code>sudo nano /etc/fstab</code>. On my Mac, there is one file called fstab.hd but this is not the one we want to edit.</p>
+  </li>
+  <li>
+    <p>Then, add  <code>LABEL=drivename none ntfs rw,auto,nobrowse</code> to the file. Replace the <code>drivename</code> with the actual drive name. Save the file.</p>
+  </li>
+  <li>
+    <p>Unmount and unplug the external dive and re-plug it. You will not be able to see the external drive on Finder’s Devices menu. Use <code>Finder's menubar</code> -&gt; <code>Go</code> -&gt; <code>Go to Folder</code> -&gt; Type ‘/volumes’ as the path. You will see the external drive. You can drag the external drive to the sidebar. Also, you can use <code>ln -s</code> to link the external drive to whereever you want.</p>
+  </li>
+</ol>
+
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

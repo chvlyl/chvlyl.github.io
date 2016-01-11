@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eric Z Chen</title>
+  <meta name="author" content="Eric Z Chen"/>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <style type="text/css">
+  html, body {
+    background-color: #F8F8F8;
+  }
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="sitename">Eric Zhang Chen</h1>
+  <ul class="nav pills">
+  <li><a href="/">Home</a></li>
+  <li><a href="/cv/">CV</a></li>
+  <li><a href="/software/">Software</a></li>
+  <li><a href="/blog/">Blog</a></li>
+</ul>
+<h1>Linear regression y on x and x on y</h1>
+<p class="meta">25 Nov 2015</p>
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<div class="post">
+  <p>For two variables X and Y, is it equivalent to model their relation by either <script type="math/tex">Y=\beta_1X+\epsilon_1</script> or <script type="math/tex">X=\beta_2Y+\epsilon_2</script>?  In the first model, we consider Y as the independent variable and X as the dependent variable. In the second model, we switch X and Y.</p>
+
+<p>The answer is no.</p>
+
+<p>For the first model <script type="math/tex">Y=\beta_1X+\epsilon_1</script>, the least square estimate is (in matrix form) <script type="math/tex">\beta_1=(X^TX)^{-1}X^TY</script>. However, for second model <script type="math/tex">Y=\beta_2X+\epsilon_2</script>, the least square estimate is   <script type="math/tex">\beta_2=(Y^TY)^{-1}Y^TX</script>. Generally, <script type="math/tex">\beta_1</script> and <script type="math/tex">\beta_2</script> are not the same. Intuitively, in the X-Y plot (Y is on the y-axis and X is on the x-axis), the least square estimate of model <script type="math/tex">Y=\beta_1X+\epsilon_1</script> is to minimize the vertical distance (along y-axis) between the data and the fitted line. However, for the second model <script type="math/tex">Y=\beta_2X+\epsilon_2</script>, it minimizes the horizontal distance (along x-axis). Therfore, the estimates are not the same.</p>
+
+<h3 id="reference">Reference</h3>
+<ol>
+  <li><a href="http://stats.stackexchange.com/questions/22718/what-is-the-difference-between-linear-regression-on-y-with-x-and-x-with-y">What is the difference between linear regression on y with x and x with y? on StackExchange</a></li>
+</ol>
+
+</div>
+
+<footer>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
+</footer>
+</div>
+</body>
+</html>
+

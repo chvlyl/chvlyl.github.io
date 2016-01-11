@@ -37,6 +37,7 @@
   <ul class="nav pills">
   <li><a href="/">Home</a></li>
   <li><a href="/cv/">CV</a></li>
+  <li><a href="/software/">Software</a></li>
   <li><a href="/blog/">Blog</a></li>
 </ul>
 <h1>Rcpp</h1>
@@ -46,7 +47,7 @@
 </script>
 <div class="post">
   <h2 id="introduction">Introduction</h2>
-<p>Rcpp is a R package that allows to easily incorporate C++ code in R code. Nowadays this package is getting very popular in the R community. If you take a look at the R packsges developed by Hadley Wickham, most of them actually use Rcpp. Code written in C++ generally is much faster than R. This is why many R packages implemented their core functions in C++ with Rcpp.</p>
+<p>Rcpp is a R package that allows to easily incorporate C++ code in R. Nowadays this package is getting very popular in the R community. If you take a look at the R packsges developed by Hadley Wickham, most of them actually use Rcpp. Code written in C++ generally is much faster than R. This is why many R packages implemented their core functions in C++ with Rcpp.</p>
 
 <h2 id="install-rcpp">Install Rcpp</h2>
 <p>Rcpp is just a regular R package and thus it can be installed as <code>install.packages('Rcpp')</code>.</p>
@@ -122,14 +123,64 @@ some R code
 </code></pre>
 
 <h2 id="rcpp-suger">Rcpp suger</h2>
-<p>Rcpp has suger version functions that mimic the R functions.<br />
-1. All the basic arithmetic and logical operatiors are vectorised.</p>
+<p>Rcpp has suger version functions that mimic the R functions. For details, check the <a href="http://dirk.eddelbuettel.com/code/rcpp/Rcpp-sugar.pdf">Rcpp sugar manual</a></p>
+
+<ol>
+  <li>All the basic arithmetic and logical operatiors are vectorised.</li>
+</ol>
+
+<pre><code>NumericVector x;
+NumericVector y;
+NumericVector z = x/y;
+</code></pre>
+
+<p>x and y are two vectors. We can get z=x/y as a vector.</p>
+
+<ol>
+  <li>Many R functions have been implemented in Rcpp and they can be directly used such as max, min, ifelse etc.</li>
+</ol>
+
+<h2 id="include-c-files-in-the-r-package">Include C++ files in the R package</h2>
+<ol>
+  <li>In the R package folder, create the <code>src</code> folder and put all C++ files in this folder.</li>
+  <li>In the DESCRIPTION file, add <code>LinkingTo: Rcpp</code> and <code>Imports: Rcpp</code>. If Imports already exists, add Rcpp to it.</li>
+  <li>If Git is used, modify <code>.gitignore</code> file to ignore the C++ compiled files.</li>
+  <li>In the <code>R code</code>, add the roxygen tags (assume the roxygen is used) at the top of your R code:</li>
+</ol>
+
+<pre><code>#' @useDynLib thepacakgename
+#' @importFrom Rcpp sourceCpp
+NULL
+</code></pre>
+
+<p>Note that these tags are added to R code, not the C++ code.</p>
+
+<p>In the <code>C++ code</code>, add following:</p>
+
+<pre><code>#include &lt;Rcpp.h&gt;
+using namespace Rcpp;
+
+// [[Rcpp::export]]
+Some C++ code
+
+
+/*** R
+some R code for testing purpose
+*/
+</code></pre>
+
+<h2 id="reference">Reference</h2>
+<ol>
+  <li><a href="http://www.rcpp.org/book/">Rcpp book</a></li>
+  <li><a href="http://adv-r.had.co.nz/Rcpp.html">Advanced R</a></li>
+  <li><a href="http://r-pkgs.had.co.nz/">R packages</a></li>
+</ol>
 
 
 </div>
 
 <footer>
-  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
 </footer>
 </div>
 </body>

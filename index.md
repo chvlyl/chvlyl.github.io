@@ -3,5 +3,13 @@ layout: home
 title: Eric Z Chen
 ---
 
-I am a PhD student in Genomics and Computational Biology at University of Pennsylvania.
-I'm working with [Prof.Hongzhe Li in Biostatistics Department](http://statgene.med.upenn.edu/) on statistical methods for metagenomic data anlaysis.
+I am a PhD student in Genomics and Computational Biology at University of Pennsylvania. I'm currently working with [Prof.Hongzhe Li in Biostatistics Department](http://statgene.med.upenn.edu/) on statistical methods for metagenomic data anlaysis. My current research foucuses on studying the microbiome in the human gut and developing statistical and computational tools for microbiome data analysis. Here is my [LinkedIn profile](https://www.linkedin.com/in/eric-zhang-chen-a31bab16) and [Google Scholar profile](https://scholar.google.com/citations?user=7mrZzpYAAAAJ&hl=en).
+
+
+
+Besides my research, I'm also a big fan of data science. That is, use machine learning and statistical approaches to extra useful information from massive data. Here is my [GitHub](https://github.com/chvlyl) and [Kaggle website]().
+
+I'd like to keep challenging myself and I like learning new things. Since I'm also interested in finance and investments, I decided to learn some finance and investment knowledge by taking the CFA exam ([Chartered Financial Analyst](https://www.cfainstitute.org/pages/index.aspx)) for fun. Currently I have passed the CFA Level 1 exam.
+
+
+This website is generated with Jekyll and hosted in GitHub. The website template  is based on [Yihui Xie's website](http://yihui.name/) but with my own modifications.

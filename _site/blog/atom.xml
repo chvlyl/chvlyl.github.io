@@ -37,6 +37,7 @@
   <ul class="nav pills">
   <li><a href="/">Home</a></li>
   <li><a href="/cv/">CV</a></li>
+  <li><a href="/software/">Software</a></li>
   <li><a href="/blog/">Blog</a></li>
 </ul>
 <?xml version="1.0" encoding="utf-8"?>
@@ -45,7 +46,7 @@
  <title>Eric Z Chen's Blog</title>
  <link href="http://chvlyl.github.io/blog/atom.xml" rel="self"/>
  <link href="http://chvlyl.github.io/blog"/>
- <updated>2015-11-24T22:11:06-05:00</updated>
+ <updated>2016-01-11T16:18:45-05:00</updated>
  <id>http://chvlyl.github.io/blog</id>
  <author>
    <name>Eric Zhang Chen</name>
@@ -54,16 +55,178 @@
 
  
  <entry>
-   <title>Hadley Wickman's advice on how to be productive</title>
+   <title>Web development</title>
+   <link href="http://chvlyl.github.io/blog/2016/01/11/web-development"/>
+   <updated>2016-01-11T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2016/01/11/web-development</id>
+   <content type="html">&lt;p&gt;I’m learning web development and here are my study notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;part-1-how-to-earn-money-by-making-websites&quot;&gt;Part 1: How to earn money by making websites?&lt;/h2&gt;
+
+&lt;h3 id=&quot;brand-yourself&quot;&gt;Brand Yourself&lt;/h3&gt;
+&lt;p&gt;-. Match your personal expertise to your website so that your website can be useful to other people. Your website will be more than a website.
+-. Build your online reputation by advertising yourself and your website on Twitter, Facebook, LinkedIn , personal website and email.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-freelance-websites&quot;&gt;Use Freelance Websites&lt;/h3&gt;
+&lt;p&gt;-. www.freelancer.com/
+-. https://www.upwork.com
+-. https://www.peopleperhour.com/
+-. https://www.elance.com/
+-. http://www.guru.com/
+-. http://www.gofreelance.com/
+-. https://fbooks.wpengine.com/blog/freelance-jobs/
+1. At the beginning, focus on gainning good reviews rather than earning money. Therefore it is necessary to start with small project and bid with lower rate.
+2. Use your real identity to create the profile and put your personal website, LinkedIn profile and Twitter to you. 
+3. Bid for small project and finish it.&lt;/p&gt;
+
+&lt;h3 id=&quot;use-wordpress-to-build-attractive-website&quot;&gt;Use Wordpress to build attractive website&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Get familiar with the templates and themes at http://themeforest.net/&lt;/li&gt;
+  &lt;li&gt;Build your own website with those website templates and themes. Use your website as the showcase.&lt;/li&gt;
+  &lt;li&gt;Create websites for friends and other people. You can also go to whatever forums to make websites for people over there. Use these websites as your showcase.&lt;/li&gt;
+  &lt;li&gt;Find some poorly designed pages for some local small business and redo them. Send the design to them. Add these websites to your showcase too.&lt;/li&gt;
+  &lt;li&gt;After gain enough showcase, bid on those website development jobs on the freelance site.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;make-the-profitable-website&quot;&gt;Make the profitable website&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;If you have spent time looking for something and you didn’t find it, then someone else may have done the same thing. Or if you feel something you have just done can be done more easily, then probably someone else also has the same feeling. This is a good start point to make your profitable website. The needs of majority people are satified my mainstream product but there are always some specific needs from a small group people. You should target those people.&lt;/li&gt;
+  &lt;li&gt;Build a preliminary website to make your idea work. Add google analytics to your website to monitor your website traffic.&lt;/li&gt;
+  &lt;li&gt;Find out what are the core features that people are willing to pay for. Choose a small subset of people to try out and ask them for feedback. Improve your website until you get a great number of people who are willing to pay for it. Keep doing this.&lt;/li&gt;
+  &lt;li&gt;Put relevant ads on your website.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>My online course tracker</title>
+   <link href="http://chvlyl.github.io/blog/2016/01/10/my-online-course-tracker"/>
+   <updated>2016-01-10T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2016/01/10/my-online-course-tracker</id>
+   <content type="html">&lt;p&gt;iOS 9 and Swift 2: From Beginner to Paid Professional
+The Complete Android Developer Course - Build 14 Apps
+The Complete Web Developer Course - Build 14 Websites&lt;/p&gt;
+
+&lt;p&gt;Swift Programming Language by Apple: This book covers the Swift syntax. It’s also available online for people who prefer using their Web Browser. (Free)
+Developing iOS 8 Apps with Swift by Stanford: This is an iTunes U course taught by Paul Hegarty, he worked at NeXT with Steve Jobs. He teaches you how to build a few apps with Swift. (Free)
+Ray Wenderlich: This site has a huge team of talented people who make tutorials for a range of programmer levels. The free tutorials are more than enough to get started with. There’s also books and subscription only tutorials. (Free / Paid / Subscription)
+Design+Code by Meng To: He packs a considerable amount of material in his book. Meng teaches how to build an app from scratch using Xcode, Sketch, Swift, Spring Animation Library and more. He regularly updates the book with new material without charging previous purchasers. (Paid)
+Swift By Example by Brett Bukowski: This site helps you learn Swift Syntax by providing explanations for code in a simple side by side view. (Free)&lt;/p&gt;
+
+&lt;p&gt;Google 推出的 31 套在线课程
+http://chinagdg.org/2015/12/google-%E6%8E%A8%E5%87%BA%E7%9A%84-31-%E5%A5%97%E5%9C%A8%E7%BA%BF%E8%AF%BE%E7%A8%8B/&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Data science toolkit</title>
+   <link href="http://chvlyl.github.io/blog/2016/01/07/data-scienst-toolkit"/>
+   <updated>2016-01-07T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2016/01/07/data-scienst-toolkit</id>
+   <content type="html">&lt;p&gt;###&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.udemy.com/big-data-and-hadoop-essentials-free-tutorial/?dtcode=Z0cAVQ02GWtu&quot;&gt;Big Data and Hadoop Essentials&lt;/a&gt;
+&lt;a href=&quot;https://www.udemy.com/overview-of-big-data-hadoop/?dtcode=TCMfbcJ2GWK6&quot;&gt;Basic overview of Big Data Hadoop&lt;/a&gt;
+&lt;a href=&quot;http://bigdatauniversity.com/courses/hadoop-course/&quot;&gt;Hadoop Fundamentals I&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>iOS development</title>
+   <link href="http://chvlyl.github.io/blog/2016/01/06/iOS-development"/>
+   <updated>2016-01-06T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2016/01/06/iOS-development</id>
+   <content type="html">&lt;h2 id=&quot;ios-development-tutorial&quot;&gt;iOS development tutorial&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/leecade/ios-dev-flow&quot;&gt;iOS development workflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/22eabfc26e83&quot;&gt;A Swift Tour&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://chengway.in/tag/ios-9/&quot;&gt;iOS 9 tutorial&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.raywenderlich.com/store/ios-9-by-tutorials&quot;&gt;iOS 9 tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>R tips</title>
+   <link href="http://chvlyl.github.io/blog/2015/12/29/usefull-R-functions"/>
+   <updated>2015-12-29T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/12/29/usefull-R-functions</id>
+   <content type="html">&lt;h2 id=&quot;setnames&quot;&gt;setNames&lt;/h2&gt;
+&lt;p&gt;setNames(object = nm, nm)&lt;/p&gt;
+
+&lt;h1 id=&quot;section&quot;&gt;#&lt;/h1&gt;
+&lt;div style=&quot;float: right&quot;&gt; 
+  ```{r Code Chunk}
+  df &amp;lt;- diamonds[sample(1:nrow(diamonds), size = 2000),]
+
+  plot_ly(df, x = x, y = price, mode = &quot;markers&quot;, color = cut, size = z) %&amp;gt;%
+  layout(title = &quot;Diamonds&quot;)
+  ``` 
+&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Write to NTFS Drives on Mac OS system</title>
+   <link href="http://chvlyl.github.io/blog/2015/12/01/write-NTFS-on-Mac"/>
+   <updated>2015-12-01T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/12/01/write-NTFS-on-Mac</id>
+   <content type="html">&lt;p&gt;An annoying problem using Mac is that the OS X system on Mac does not support NTFS drives. When I try to write a file to the external disk in NTFS format, the OS X system refuses to do so and throws out an error that the disk is read only. One simple solution to install &lt;a href=&quot;http://www.paragon-software.com/home/ntfs-mac/&quot;&gt;NTFS for Mac&lt;/a&gt;. However, it is not free. Therefore, I try to find other solutions and I happed to find &lt;a href=&quot;http://computers.tutsplus.com/tutorials/quick-tip-how-to-write-to-ntfs-drives-in-os-x-mavericks--cms-21434&quot;&gt;this one&lt;/a&gt;. I tried it on my Mac and it worked!&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;First, edit the /etc/fstab file by &lt;code&gt;sudo nano /etc/fstab&lt;/code&gt;. On my Mac, there is one file called fstab.hd but this is not the one we want to edit.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Then, add  &lt;code&gt;LABEL=drivename none ntfs rw,auto,nobrowse&lt;/code&gt; to the file. Replace the &lt;code&gt;drivename&lt;/code&gt; with the actual drive name. Save the file.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unmount and unplug the external dive and re-plug it. You will not be able to see the external drive on Finder’s Devices menu. Use &lt;code&gt;Finder&#39;s menubar&lt;/code&gt; -&amp;gt; &lt;code&gt;Go&lt;/code&gt; -&amp;gt; &lt;code&gt;Go to Folder&lt;/code&gt; -&amp;gt; Type ‘/volumes’ as the path. You will see the external drive. You can drag the external drive to the sidebar. Also, you can use &lt;code&gt;ln -s&lt;/code&gt; to link the external drive to whereever you want.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Linear regression y on x and x on y</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/25/linear-regression-y-on-x-or-x-on-y"/>
+   <updated>2015-11-25T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/25/linear-regression-y-on-x-or-x-on-y</id>
+   <content type="html">&lt;p&gt;For two variables X and Y, is it equivalent to model their relation by either &lt;script type=&quot;math/tex&quot;&gt;Y=\beta_1X+\epsilon_1&lt;/script&gt; or &lt;script type=&quot;math/tex&quot;&gt;X=\beta_2Y+\epsilon_2&lt;/script&gt;?  In the first model, we consider Y as the independent variable and X as the dependent variable. In the second model, we switch X and Y.&lt;/p&gt;
+
+&lt;p&gt;The answer is no.&lt;/p&gt;
+
+&lt;p&gt;For the first model &lt;script type=&quot;math/tex&quot;&gt;Y=\beta_1X+\epsilon_1&lt;/script&gt;, the least square estimate is (in matrix form) &lt;script type=&quot;math/tex&quot;&gt;\beta_1=(X^TX)^{-1}X^TY&lt;/script&gt;. However, for second model &lt;script type=&quot;math/tex&quot;&gt;Y=\beta_2X+\epsilon_2&lt;/script&gt;, the least square estimate is   &lt;script type=&quot;math/tex&quot;&gt;\beta_2=(Y^TY)^{-1}Y^TX&lt;/script&gt;. Generally, &lt;script type=&quot;math/tex&quot;&gt;\beta_1&lt;/script&gt; and &lt;script type=&quot;math/tex&quot;&gt;\beta_2&lt;/script&gt; are not the same. Intuitively, in the X-Y plot (Y is on the y-axis and X is on the x-axis), the least square estimate of model &lt;script type=&quot;math/tex&quot;&gt;Y=\beta_1X+\epsilon_1&lt;/script&gt; is to minimize the vertical distance (along y-axis) between the data and the fitted line. However, for the second model &lt;script type=&quot;math/tex&quot;&gt;Y=\beta_2X+\epsilon_2&lt;/script&gt;, it minimizes the horizontal distance (along x-axis). Therfore, the estimates are not the same.&lt;/p&gt;
+
+&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stats.stackexchange.com/questions/22718/what-is-the-difference-between-linear-regression-on-y-with-x-and-x-with-y&quot;&gt;What is the difference between linear regression on y with x and x with y? on StackExchange&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hadley Wickham's advice on how to be productive</title>
    <link href="http://chvlyl.github.io/blog/2015/11/23/Hadley-Wickman"/>
    <updated>2015-11-23T00:00:00-05:00</updated>
    <id>http://chvlyl.github.io//blog/2015/11/23/Hadley-Wickman</id>
-   <content type="html">&lt;blockquote&gt;
+   <content type="html">&lt;p&gt;I’m a big fan of &lt;a href=&quot;http://had.co.nz/&quot;&gt;Hadley Wickham&lt;/a&gt;. For those who don’t him, he is the author of many famous R packages such as ggplot2, tidyr, dplyr, devtools etc. I use these packages everyday and they make analyzing data with R much more eaiser. I’m curious how he can come up with so many great ideas and work them out. Therefore, I searched anything online about him and summarized the information about as as below (Hadley Wickham’s words are in block quotes).&lt;/p&gt;
+
+&lt;blockquote&gt;
   &lt;p&gt;Most of my practical tips are in my quora answer, but here’s a bit more about my typical day.
 I normally wake up somewhere between 6 and 7. I try to immediately spend an hour writing - in an ideal world I do that before I check twitter and email, but that doesn’t always happen. Depending on whether I’m currently involved in more writing or programming heavy projects, I spend the next few hours programming or writing. I go to yoga at 12-1, and then eat lunch. I spend the rest of the afternoon (until 6) doing more writing/programming.
 On Fridays, I make a significant effort to get to inbox zero, and to handle my other responsibilities (reviewing papers, misc pull requests etc). I try to ignore email as much as possible during the rest of the week. I also try and schedule random meetings on Friday as much as possible.
 I avoid working on the weekends&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Get up early and work.&lt;/li&gt;
+  &lt;li&gt;Minimize email influence as much as possible. Indeed I found that keeping checking my emails often disrupts my normal work.&lt;/li&gt;
+  &lt;li&gt;Keep the habit of writing. Writing is way to record everything I have learned and clear my thoughts about things I need to do.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;blockquote&gt;
   &lt;ul&gt;
@@ -74,13 +237,26 @@ Chunking. Context-switching is expensive, so if I worked on many packages at the
   &lt;/ul&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;Again, writing is important. Write down everything I learned and it can be used as the reference.&lt;/li&gt;
+  &lt;li&gt;Reading keeps me tracking all the new things.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;If you want to give back, I think writing a blog is a great way. Many of the things that you struggle with will be common problems. Think about how to solve them well and describe your solution to others. The next step is to figure out how to wrap your solutions up into a function and then in a package. Keep your eyes open for similar problems and think about how you can create simple components that can be combined to solve them. This is hard so don’t be surprised if it takes a while (years!) to come together.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;Keep writing a blog.&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;blockquote&gt;
   &lt;p&gt;C++ because it’s fast and awesome!&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Learn C++&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
 &lt;ol&gt;
@@ -90,12 +266,44 @@ Chunking. Context-switching is expensive, so if I worked on many packages at the
  </entry>
  
  <entry>
+   <title>Learn C++</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/22/learn-cpp"/>
+   <updated>2015-11-22T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/22/learn-cpp</id>
+   <content type="html">&lt;p&gt;Here are my learning C++ notes.&lt;/p&gt;
+
+&lt;h2 id=&quot;declarations&quot;&gt;Declarations&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Functions can not be declared inside another function. They can only be declared globally.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cs.fit.edu/~mmahoney/cse1502/introcpp.html&quot;&gt;Introduction to C++&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Learn C++</title>
+   <link href="http://chvlyl.github.io/blog/2015/11/22/Sublime-tips"/>
+   <updated>2015-11-22T00:00:00-05:00</updated>
+   <id>http://chvlyl.github.io//blog/2015/11/22/Sublime-tips</id>
+   <content type="html">&lt;h2 id=&quot;create-a-link-to-sublime-on-mac&quot;&gt;Create a link to sublime on Mac&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;
+ln -s &quot;/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl&quot; ~/bin/subl
+&lt;/code&gt;
+Use subl to edit files.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Rcpp</title>
    <link href="http://chvlyl.github.io/blog/2015/11/22/Rcpp"/>
    <updated>2015-11-22T00:00:00-05:00</updated>
    <id>http://chvlyl.github.io//blog/2015/11/22/Rcpp</id>
    <content type="html">&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;Rcpp is a R package that allows to easily incorporate C++ code in R code. Nowadays this package is getting very popular in the R community. If you take a look at the R packsges developed by Hadley Wickham, most of them actually use Rcpp. Code written in C++ generally is much faster than R. This is why many R packages implemented their core functions in C++ with Rcpp.&lt;/p&gt;
+&lt;p&gt;Rcpp is a R package that allows to easily incorporate C++ code in R. Nowadays this package is getting very popular in the R community. If you take a look at the R packsges developed by Hadley Wickham, most of them actually use Rcpp. Code written in C++ generally is much faster than R. This is why many R packages implemented their core functions in C++ with Rcpp.&lt;/p&gt;
 
 &lt;h2 id=&quot;install-rcpp&quot;&gt;Install Rcpp&lt;/h2&gt;
 &lt;p&gt;Rcpp is just a regular R package and thus it can be installed as &lt;code&gt;install.packages(&#39;Rcpp&#39;)&lt;/code&gt;.&lt;/p&gt;
@@ -171,8 +379,58 @@ some R code
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&quot;rcpp-suger&quot;&gt;Rcpp suger&lt;/h2&gt;
-&lt;p&gt;Rcpp has suger version functions that mimic the R functions.&lt;br /&gt;
-1. All the basic arithmetic and logical operatiors are vectorised.&lt;/p&gt;
+&lt;p&gt;Rcpp has suger version functions that mimic the R functions. For details, check the &lt;a href=&quot;http://dirk.eddelbuettel.com/code/rcpp/Rcpp-sugar.pdf&quot;&gt;Rcpp sugar manual&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;All the basic arithmetic and logical operatiors are vectorised.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;NumericVector x;
+NumericVector y;
+NumericVector z = x/y;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;x and y are two vectors. We can get z=x/y as a vector.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Many R functions have been implemented in Rcpp and they can be directly used such as max, min, ifelse etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;include-c-files-in-the-r-package&quot;&gt;Include C++ files in the R package&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;In the R package folder, create the &lt;code&gt;src&lt;/code&gt; folder and put all C++ files in this folder.&lt;/li&gt;
+  &lt;li&gt;In the DESCRIPTION file, add &lt;code&gt;LinkingTo: Rcpp&lt;/code&gt; and &lt;code&gt;Imports: Rcpp&lt;/code&gt;. If Imports already exists, add Rcpp to it.&lt;/li&gt;
+  &lt;li&gt;If Git is used, modify &lt;code&gt;.gitignore&lt;/code&gt; file to ignore the C++ compiled files.&lt;/li&gt;
+  &lt;li&gt;In the &lt;code&gt;R code&lt;/code&gt;, add the roxygen tags (assume the roxygen is used) at the top of your R code:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code&gt;#&#39; @useDynLib thepacakgename
+#&#39; @importFrom Rcpp sourceCpp
+NULL
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that these tags are added to R code, not the C++ code.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code&gt;C++ code&lt;/code&gt;, add following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;Rcpp.h&amp;gt;
+using namespace Rcpp;
+
+// [[Rcpp::export]]
+Some C++ code
+
+
+/*** R
+some R code for testing purpose
+*/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.rcpp.org/book/&quot;&gt;Rcpp book&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adv-r.had.co.nz/Rcpp.html&quot;&gt;Advanced R&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://r-pkgs.had.co.nz/&quot;&gt;R packages&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 </content>
  </entry>
@@ -667,59 +925,35 @@ source bin/activate
  </entry>
  
  <entry>
-   <title>Use virtualenv in Python</title>
-   <link href="http://chvlyl.github.io/blog/2015/09/01/maximal-information-coefficient"/>
-   <updated>2015-09-01T00:00:00-04:00</updated>
-   <id>http://chvlyl.github.io//blog/2015/09/01/maximal-information-coefficient</id>
-   <content type="html">&lt;p&gt;Virtualenv is a package to create isolated Python environments. So you can use different python environments for each project.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The basic problem being addressed is one of dependencies and versions, and indirectly permissions. Imagine you have an application that needs version 1 of LibFoo, but another application requires version 2. How can you use both these applications? If you install everything into /usr/lib/python2.7/site-packages (or whatever your platform’s standard location is), it’s easy to end up in a situation where you unintentionally upgrade an application that shouldn’t be upgraded.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;install-virtualent&quot;&gt;– Install virtualent&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;python
-sudo pip install virtualenv
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;create-a-python-environment&quot;&gt;– Create a Python environment&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;python
-mkdir new_project
-virtualenv --distribute new_project
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;The –distribute is to use distribute package system instead of setuptools. It will install pip in the new virtual environment.  The new_project folder has its own Python and pip in it. All the packages installed globally are also available to the virtualenv environment.&lt;/p&gt;
-
-&lt;h3 id=&quot;activate-the-virtualenv&quot;&gt;– Activate the virtualenv&lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;python
-cd new_project
-source bin/activate
-&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Use deactivate to exit the environment.&lt;/p&gt;
-
-&lt;h3 id=&quot;python-style-guide&quot;&gt;– Python style guide&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0008/&quot;&gt;PEP 0008 Python coding style&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;reference&quot;&gt;– Reference&lt;/h3&gt;
-&lt;ol&gt;
-  &lt;li&gt;The above content was summarized from http://mirnazim.org/writings/python-ecosystem-introduction/&lt;/li&gt;
-&lt;/ol&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>iPython Notebook</title>
+   <title>IPython Notebook</title>
    <link href="http://chvlyl.github.io/blog/2015/08/26/ipython-notebook"/>
    <updated>2015-08-26T00:00:00-04:00</updated>
    <id>http://chvlyl.github.io//blog/2015/08/26/ipython-notebook</id>
-   <content type="html">&lt;h2 id=&quot;install-ipython&quot;&gt;Install iPython&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;
-pip install &quot;ipython[all]&quot;  
-&lt;/code&gt;&lt;/p&gt;
+   <content type="html">&lt;h2 id=&quot;install-anaconda&quot;&gt;Install Anaconda&lt;/h2&gt;
+&lt;p&gt;Anaconda includes a large collection of popular Python packages for scientific computing. It can be download &lt;a href=&quot;http://continuum.io/downloads&quot;&gt;here&lt;/a&gt;. IPython and IPython Notebook have been already included in the Anaconda distribution. So you don’t need to install IPython after Anaconda is installed.&lt;/p&gt;
 
-&lt;h2 id=&quot;install-anaconda&quot;&gt;Install Anaconda&lt;/h2&gt;
-&lt;p&gt;Anaconda includes a large collection of popular Python packages for scientific computing. It can be download &lt;a href=&quot;http://continuum.io/downloads&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can install packages from Anaconda.org:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -c packagename
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you want to install packages from non-Anaconda, you can use pip, which is also included in Anaconda:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install packagename
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;use-r-in-ipython-notebook&quot;&gt;Use R in IPython Notebook&lt;/h2&gt;
+&lt;p&gt;First, you need to install the R kernel:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda install -c r r-irkernel
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then, run the IPython Notebook server:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipython notebook
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In IPython notebook, you can create a R notebook.&lt;/p&gt;
 
 </content>
  </entry>
@@ -964,150 +1198,6 @@ both product ions and the remaining parent ion. Therefore, metabolites with the 
    <updated>2015-04-02T00:00:00-04:00</updated>
    <id>http://chvlyl.github.io//blog/2015/04/02/iOS-APP-development</id>
    <content type="html">&lt;p&gt;https://github.com/futurice/ios-good-practices&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Recommended statistics text books by UC  Berkeley SGSA</title>
-   <link href="http://chvlyl.github.io/blog/2015/04/01/statistics-book"/>
-   <updated>2015-04-01T00:00:00-04:00</updated>
-   <id>http://chvlyl.github.io//blog/2015/04/01/statistics-book</id>
-   <content type="html">&lt;p&gt;I found a list of &lt;a href=&quot;https://www.stat.berkeley.edu/mediawiki/index.php/Recommended_Books&quot;&gt;statistics text books&lt;/a&gt; from UC Berkeley SGSA.
-I moditifed this list and added some books that I think are quite good.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&quot;applied-statistics&quot;&gt;Applied Statistics&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;All of Statistics: A Concise Course in Statistical Inference by Larry Wasserman&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;categorical-data&quot;&gt;Categorical Data&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;&#39;’Categorical Data Analysis’’ by Alan Agresti&lt;/dt&gt;
-      &lt;dd&gt;Well-written, go-to reference for all things involving categorical data.&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;All of Nonparametric Statistics (Springer Texts in Statistics) by Larry Wasserman&lt;/p&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;=== Linear models ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Generalized Linear Models’’ by McCullagh and Nelder&lt;/dt&gt;
-  &lt;dd&gt;Theoretical take on GLMs. Does not have a lot of concrete data examples.
-* ‘‘Statistical Models’’ by David A. Freedman&lt;/dd&gt;
-  &lt;dd&gt;…Berkeley classic!
-* ‘‘Linear Models with R’’ by Julian Faraway&lt;/dd&gt;
-  &lt;dd&gt;Undergraduate-level textbook, has been used previously as a textbook for Stat 151A. Appropriate for beginners to R who would like to learn how to use linear models in practice. Does not cover GLMs.&lt;/dd&gt;
-  &lt;dt&gt;=== Experimental Design ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Design of Comparative Experiments’’ by RA Bailey&lt;/dt&gt;
-  &lt;dd&gt;Classic, approachable text, free for download: http://www.maths.qmul.ac.uk/~rab/DOEbook/&lt;/dd&gt;
-  &lt;dt&gt;=== Machine Learning ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘The Elements of Statistical Learning’’ by Hastie, Tibshirani, and Friedman.&lt;/dt&gt;
-  &lt;dd&gt;Comprehensive but superficial coverage of all modern machine learning techniques for handling data. Introduces PCA, EM algorithm, k-means/hierarchical clustering, boosting, classification and regression trees, random forest, neural networks, etc. …the list goes on.&lt;/dd&gt;
-  &lt;dd&gt;You can download the book here [http://www-stat.stanford.edu/~tibs/ElemStatLearn/].
-* “Pattern Recognition and Machine Learning” by Bishop.
-* “Probabilistic Graphical Models” by Koller and Friedman.&lt;/dd&gt;
-  &lt;dt&gt;== Theoretical Statistics ==&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Theory of Point Estimation’’ by Lehmann and Casella&lt;/dt&gt;
-  &lt;dd&gt;A good reference for Stat 210A.
-* ‘‘Testing Statistical Hypotheses’’ by Lehmann and Romano&lt;/dd&gt;
-  &lt;dd&gt;A good reference for Stat 210A.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;== Probability ==&lt;/p&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;=== Undergraduate Level Probability ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Probability’’ by Jim Pitman&lt;/dt&gt;
-  &lt;dd&gt;What the majority of Berkeley undergraduates use to learn probability.
-* ‘‘Introduction to Probability Theory’’ by Hoel, Port and Stone&lt;/dd&gt;
-  &lt;dd&gt;This text is more mathematically inclined than Pitman’s, and more concise, but not as good at teaching probabilistic thinking.&lt;/dd&gt;
-  &lt;dt&gt;=== Measure Theoretic Probability ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Probability: Theory and Examples’’ by Rick Durrett&lt;/dt&gt;
-  &lt;dd&gt;This is the standard text for learning measure theoretic probability. Its style of presentation can be confusing at times, but the aim is to present the material in a manner that emphasizes understanding rather than mathematical clarity. It has become the standard text in Stat 205A and Stat 205B for good reason. Online [http://www.math.duke.edu/~rtd/PTE/pte.html here].
-* ‘‘Foundations of Modern Probability’’ by Olav Kallenberg&lt;/dd&gt;
-  &lt;dd&gt;This epic tome is the ultimate research level reference for fundamental probability. It starts from scratch, building up the appropriate measure theory and then going through all the material found in 205A and 205B before powering on through to stochastic calculus and a variety of other specialized topics. The author put much effort into making every proof as concise as possible, and thus the reader must put in a similar amount of effort to understand the proofs. This might sound daunting, but the rewards are great. This book has sometimes been used as the text for 205A.
-* ‘‘Probability with Martingales’’ by David Williams&lt;/dd&gt;
-  &lt;dd&gt;This delightful and entertaining book is the fastest way to learn measure theoretic probability, but far from the most thorough. A great way to learn the essentials.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;=== Stochastic Calculus ===
-Stochastic Calculus is an advanced topic that interested students can learn by themselves or in a reading group. There are three classic texts:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&#39;’Continuous Martingales and Brownian Motion’’ by Revuz and Yor&lt;/li&gt;
-  &lt;li&gt;&#39;’Diffusions, Markov Processes and Martingales (Volumes 1 and 2)’’ by Rogers and Williams&lt;/li&gt;
-  &lt;li&gt;&#39;’Brownian Motion and Stochastic Calculus’’ by Karatzas and Shreve&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;=== Random Walk and Markov Chains ===
-These are indispensable tools of probability. Some nice references are&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&#39;’Markov Chain and Mixing Times’’ by Levin, Peres and Wilmer. Online  [http://pages.uoregon.edu/dlevin/MARKOV/ here].&lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;&#39;’Markov Chains’’ by Norris&lt;/dt&gt;
-      &lt;dd&gt;Staring with elementary examples, this book gives very good hints on how to think about Markov Chains&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;dl&gt;
-      &lt;dt&gt;&#39;’Continuous time Markov Processes’’ by Liggett&lt;/dt&gt;
-      &lt;dd&gt;This is a really great book. Ngoc is keeping the library copy - and she is looking for someone to read the book with. :)&lt;/dd&gt;
-    &lt;/dl&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;== Mathematics == &lt;/dt&gt;
-  &lt;dt&gt;=== Convex Optimization ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Convex Optimization’’ by Stephen Boyd and Lieven Vandenberghe.&lt;/dt&gt;
-  &lt;dd&gt;You can download the book here [http://www.stanford.edu/~boyd/cvxbook/].&lt;/dd&gt;
-  &lt;dt&gt;=== Linear Algebra ===&lt;/dt&gt;
-  &lt;dt&gt;* “The Matrix Cookbook” by Kaare Brandt Petersen, Michael Syskind Pedersen&lt;/dt&gt;
-  &lt;dd&gt;I can’t say it better than they do: “Matrix identities, relations and approximations. A desktop reference for quick overview of mathematics of matrices.”&lt;/dd&gt;
-  &lt;dd&gt;Download here http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274
-* “Matrix Analysis” and “Topics in Matrix Analysis” by Horn and Johnson&lt;/dd&gt;
-  &lt;dd&gt;Second book is more advanced than the first. Everything you need to know about matrix analysis.&lt;/dd&gt;
-  &lt;dt&gt;=== Convex Analysis ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘A course in Convexity’’ by Barvinok.&lt;/dt&gt;
-  &lt;dd&gt;A great book for self study and reference. It starts with the basis of convex analysis, then moves on to duality, Krein-Millman theorem, duality, concentration of measure, ellipsoid method and ends with Minkowski bodies, lattices and integer programming. Fairly theoretical and has many fun exercises.&lt;/dd&gt;
-  &lt;dt&gt;=== Measure Theory ===&lt;/dt&gt;
-  &lt;dt&gt;* Real Analysis and Probability - Dudley&lt;/dt&gt;
-  &lt;dd&gt;Very comprehensive. 
-* Probability and Measure Theory - Ash&lt;/dd&gt;
-  &lt;dd&gt;Nice and easy to digest. Good as companion for 205A&lt;/dd&gt;
-  &lt;dt&gt;=== Combinatorics ===&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Enumerative Combinatorics Vol I and II’’ - Richard Stanley [http://www-math.mit.edu/~rstan/ec/].&lt;/dt&gt;
-  &lt;dd&gt;There’s also a course on combinatorics this semester in the math department called Math249: Algebraic Combinatorics. Despite the scary “algebraic” prefix it’s really fun.&lt;/dd&gt;
-  &lt;dt&gt;== Computational Biology ==&lt;/dt&gt;
-  &lt;dt&gt;* ‘‘Statistical Methods in Bioinformatics’’ by Ewens and Grant&lt;/dt&gt;
-  &lt;dd&gt;Great overview of sequencing technology for the unacquainted.
-* ‘‘Computational Genome Analysis: An Introduction’’ by Deonier, Tavare, and Waterman&lt;/dd&gt;
-  &lt;dd&gt;Great R code examples from computational biology. Discusses the basics, such as the greedy algorithm, etc.&lt;/dd&gt;
-&lt;/dl&gt;
-
-&lt;p&gt;=== Population Genetics ===
-* “Probability Models for DNA Sequence Evolution” by Durrett
-* “Mathematical Population Genetics” by Ewens&lt;/p&gt;
-
-&lt;dl&gt;
-  &lt;dt&gt;== Computer Science ==&lt;/dt&gt;
-  &lt;dt&gt;=== Numerical Analysis ===&lt;/dt&gt;
-  &lt;dt&gt;* Numerical Analysis by Burden and Faires&lt;/dt&gt;
-  &lt;dd&gt;This book is a good overview of numerical computation methods for everything you’d need to know about implementing most computational methods you’ll run into in statistics. It is filled with pseudo-code  but does use Maple as it’s exemplary language sometimes. It has been a great resource for the Computational Statistics courses (243/244). Depending on what happens with this course, this may be a good place to look when you’re &lt;b&gt;lost in computation&lt;/b&gt;.
-=== Algorithms ===
-* ‘‘Introduction to Algorithms’’, Third Edition, by Cormen, Leiserson, Rivest, and Stein.&lt;/dd&gt;
-  &lt;dd&gt;Amazon [http://www.amazon.com/Introduction-Algorithms-Third-Thomas-Cormen/dp/0262033844/] Google Books [http://books.google.com/books?id=VK9hPgAACAAJ&amp;amp;dq=9780262033848&amp;amp;hl=en&amp;amp;ei=McKXTfbaBOXliAKpxaCBCQ&amp;amp;sa=X&amp;amp;oi=book_result&amp;amp;ct=result&amp;amp;resnum=1&amp;amp;ved=0CDwQ6AEwAA]&lt;/dd&gt;
-  &lt;dd&gt;MIT OpenCourseWare 6.046J / 18.410J ‘‘Introduction to Algorithms’’ (SMA 5503) was taught by one of the authors, Prof. Charles Leiserson, in 2005. This is an undergraduate course and this book was used as the textbook. [http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/]
-* ‘‘Algorithm Design’‘[http://www.amazon.com/dp/0321295358/ref%3Dasc_df_03212953581947560/%3Ftag%3Daskcom05el-20%26creative%3D394997%26creativeASIN%3D0321295358%26linkCode%3Dasn&amp;amp;tag=appmatic-20], by Jon Kleinberg and Éva Tardos.&lt;/dd&gt;
-&lt;/dl&gt;
-
 </content>
  </entry>
  
@@ -1417,9 +1507,7 @@ contain the true parameter.&lt;/li&gt;
    <updated>2015-03-09T00:00:00-04:00</updated>
    <id>http://chvlyl.github.io//blog/2015/03/09/multiple-testing-problem</id>
    <content type="html">&lt;h2 id=&quot;what-is-multiple-testing-problem&quot;&gt;What is multiple testing problem?&lt;/h2&gt;
-&lt;p&gt;I found this interesting comic from XKCD:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://imgs.xkcd.com/comics/significant.png&quot; alt=&quot;Multiple testing problem&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I found one interesting comic from XKCD about &lt;a href=&quot;http://imgs.xkcd.com/comics/significant.png&quot;&gt;Multiple testing problem&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Basically, the comic says that the scientists want to test the association
 between jelly beans and acne with some test. In each test, they control 
@@ -1498,18 +1586,18 @@ at &lt;script type=&quot;math/tex&quot;&gt;\alpha&lt;/script&gt; level so that t
   1. Go to &lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;.&lt;br /&gt;
   2. Create an account in GitHub.&lt;br /&gt;
   3. Create a repository username.github.io, replacing username with your GitHub username.&lt;br /&gt;
-  4. I used the website templates from &lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot;&gt;Jonathan Mcglone&lt;/a&gt; and &lt;a href=&quot;http://yihui.name/&quot;&gt;Yihui&lt;/a&gt;.&lt;br /&gt;
+  4. I used the website templates from &lt;a href=&quot;http://jmcglone.com/guides/github-pages/&quot;&gt;Jonathan Mcglone&lt;/a&gt; and &lt;a href=&quot;http://yihui.name/&quot;&gt;Yihui Xie&lt;/a&gt;.&lt;br /&gt;
   5. Copy the template into your github repository. You have to learn some github basics about how to push a file into the respository.&lt;/p&gt;
 
 &lt;p&gt;Step 2: setup the custom domain with GoDaddy:&lt;br /&gt;
-  1. Go to &lt;a href=&quot;www.godaddy.com&quot;&gt;GoDaddy&lt;/a&gt; and buy my own domain name statchen.com.&lt;br /&gt;
+  1. Go to &lt;a href=&quot;www.godaddy.com&quot;&gt;GoDaddy&lt;/a&gt; and buy your own domain name (mine is statchen.com).&lt;br /&gt;
   2. Go to GoDaddy &lt;strong&gt;Zone File Editor&lt;/strong&gt;:&lt;br /&gt;
   3. At &lt;strong&gt;A(Host)&lt;/strong&gt; section add &lt;code&gt;Host:@ Points to: 192.30.252.153&lt;/code&gt;  and &lt;code&gt;Host:@ Points to: 192.30.252.154&lt;/code&gt;&lt;br /&gt;
   4. At &lt;strong&gt;CNAME (Alias)&lt;/strong&gt; section add &lt;code&gt;Host:www to: chvlyl.github.io&lt;/code&gt;&lt;br /&gt;
-  5. Go to GitHub, add a file called CNAME with content statchen.com&lt;br /&gt;
+  5. Go to GitHub, add a file called CNAME with content &lt;code&gt;statchen.com&lt;/code&gt;&lt;br /&gt;
   6. I set the link in the layout to my GiHub website link chvlyl.github.io and this caused some problems. I changed the link to statchen.com and then problem was solved.&lt;/p&gt;
 
-&lt;p&gt;Step 3: modify the index files from the template:&lt;br /&gt;
+&lt;p&gt;Step 3: modify the index.md files from the template (this is the main website):&lt;br /&gt;
   1. In the YAML header of the .md file, there must be a space after semicolon.&lt;br /&gt;
   Wrong:&lt;br /&gt;
    &lt;code&gt;layout:default&lt;/code&gt;&lt;br /&gt;
@@ -1523,8 +1611,12 @@ git add README.md
 git commit -m ‘Add README.md’
 git push -u origin master&lt;/p&gt;
 
-&lt;p&gt;Step 5: Jekyll
-Run &lt;code&gt;jekyll serve --detach&lt;/code&gt; in the website home folder to setup the local server.&lt;/p&gt;
+&lt;p&gt;Step 5: run Jekyll:&lt;br /&gt;
+Run &lt;code&gt;jekyll serve --detach&lt;/code&gt; in the website home folder to setup the local server. You can use &lt;code&gt;http://127.0.0.1:4000/&lt;/code&gt; to access the website on the local web browser.&lt;/p&gt;
+
+&lt;p&gt;Step 6: add new pages on the main website:&lt;br /&gt;
+In the &lt;code&gt;_layouts&lt;/code&gt; folder, edit the layout html file you use, for example &lt;code&gt;default.html&lt;/code&gt;.&lt;/p&gt;
+
 </content>
  </entry>
  
@@ -1533,9 +1625,9 @@ Run &lt;code&gt;jekyll serve --detach&lt;/code&gt; in the website home folder to
    <link href="http://chvlyl.github.io/blog/2015/03/08/github-basics"/>
    <updated>2015-03-08T00:00:00-05:00</updated>
    <id>http://chvlyl.github.io//blog/2015/03/08/github-basics</id>
-   <content type="html">&lt;h4 id=&quot;basic-workflow&quot;&gt;Basic workflow&lt;/h4&gt;
+   <content type="html">&lt;h3 id=&quot;basic-workflow&quot;&gt;Basic workflow&lt;/h3&gt;
 &lt;ol&gt;
-  &lt;li&gt;Create a branch: anything in the master branch is always deployable. when working on a feature or a fix, create a new branch with descriptive names.&lt;/li&gt;
+  &lt;li&gt;Create a branch: anything in the master branch is always deployable. When working on a feature or a fix, create a new branch with descriptive names. That is, consider master branch as a stable version of your software and other branches as the development or test version. Work new features only on the development branch and merge into master branch when you are sure that the software is working as desired.&lt;/li&gt;
   &lt;li&gt;Add commits: This keeps track of the progress as you work on a feature branch.&lt;/li&gt;
   &lt;li&gt;Open a pull request&lt;/li&gt;
   &lt;li&gt;Deploy&lt;/li&gt;
@@ -1581,8 +1673,6 @@ git push origin master
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;5&lt;/p&gt;
-
 </content>
  </entry>
  
@@ -1590,7 +1680,7 @@ git push origin master
 </feed>
 
 <footer>
-  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
 </footer>
 </div>
 </body>

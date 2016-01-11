@@ -37,6 +37,7 @@
   <ul class="nav pills">
   <li><a href="/">Home</a></li>
   <li><a href="/cv/">CV</a></li>
+  <li><a href="/software/">Software</a></li>
   <li><a href="/blog/">Blog</a></li>
 </ul>
 <h1>GitHub personal website setup</h1>
@@ -49,18 +50,18 @@
   1. Go to <a href="https://github.com/">GitHub</a>.<br />
   2. Create an account in GitHub.<br />
   3. Create a repository username.github.io, replacing username with your GitHub username.<br />
-  4. I used the website templates from <a href="http://jmcglone.com/guides/github-pages/">Jonathan Mcglone</a> and <a href="http://yihui.name/">Yihui</a>.<br />
+  4. I used the website templates from <a href="http://jmcglone.com/guides/github-pages/">Jonathan Mcglone</a> and <a href="http://yihui.name/">Yihui Xie</a>.<br />
   5. Copy the template into your github repository. You have to learn some github basics about how to push a file into the respository.</p>
 
 <p>Step 2: setup the custom domain with GoDaddy:<br />
-  1. Go to <a href="www.godaddy.com">GoDaddy</a> and buy my own domain name statchen.com.<br />
+  1. Go to <a href="www.godaddy.com">GoDaddy</a> and buy your own domain name (mine is statchen.com).<br />
   2. Go to GoDaddy <strong>Zone File Editor</strong>:<br />
   3. At <strong>A(Host)</strong> section add <code>Host:@ Points to: 192.30.252.153</code>  and <code>Host:@ Points to: 192.30.252.154</code><br />
   4. At <strong>CNAME (Alias)</strong> section add <code>Host:www to: chvlyl.github.io</code><br />
-  5. Go to GitHub, add a file called CNAME with content statchen.com<br />
+  5. Go to GitHub, add a file called CNAME with content <code>statchen.com</code><br />
   6. I set the link in the layout to my GiHub website link chvlyl.github.io and this caused some problems. I changed the link to statchen.com and then problem was solved.</p>
 
-<p>Step 3: modify the index files from the template:<br />
+<p>Step 3: modify the index.md files from the template (this is the main website):<br />
   1. In the YAML header of the .md file, there must be a space after semicolon.<br />
   Wrong:<br />
    <code>layout:default</code><br />
@@ -74,13 +75,17 @@ git add README.md
 git commit -m ‘Add README.md’
 git push -u origin master</p>
 
-<p>Step 5: Jekyll
-Run <code>jekyll serve --detach</code> in the website home folder to setup the local server.</p>
+<p>Step 5: run Jekyll:<br />
+Run <code>jekyll serve --detach</code> in the website home folder to setup the local server. You can use <code>http://127.0.0.1:4000/</code> to access the website on the local web browser.</p>
+
+<p>Step 6: add new pages on the main website:<br />
+In the <code>_layouts</code> folder, edit the layout html file you use, for example <code>default.html</code>.</p>
+
 
 </div>
 
 <footer>
-  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2005 - 2015 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2015-11-24 22:11:06</span></small></p>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
 </footer>
 </div>
 </body>
