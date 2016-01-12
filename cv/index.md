@@ -26,6 +26,9 @@ title: Eric Z Chen
 * Linux 
 * Parallel computing in clusters
 
+## Patent
+[Methods for analyzing massively parallel sequencing data for noninvasive prenatal diagnosis ](http://www.google.com/patents/EP2825991A4?cl=en)
+
 ## Publications ([Google Scholar Citation](https://scholar.google.com/citations?hl=en&user=7mrZzpYAAAAJ&view_op=list_works&sortby=pubdate))  
 12. Lewis JD\*, **Chen EZ**\*, Baldassano RN, Otley AR, Griffiths AM, Lee D, Bittinger K, Bailey A, Friedman ES, Hoffmann C, Albenberg L, Sinha R, Compher C, Gilroy E, Nessel L, Grant A, Chehoud C, Li H, Wu GD, Bushman FD: Inflammation, Antibiotics, and Diet as Environmental Stressors of the Gut Microbiome in Pediatric Crohn's Disease. Cell Host Microbe 2015, 18:489–500. (* Co-first authors)
 
