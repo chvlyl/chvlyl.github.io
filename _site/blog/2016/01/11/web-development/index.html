@@ -1,5 +1,16 @@
 <!doctype html>
 <html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72324111-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 <head>
   <meta charset="utf-8">
   <title>Eric Z Chen</title>
@@ -83,10 +94,329 @@
   <li>Put relevant ads on your website.</li>
 </ol>
 
+<h2 id="part-2-basic-web-development">Part 2: Basic web development</h2>
+
+<h3 id="buy-a-domain-name-and-hosting-server">Buy a domain name and hosting server</h3>
+
+<h2 id="part-3--html">Part 3:  HTML</h2>
+
+<h3 id="a-usefull-website-for-code-debug">A usefull website for code debug</h3>
+<ol>
+  <li>Use www.jsbin.com for HTML code visualization.</li>
+</ol>
+
+<h3 id="general-structure-of-html-page">General structure of HTML page</h3>
+<ol>
+  <li>The first line is: <code>&lt;!doctype html&gt;</code> <br />
+This is to tell the browser that this is a HTML file.</li>
+  <li>The HTML file includes paired tages such as</li>
+</ol>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;&lt;div&gt;&lt;h&gt;&lt;/h&gt;&lt;/div&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p><code>/tagname</code> means closing tag. <code>&lt;div&gt;</code> is the tag for division of the page and <code>&lt;h&gt;</code> is the tag for paragraph.</p>
+
+<ol>
+  <li>
+    <p>Header tag 
+<code>&lt;h1&gt;</code> is the biggest and <code>&lt;h6&gt;</code> is the smallest. <code>&lt;h7&gt;</code> will go back to the normal text size.</p>
+  </li>
+  <li>
+    <p>Paragraph tag
+HTML files ignore line break and multiple spaces. Therefore text should be put into &lt;p&gt; tag. There is padding space between paragraphs. If you want a line break in the paragraph, use the <br /> tag, which is a self-closing tag. Use &lt;hr /&gt; to add a horizontal line.</p>
+  </li>
+  <li>
+    <p>Text formatting tag
+-. <code>&lt;strong&gt;</code> is for bold text. Do not use <code>&lt;b&gt;</code><br />
+-. <code>&lt;italics&gt;</code> is for italic text<br />
+-. <code>&lt;u&gt;</code> for underline text<br />
+-. <code>&lt;strike&gt;</code> for strikethrough text</p>
+  </li>
+  <li>
+    <p>Unordered list tag
+<code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>: <code>&lt;li&gt;</code> is for each item</p>
+  </li>
+  <li>
+    <p>Ordered list tag
+<code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code></p>
+  </li>
+  <li>
+    <p>Image
+<code>&lt;img src="figure location" width="200" height="500" /&gt;</code>. This is also a self-closing tag. The width and height is measured in pixel</p>
+  </li>
+  <li>
+    <p>Forms</p>
+  </li>
+</ol>
+
+<pre><code>&lt;form&gt;
+&lt;input type="text" value="example" placeholder="disappear automatically" /&gt; 
+&lt;input type="radio" name="color"/&gt; 
+&lt;input type="checkbox"/&gt; 
+&lt;textarea&gt;&lt;/textarea&gt;
+&lt;select&gt;&lt;option&gt;&lt;/option&gt;&lt;/select&gt;
+&lt;input type="submit" value="Click here"/&gt; 
+&lt;/form&gt;
+</code></pre>
+
+<p>-. <code>&lt;input&gt;</code> is self-closing. 
+-. <code>&lt;textarea&gt;</code> is bigger than <code>&lt;input&gt;</code>. 
+-. <code>&lt;select&gt;</code> and <code>&lt;option&gt;</code> are for drop-down list.
+-. <code>&lt;input type="radio" /&gt;</code> is for button selection. Use “name” to group the options so that only one button can be selected.
+-. <code>&lt;input type="radio" /&gt;</code> is for multiple selections.
+-. <code>&lt;input type="submit"&gt;</code> is for submitting the form. This will gererate a string. Use “name” to give the variable in the form a name. Need PHP or JavaScript to process the form.</p>
+
+<ol>
+  <li>
+    <p>Links
+<code>&lt;a href="link"&gt;text&lt;/a&gt;</code> for hyperlink reference.<br />
+<code>&lt;a name="anchor"/&gt;</code> is for anchor in the page.  <code>&lt;a href="#anchor"&gt;text&lt;/a&gt;</code> will go to that anchor.</p>
+  </li>
+  <li>
+    <p>Tables</p>
+  </li>
+</ol>
+
+<pre><code>&lt;Table&gt;
+&lt;tr&gt;&gt;&lt;th&gt;&lt;/th&gt;&lt;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;tr&gt;
+&lt;/Table&gt;
+</code></pre>
+
+<p><code>&lt;tr&gt;</code> is for a new table row. <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> are for table header and table data respectively.</p>
+
+<ol>
+  <li>
+    <p>HTML entities
+<code>&amp;alt:</code>` is for “less than” sign &lt;. Check <a href="http://www.w3schools.com/html/html_entities.asp">http://www.w3schools.com</a> for more.</p>
+  </li>
+  <li>
+    <p>Embed another page
+<code>&lt;iframe src="youtubelink"&gt;&lt;iframe&gt;</code></p>
+  </li>
+</ol>
+
+<h2 id="part-3--css">Part 3:  CSS</h2>
+
+<p>CSS is the style of the website</p>
+
+<h3 id="inline-css">Inline CSS</h3>
+<ol>
+  <li>Inline CSS is not recommonded. 
+<code>&lt;p style="color:blue;font-size:200%"&gt;</code></li>
+</ol>
+
+<h3 id="internal-css">Internal CSS</h3>
+
+<ol>
+  <li>Internal CSS</li>
+</ol>
+
+<pre><code>&lt;head&gt;
+&lt;style type="text/css"&gt;
+	p{
+	color:green;
+	}
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+
+<p>The <code>p{}</code> in <code>&lt;style&gt;</code> will add style to the text in &lt;p&gt;</p>
+
+<ol>
+  <li>Class
+If you want to add style to a specific text but not all text with the same tag, you can use class. Define a class in the body such as <code>&lt;p class="underline large"&gt;&lt;/p&gt;</code>. Then in the CSS style define:</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.large{
+		font-size:300%;
+	}
+	.underline{
+		text-decoration:underline;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<p>Use <code>.</code> to refer to the class. In this way, the CSS style will only be added to the <code>&lt;p&gt;</code> tag with <code>large</code> class. Multiple classes can be added to one tag.</p>
+
+<ol>
+  <li>Id
+Use <code>class</code> for multiple elements (the class will be used multiple times) and <code>id</code> for just one element (the id will be used only once). In CSS style, use <code>#</code> to refer to the id.</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	#large{
+		font-size:300%;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Div
+A division of the page. In the body, you can divide the page into different sections. Use class to define different divs.</li>
+</ol>
+
+<pre><code>&lt;div class="bluebox"&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Then define the properties of each section:</p>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		background-color:blue;
+		width:100px;
+		height:300px;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Color
+Use <a href="http://html-color-codes.info/">HTML color code</a> for color code information. Remeber to put <code>#</code> before the code.</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		background-color:#FFFFFF;
+		width:100px;
+		height:300px;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Floating</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		float:left;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<p>Add an empty div between the floating figures and text t separate them.</p>
+
+<pre><code>&lt;body&gt;
+&lt;div class="clear"&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.clear{
+		clear:both;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Positioning
+Use <code>left:100px</code> Move to the right 100px because it add 100px margin to the left and move it to the right. Use <code>z-index</code> to set which figure is on the top of the other. <code>position:fixed</code> will fix the figure in the browser.</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		position:relative
+		left:100px
+		z-index:1
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Margin
+Add margin to the top, right, bottom, left (closewise order).</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		margin:10px 20px 30px 40px;
+		margin-left:10px;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Padding
+Padding is the space between the text and background box.</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		padding:10px 20px 30px 40px;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<p>Some of the tags such as <code>&lt;p&gt;</code> has it own buit-in padding and margin settings. Setting the padding will add extra space to the default padding space. Also, adding padding will add to the width and height of the div setting.</p>
+
+<ol>
+  <li>Borders
+Use <code>border: width color type</code> to set the width, color and type. Use <code>border-radius</code> to make the round corner.</li>
+</ol>
+
+<pre><code>&lt;style type="text/css"&gt;
+	.bluebox{
+		border:5px balck solid;
+		border-radius:10px;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Fonts</li>
+</ol>
+
+<p>Check <a href="http://www.w3schools.com/css/css_font.asp">CSS Font</a> for more information. In the font-family, the latter options is the backup for the previous options so that if the browser can not the find the previous font, it will use the latter one.</p>
+
+<pre><code>&lt;style type="text/css"&gt;
+	p {
+		font-family: "Times New Roman", Times, serif;
+		font-weight:bold;
+		font-style:italic;
+		color:green;
+		font-size:200%;
+		text-align:center;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Links</li>
+</ol>
+
+<p>Change the color of the visited link and the size of the link.</p>
+
+<pre><code>&lt;style type="text/css"&gt;
+	a:visited{
+		color:green;
+	}
+	a:hover{
+		font-size:50px;
+	}
+&lt;/style&gt;
+</code></pre>
+
+<ol>
+  <li>Container
+Put the whole page in the container so that the style of whole page can be controlled.</li>
+</ol>
+
+<pre><code>&lt;body&gt;
+&lt;div id="container"&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
 </div>
 
 <footer>
-  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 16:18:45</span></small></p>
+  <p><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2014 - 2016 by <a href="http://statchen.com/">Eric Z Chen</a> | <span class="label label-info">2016-01-11 22:33:54</span></small></p>
 </footer>
 </div>
 </body>
