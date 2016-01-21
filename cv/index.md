@@ -5,14 +5,19 @@ title: Eric Z Chen
 
 ## Education     
 * 2011-now, PhD student in Genomics and Computational Biology, University of Pennsylvania  
-* 2009-2011, M.Phil in Bioinformatics, The Chinese University of Hong Kong
-* 2008-2009, Intern, Institute of Genetics and Developmental Biology Chinese Academy of Sciences
+Thesis: Statistical methods for microbiome data analysis
+* 2009-2011, M.Phil in Bioinformatics, The Chinese University of Hong Kong  
+Thesis: Development of bioinformatics algorithms for trisomy 13 and 18 detection by next generation sequencing of maternal plasma DNA
+* 2008-2009, Intern, Institute of Genetics and Developmental Biology Chinese Academy of Sciences  
 * 2004-2008, BS in Biology, University of Science and Technology of China  
+Thesis: ChIP-Seq data analysis 
 
 
 ## Teaching Experience  
-* TA for GCB535 Introduction to Bioinformatics 2015 Fall  
+* TA for GCB535 Introduction to Bioinformatics 2015 Fall
+	- Designed course materials and taught computation labs for Linux, R, Python and popular bioinformatics tools
 * TA for GCB535 Introduction to Bioinformatics 2016 Fall  
+    - Designed course materials and taught Linux, R, Python, machine learning with Scikit-learn and popular bioinformatics tools
 
 ## Reviewer Experience
 * PLoS One   
@@ -21,13 +26,14 @@ title: Eric Z Chen
 * Applied Soft Computing  
 * IEEE/ACM Transactions on Computational Biology and Bioinformatics
 
-## Computing Skill
-* Programming language: R, Python, Perl, Java, C++, bash
+## Computing Skills
+* Programming language: R, Python, Java, C++, bash
+* Web development: HTML, CSS, Bootstrap
 * Linux 
-* Parallel computing in clusters
+* Parallel computing in HPC clusters
 
 ## Patent
-[Methods for analyzing massively parallel sequencing data for noninvasive prenatal diagnosis ](http://www.google.com/patents/EP2825991A4?cl=en)
+* [Methods for analyzing massively parallel sequencing data for noninvasive prenatal diagnosis ](http://www.google.com/patents/EP2825991A4?cl=en)
 
 ## Publications ([Google Scholar Citation](https://scholar.google.com/citations?hl=en&user=7mrZzpYAAAAJ&view_op=list_works&sortby=pubdate))  
 12. Lewis JD\*, **Chen EZ**\*, Baldassano RN, Otley AR, Griffiths AM, Lee D, Bittinger K, Bailey A, Friedman ES, Hoffmann C, Albenberg L, Sinha R, Compher C, Gilroy E, Nessel L, Grant A, Chehoud C, Li H, Wu GD, Bushman FD: Inflammation, Antibiotics, and Diet as Environmental Stressors of the Gut Microbiome in Pediatric Crohn's Disease. Cell Host Microbe 2015, 18:489–500. (* Co-first authors)
