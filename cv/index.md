@@ -4,7 +4,7 @@ title: Eric Z Chen
 ---
 
 ## Education     
-* 2011-now, PhD student in Genomics and Computational Biology, University of Pennsylvania  
+* 2011-2016, PhD in Bioinformatics, University of Pennsylvania  
 	- Thesis: Statistical methods for microbiome data analysis
 * 2009-2011, M.Phil in Bioinformatics, The Chinese University of Hong Kong  
 	- Thesis: Development of bioinformatics algorithms for trisomy 13 and 18 detection by next generation sequencing of maternal plasma DNA
