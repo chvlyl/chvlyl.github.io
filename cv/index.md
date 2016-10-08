@@ -14,9 +14,9 @@ title: Eric Z Chen
 
 
 ## Teaching Experience  
-* TA for GCB535 Introduction to Bioinformatics 2015 Fall
+* TA for GCB535 Introduction to Bioinformatics 2015 Spring
 	- Designed course materials and taught computation labs for Linux, R, Python and popular bioinformatics tools
-* TA for GCB535 Introduction to Bioinformatics 2016 Fall  
+* TA for GCB535 Introduction to Bioinformatics 2016 Spring  
     - Designed course materials and taught Linux, R, Python, machine learning with Scikit-learn and popular bioinformatics tools
 
 ## Reviewer Experience
@@ -31,6 +31,11 @@ title: Eric Z Chen
 * Web development: HTML, CSS, Bootstrap
 * Linux 
 * Parallel computing in HPC clusters
+
+## Certificates
+* Passed CFA (Chartered Financial Analyst) Level 1 exam
+* Big Data and Hadoop Essentials (Udemy)
+* Big Data Basics: Hadoop, MapReduce, Hive, Pig, & Spark (Udemy)
 
 ## Patent
 * [Methods for analyzing massively parallel sequencing data for noninvasive prenatal diagnosis ](http://www.google.com/patents/EP2825991A4?cl=en)
