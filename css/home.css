@@ -1,3 +1,27 @@
+  .container > footer p , .postheader > a{
+    text-align: center;
+  }
+  
+  .date {
+    text-align: center;
+    height: 30px;
+    color:#bfbfbf;
+    margin-bottom: 10px;
+  }
+  
+  /* Specify class=linenums on a pre to get line numbering */
+  ol.linenums {
+    margin: 0 0 0 33px; /* IE indents via margin-left */
+  } 
+  
+  ol.linenums li {
+    padding-left: 12px;
+    color: #bebec5;
+    line-height: 18px;
+    text-shadow: 0 1px 0 #fff;
+  }
+
+
 @media screen {
 .container {
 width:auto;
@@ -16,6 +40,7 @@ font-weight:700;
 }
 
 html {
+background-color: #F3F0F0;
 font-size:100%;
 -webkit-text-size-adjust:100%;
 -ms-text-size-adjust:100%;
@@ -55,7 +80,7 @@ font-family:Trebuchet,"Trebuchet MS",Tahoma,"Lucida Grande","Lucida Sans Unicode
 font-size:17px;
 line-height:30px;
 color:#555;
-background-color:#fff;
+background-color: #F3F0F0;
 margin:0;
 }
 
