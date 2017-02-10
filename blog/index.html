@@ -3,13 +3,18 @@ layout: home
 title: 
 ---
 
+
+
 <ul class="listing">
-{% for post in site.posts %}
-  {% capture y %}{{post.date | date:"%Y"}}{% endcapture %}
+{% for cat in site.categories %}
+  <p class="listing-seperator" id="{{ cat[0] }}">{{ cat[0]|upcase }}</p>
+{% for post in cat[1] %}
   <li class="listing-item">
-    <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-    <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+  <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
   </li>
+{% endfor %}
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;</h1>
 {% endfor %}
 </ul>
 

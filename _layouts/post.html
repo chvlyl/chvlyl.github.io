@@ -10,4 +10,17 @@ layout: home
 </script>
 <div class="post">
   {{ content }}
+
+  {% if page.categories %}
+  <span class="categories">
+  {% for cat in page.categories %}
+  <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>&nbsp;
+  {% endfor %}
+  </span>
+  {% endif %}
+
+  <h1>&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+  
+
+  {% include comments.html %}
 </div>
