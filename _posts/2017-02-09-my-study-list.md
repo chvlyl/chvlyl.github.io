@@ -10,9 +10,12 @@ categories: Other
 
 
 
+
 ## Machine Learning
 
+1\. [Deep Learning, NLP, and Representations by Christopher Olah](http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/)
 
+This is a great post covering deep learning in NLP. 
 
 ## Image Processing
 
