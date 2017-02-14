@@ -53,6 +53,16 @@ This is a general introduction aritle about natural language processing and the 
 
 <br /><br />    
 
+
+5\. [Deep learning (Nature 2015) by Yann LeCun, Yoshua Bengio & Geoffrey Hinton](http://www.nature.com/nature/journal/v521/n7553/pdf/nature14539.pdf)
+
+<br /><br /> 
+
+6\. [Critique of Paper by "Deep Learning Conspiracy" ](http://people.idsia.ch/~juergen/deep-learning-conspiracy.html)
+
+<br /><br /> 
+
+
 ## Image Processing
 
 
