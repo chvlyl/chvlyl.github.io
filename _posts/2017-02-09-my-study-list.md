@@ -12,7 +12,17 @@ categories: Other
 
 
 ## Machine Learning
-   
+
+<br /> 
+1\. [Machine Learning for Healthcare by David Sontag](http://people.csail.mit.edu/dsontag/courses/mlhc17/)
+
+A MIT course about machine learning for healthcare. The slides can be downloaded from the course website.
+
+<br /> 
+
+2\. [Rules of Machine Learning:Best Practices for ML Engineering](http://martin.zinkevich.org/rules_of_ml/rules_of_ml.pdf)  
+
+The post offers some very proctical suggestions about using machine learning to solve problems.
    
 <br /><br />  
 
@@ -43,25 +53,36 @@ This is a general introduction aritle about natural language processing and the 
 
 * LSTMs (Long Short Term Memory Units)
 
-<br /><br />  
+<br /> 
 
 3\. [Deep Learning Research Review: Reinforcement Learning by Adit Deshpande](https://adeshpande3.github.io/adeshpande3.github.io/Deep-Learning-Research-Review-Week-2-Reinforcement-Learning)
 
-<br /><br />   
+<br />
 
 4\. [Deep Learning Research Review: Generative Adversarial Nets by Adit Deshpande](http://www.kdnuggets.com/2016/10/deep-learning-research-review-generative-adversarial-networks.html)
 
-<br /><br />    
+<br />  
 
 
 5\. [Deep learning (Nature 2015) by Yann LeCun, Yoshua Bengio & Geoffrey Hinton](http://www.nature.com/nature/journal/v521/n7553/pdf/nature14539.pdf)
 
-<br /><br /> 
+<br />
 
 6\. [Critique of Paper by "Deep Learning Conspiracy" ](http://people.idsia.ch/~juergen/deep-learning-conspiracy.html)
 
-<br /><br /> 
+<br />
 
+7\. [Deep Learning Gallery - a curated list of awesome deep learning projects](http://deeplearninggallery.com/)
+
+<br />
+
+8\. [AlphaGo Replication](https://github.com/Rochester-NRT/RocAlphaGo/wiki/01.-Home)
+
+<br />
+
+9\. [Oxford Deep NLP 2017 course](https://github.com/oxford-cs-deepnlp-2017/lectures)
+
+<br /><br /> 
 
 ## Image Processing
 

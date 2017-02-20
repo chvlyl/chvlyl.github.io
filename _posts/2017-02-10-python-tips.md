@@ -15,6 +15,7 @@ for index, row in df.iterrows():
 {% endhighlight %}  
 
 
+<br />
 
 
 
@@ -29,7 +30,12 @@ df.round({'Column_A': 1, 'Column_B': 2})
     {% endhighlight %}
 
 
+<br />
+
+
+
 3\. Add X or Y label in Matplotlib
+
 {% highlight python %}
 plt.plot(x, y)
 plt.title('Title')
@@ -40,6 +46,9 @@ plt.ylabel('ylab')
 
 plt.show()
 {% endhighlight %}
+
+
+<br />
 
 
 
@@ -63,3 +72,80 @@ plt.show()
 In the above code, idx is the label. xy=(x,y) are the coordinates of the points and xytext are the relative coordinates of the label. bbox is to add a box around the label and corresponding parameters control the properties of the box. arrowprops is to connect the label and the point with an arrow. Similarly, the parameters control the properties of the arrow. 
 
 See [Matplotlib API](http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.annotate) and [examples](http://matplotlib.org/examples/pylab_examples/annotation_demo2.html)
+
+<br />
+
+
+5\. Calculate the relative frequency of the unqiue values
+
+Sometimes, I have a categorical variable and I want to calculate the count for each unique value (category) and the corresponding relative frequency (i.e. the percentage of count of each category over the total count). One can set normalize = True in the value_counts function to get the relative frequency.
+
+{% highlight python %}
+Series.value_counts(normalize=True)
+{% endhighlight python %}
+
+<br />
+
+6\. Load Matlab data by scipy
+
+{% highlight python %}
+from scipy.io import loadmat
+data = loadmat('data.m')
+
+## access the matrix X 
+data['X']
+## check the dimensions
+data['X'].shape
+{% endhighlight %}
+
+* Note that the loaded data is not a numpy array. It is actually a python dictionary and the actual data matrix is just of the elements in the dictionary.  
+* Matlab puts the number of rows at the last dimensions of the data matrix. For example, we can access the data matrix X by data['X'] and check the dimentions by data['X'].shape. You will find that the row counts are in the last dimensions, which is different from Python convention.  
+* Matlab index starts from 1, not 0. 
+
+<br />
+
+7\. Create zero matrix by numpy
+
+{% highlight python %}
+import numpy as np
+np.zeros((3,5))
+{% endhighlight %}
+
+The dimensions of the zero matrix is given by the tuple (3,5). That is, three rows and five columns.
+
+<br />
+
+
+8\. Reshape arrays by numpy
+
+{% highlight python %}
+np.reshape(arr, newshape = (2, 3))
+{% endhighlight %}
+
+The dimensions of the new array are given by the tuple (2,3). 
+
+<br />
+
+
+9\. Flatten arry by numpy
+
+{% highlight python %}
+import numpy as np
+arr = np.zeros((3,5))
+arr.flatten()
+{% endhighlight %}
+
+We can set the order: C is by row and F is by column.  Default is by row. 
+
+<br />
+
+
+10\. Create data frame from dictionary
+
+{% highlight python %}
+pd.DataFrame.from_dict(python_dict,orient='index')
+{% endhighlight %}
+
+The parameter orient='index' will set the dict keys to the index of the data frame. 
+
+<br />
