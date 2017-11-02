@@ -45,16 +45,17 @@ Step 6: add new pages on the main website:
 In the `_layouts` folder, edit the layout html file you use, for example `default.html`. 
 
 Step 7: allow comments to the blog posts
-1. Go to [Disqus](https://disqus.com/) and create an account. After signup, click settings->Add Disqus to a site and flollow the instructions to add your website. You only need to create a site name, which will show up above the comments area. Disqus will tell you the usename. You don't need to copy the code from the website. Instead, do the following steps.
-2. In the _layouts/default.html add 
+
+1\. Go to [Disqus](https://disqus.com/) and create an account. After signup, click settings->Add Disqus to a site and flollow the instructions to add your website. You only need to create a site name, which will show up above the comments area. Disqus will tell you the usename. You don't need to copy the code from the website. Instead, do the following steps.
+
+2\. In the _layouts/default.html add 
 {% highlight python %}
 {% raw %}
 {% include comments.html %}
 {% endraw %}
-{% endhighlight %}
+{% endhighlight %}  
  
-
-3. Then create a file _includes/comments.html and following code to the file. Remember to change ```<USERNAME>``` in the above code to your Disqus username.
+3\. Then create a file _includes/comments.html and following code to the file. Remember to change ```<USERNAME>``` in the above code to your Disqus username.
 
 {% highlight html %}
 
@@ -80,7 +81,7 @@ Step 7: allow comments to the blog posts
 
 
 
-4. Add ```comments: true``` to the YAML header of the post that you want to include the comments.
+4\. Add ```comments: true``` to the YAML header of the post that you want to include the comments.
 
 
 ## Reference
