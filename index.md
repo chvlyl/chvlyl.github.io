@@ -9,9 +9,14 @@ I'm a data scientist at Thomas Jefferson University Hospital. My work involves a
  I'm also interested in financial investments and passed the CFA ([Chartered Financial Analyst](https://www.cfainstitute.org/pages/index.aspx)) Level 1 exam.
 
 
+
 Books I have been reading:
 
 * [Sophie's World](https://www.amazon.com/Sophies-World-History-Philosophy-Classics/dp/0374530718)
+I have a friend who is a PhD student in Philosophy. His research is focused on biology. But unlike a biologist, he is studying biology from a philosophical point of view. We chat a lot about Philosophy, especially those thought experiments about AI, for example, the famous Chinese Room thought experiment. I became interested in Philosophy and asked his recommendation for a beginner’s book. This a the book he recommended. 
+
+
+
 
 * [Computer Age Statistical Inference: Algorithms, Evidence, and Data Science](https://www.amazon.com/Computer-Age-Statistical-Inference-Mathematical/dp/1107149894)
 
