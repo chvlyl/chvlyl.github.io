@@ -19,28 +19,16 @@ title: Eric Z Chen
 * TA for GCB535 Introduction to Bioinformatics 2016 Spring  
     - Designed course materials and taught Linux, R, Python, machine learning with Scikit-learn and popular bioinformatics tools
 
-## Reviewer Experience
-* PLoS One   
-* BioData Mining   
-* Biometrics   
-* Applied Soft Computing  
-* IEEE/ACM Transactions on Computational Biology and Bioinformatics
-
-## Computing Skills
-* Programming language: R, Python, Java, C++, bash
-* Web development: HTML, CSS, Bootstrap
-* Linux 
-* Parallel computing in HPC clusters
-
-## Certificates
-* Passed CFA (Chartered Financial Analyst) Level 1 exam
-* Big Data and Hadoop Essentials (Udemy)
-* Big Data Basics: Hadoop, MapReduce, Hive, Pig, & Spark (Udemy)
 
 ## Patent
 * [Methods for analyzing massively parallel sequencing data for noninvasive prenatal diagnosis ](http://www.google.com/patents/EP2825991A4?cl=en)
 
 ## Publications ([Google Scholar Citation](https://scholar.google.com/citations?hl=en&user=7mrZzpYAAAAJ&view_op=list_works&sortby=pubdate))  
+
+14. **Chen EZ**, Bushman FD, Li H. A Model-Based Approach For Species Abundance Quantification Based On Shotgun Metagenomic Data. Statistics in Biosciences. 2017;9:13–27. 
+
+13. **Chen EZ**, Li H. A two-part mixed-effects model for analyzing longitudinal microbiome compositional data. Bioinformatics. 2016;32:2611–7. 
+
 12. Lewis JD\*, **Chen EZ**\*, Baldassano RN, Otley AR, Griffiths AM, Lee D, Bittinger K, Bailey A, Friedman ES, Hoffmann C, Albenberg L, Sinha R, Compher C, Gilroy E, Nessel L, Grant A, Chehoud C, Li H, Wu GD, Bushman FD: Inflammation, Antibiotics, and Diet as Environmental Stressors of the Gut Microbiome in Pediatric Crohn's Disease. Cell Host Microbe 2015, 18:489–500. (* Co-first authors)
 
 11. Lee D, Baldassano RN, Otley AR, Albenberg L, Griffiths AM, Compher C, **Chen EZ**, Li H, Gilroy E, Nessel L, Grant A, Chehoud C, Bushman FD, Wu GD, Lewis JD: Comparative Effectiveness of Nutritional and Biological Therapy in North American Children with Active Crohnʼs Disease. Inflammatory Bowel Diseases 2015, 21:1786–1793.
