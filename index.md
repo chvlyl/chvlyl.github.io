@@ -13,6 +13,8 @@ Books I have been reading:
 
 * [Sophie's World](https://www.amazon.com/Sophies-World-History-Philosophy-Classics/dp/0374530718)
 
+* [Computer Age Statistical Inference: Algorithms, Evidence, and Data Science](https://www.amazon.com/Computer-Age-Statistical-Inference-Mathematical/dp/1107149894)
+
 <!---
 <img style="float:left" width="40%" height="40%" src="/image/Certificates/Big_Data_UC-CLT9CTCF.jpg">
 <img  width="40%" height="40%" src="/image/Certificates/Big_Data_Hadoop_UC-OPLR5Z3I.jpg">
