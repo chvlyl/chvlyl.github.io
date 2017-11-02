@@ -9,7 +9,8 @@ I'm a data scientist at Thomas Jefferson University Hospital. My work involves a
  I'm also interested in financial investments and passed the CFA ([Chartered Financial Analyst](https://www.cfainstitute.org/pages/index.aspx)) Level 1 exam.
 
 
-
+<br>
+---
 Books I have been reading:
 
 * [Sophie's World](https://www.amazon.com/Sophies-World-History-Philosophy-Classics/dp/0374530718)
