@@ -13,6 +13,12 @@ I'm a data scientist at Thomas Jefferson University Hospital. My work involves a
 ---
 Books I have been reading:
 
+* [Deep Learning with Python](https://www.amazon.com/gp/product/1617294438/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
+A must-read book about deep learning by the main developer of Keras.
+
+* [A Little History of Economics](https://www.amazon.com/gp/product/0300206364/ref=oh_aui_detailpage_o07_s00?ie=UTF8&psc=1)
+An interesting book about the history of economics. 
+
 
 * [A Little History of the World](https://www.amazon.com/Little-History-World-Histories/dp/030014332X/ref=sr_1_1?s=books&ie=UTF8&qid=1513996880&sr=1-1&keywords=the+little+history+of+the+world)
 
@@ -30,7 +36,6 @@ Books I have been reading:
 
 * [Sophie's World](https://www.amazon.com/Sophies-World-History-Philosophy-Classics/dp/0374530718)
 I have a friend who is a PhD student in Philosophy. His research is focused on biology. But unlike a biologist, he is studying biology from a philosophical point of view. We chat a lot about Philosophy, especially those thought experiments about AI, for example, the famous Chinese Room thought experiment. I became interested in Philosophy and asked his recommendation for a beginner’s book. This a the book he recommended. 
-
 
 
 * [Computer Age Statistical Inference: Algorithms, Evidence, and Data Science](https://www.amazon.com/Computer-Age-Statistical-Inference-Mathematical/dp/1107149894)
