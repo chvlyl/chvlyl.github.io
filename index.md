@@ -13,6 +13,10 @@ I'm a data scientist at Thomas Jefferson University Hospital. My work involves a
 ---
 Books I have been reading:
 
+* [Journey to Data Scientist: Interviews with More Than Twenty Amazing Data Scientists](https://www.amazon.com/gp/product/1548984248/ref=oh_aui_detailpage_o03_s00?ie=UTF8&psc=1)
+The author interviewed about twenty data scientists. This book gives a lot of valuable suggestions about the data science in general.  
+
+
 * [Deep Learning with Python](https://www.amazon.com/gp/product/1617294438/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1)
 A must-read book about deep learning by the main developer of Keras.
 
