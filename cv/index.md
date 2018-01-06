@@ -12,6 +12,17 @@ title: Eric Z Chen
 * 2004-2008, BS in Biology, University of Science and Technology of China  
 	- Thesis: ChIP-Seq data analysis 
 
+## Certifications
+* Structuring Machine Learning Projects. Coursera (deeplearning.ai). 2017 
+* Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization. Coursera (deeplearning.ai). 2017 
+* Neural Networks and Deep Learning. Coursera (deeplearning.ai). 2017 
+* Deep Learning Nanodegree. Udacity. 2017 
+* SAS Certified Advanced Programmer for SAS 9. SAS. 2016 
+* SAS Certified Base Programmer for SAS 9. SAS. 2016 
+* Machine Learning Foundations: A Case Study Approach. Coursera (University of Washington). 2016
+* Machine Learning: Classification. Coursera (University of Washington). 2016
+* Machine Learning: Regression. Coursera (University of Washington). 2016
+* CFA level 1. CFA Institute. 2014 
 
 ## Teaching Experience  
 * TA for GCB535 Introduction to Bioinformatics 2015 Spring
