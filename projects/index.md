@@ -13,7 +13,7 @@ title: Eric Z Chen
 ### Udacity deep learning nano degree projects
 > <sub>[[Github](https://github.com/chvlyl/udacity_deep_learning)]</sub>
 > <sub>I took the Udacity deep learning nano degree program. This is an excellent program covering basics of neural networks, CNN, RNN and GAN. I finished all five deep learning projects.</sub>
-> <sub> 1.Build a neural network from scratch to predict bike usge </sub>
+> <sub> 1. Build a neural network from scratch to predict bike usge </sub>
 > <sub> 2. Build a CNN model to do image classficiation based on CIFAR-10 dataset </sub>
 > <sub> 3. Build a RNN model to generate Simpsons TV scripts using the Simpsons dataset of scripts from 27 seasons </sub>
 > <sub> 4. Build a sequence to sequence model for translation of English and French sentence </sub>
