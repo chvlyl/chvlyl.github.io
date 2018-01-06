@@ -25,6 +25,8 @@ title: Eric Z Chen
 
 ## Publications ([Google Scholar Citation](https://scholar.google.com/citations?hl=en&user=7mrZzpYAAAAJ&view_op=list_works&sortby=pubdate))  
 
+15. Ni J, Shen T-CD, **Chen EZ**, Bittinger K, Bailey A, Roggiani M, et al. A role for bacterial urease in gut dysbiosis and Crohn's disease. Science Translational Medicine. 2017;9:eaah6888. 
+
 14. **Chen EZ**, Bushman FD, Li H. A Model-Based Approach For Species Abundance Quantification Based On Shotgun Metagenomic Data. Statistics in Biosciences. 2017;9:13–27. 
 
 13. **Chen EZ**, Li H. A two-part mixed-effects model for analyzing longitudinal microbiome compositional data. Bioinformatics. 2016;32:2611–7. 
