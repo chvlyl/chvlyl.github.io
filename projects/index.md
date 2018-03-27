@@ -3,6 +3,39 @@ layout: home
 title: Eric Z Chen
 ---
 
+###  Coursera deeplearning.ai projects
+> <sub> Course 1: Neural Networks and Deep Learning</sub><br>
+> <sub> 1 - Logistic Regression with a Neural Network mindset</sub><br>
+> <sub> 2 - Planar data classification with one hidden layer</sub><br>
+> <sub> 3 - Building your Deep Neural Network: Step by Step</sub><br>
+> <sub> 4 - Deep Neural Network for Image Classification: Application</sub><br>
+> <sub> Course 2: Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</sub><br>
+> <sub> 1 - Initialization</sub><br>
+> <sub> 2 - Regularization</sub><br>
+> <sub> 3 - Gradient Checking</sub><br>
+> <sub> 4 - Optimization Methods</sub><br>
+> <sub> 5 - TensorFlow Tutorial</sub><br>
+> <sub> Course 3: Structuring Machine Learning Projects</sub><br>
+> <sub> No projects for this course. </sub><br>
+> <sub> Course 4: Convolutional Neural Networks</sub><br>
+> <sub> 1 - Convolutional Model: step by step</sub><br>
+> <sub> 2 - Convolutional Model: application</sub><br>
+> <sub> 3 - Keras - Tutorial - Happy House</sub><br>
+> <sub> 4 - Residual Networks</sub><br>
+> <sub> 5 - Building a Recurrent Neural Network - Step by Step</sub><br>
+> <sub> 6 - Character level language model - Dinosaurus land</sub><br>
+> <sub> 7 - Car detection with YOLOv2</sub><br>
+> <sub> 8 - Art generation with Neural Style Transfer</sub><br>
+> <sub> 9 - Face Recognition for the Happy House</sub><br>
+> <sub> Course 5: Sequence Models</sub><br>
+> <sub> 1 - Building a Recurrent Neural Network - Step by Step</sub><br>
+> <sub> 2 - Character level language model - Dinosaurus land</sub><br>
+> <sub> 3 - Jazz improvisation with LSTM</sub><br>
+> <sub> 4 - Operations on word vectors - Debiasing</sub><br>
+> <sub> 5 - Emojify</sub><br>
+> <sub> 6 - Neural Machine Translation with Attention</sub><br>
+> <sub> 7 - Trigger word detection</sub><br>
+
 
 ### Adaptive non-parametric clustering  
 > <sub>[[Github](https://github.com/chvlyl/kernel_kmeans_and_adaptive_clustering)]</sub>
